@@ -1,8 +1,8 @@
-# TÍTULO DO PROJETO
+# MEDIQUEI
 
-`CURSO`
+`Análise e desenvolvimento de sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
 
 `SEMESTRE`
 
@@ -11,13 +11,15 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Adriana Neves da Silva Carvalho
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Maria Teixeira do Carmo
+* Fernanda Salles Furtado
+* Jaqueline Câmara Poletto
+* Roberta Motta Pacheco
+* Thainá Luisa Costa Siqueira
 
 ## Orientador
 
-* Nome completo do professor 1
+* Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
 
