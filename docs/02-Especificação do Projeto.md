@@ -8,25 +8,11 @@ Para que o projeto em desenvolvimento seja efetivo e resolutivo quanto às deman
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras que se seguem. Elas são um cuidador, um paciente sem limitações ou necessidades especiais, um familiar de paciente idoso, uma paciente idosa, um paciente surdo e uma gestante.
 
-1)  	Paulo Fontes
-	Idade: 40
-Ocupação: Analista de Vendas
-Descrição: Pessoa em tratamento de doença crônica de pele.	Plataformas e apps utilizados:
-•	Instagram
-•	Netflix
-•	Amazon Prime
-•	Uber
-•	Ifood
-•	Spotify
-Motivações
-•	Utilizar o website para documentar e arquivar os medicamentos utilizados durante os vários períodos de tratamento,
-•	Entender quais medicamentos tiveram melhor efetividade no tratamento.	Frustrações
-•	Dificuldade de arquivar todos os tratamentos já realizados.
-	Hobbies, História
-•	Filmes e séries
-•	Taekwondo
-•	Toca bateria em uma banda.
-
+|NOME| IDADE  |OCUPAÇÃO |DESCRIÇÃO| PLTAFORMAS UTILIZADAS | FRUSTAÇÔES| MOTIVAÇÕES|
+|---------|-----------|-------------------|-----------------|------------|-------|---------|
+|PERSONA 01|
+|Paulo Fontes| 	Idade: 40| Analista de Vendas| Pessoa em tratamento de doença crônica de pele.|	Instagram, Netflix, Amazon Prime, Uber, Ifood, Spotify|	Utilizar o website para documentar e arquivar os medicamentos utilizados durante os vários períodos de tratamento,Entender quais medicamentos tiveram melhor efetividade no tratamento.|Dificuldade de arquivar todos os tratamentos já realizados.|Hobbies, História, Filmes e séries, Taekwondo, Toca bateria em uma banda.|
+|PERSONA 02|
 2)  	Carlos Tobias
 	Idade: 45
 Ocupação: Cuidador
@@ -116,33 +102,28 @@ Motivações
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
+
 >
 Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários. 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Eu, Paulo Pontes, como pessoa em tratamento de doença crônica de pele|	desejo cadastrar os medicamentos utilizados durante os vários períodos de tratamento aos quais já me submeti, informando a eficácia ou não do medicamento|	para saber quais medicamentos tiveram melhor efetividade no tratamento.|
+|Eu, Paulo Pontes, como pessoa em tratamento de doença crônica de pele,	desejo informar os medicamentos que causaram efeito colateral durante o tratamento e quais foram esses efeitos,	para evitar de repetir os erros de tratamentos anteriores.|
+|Eu, Carlos Tobias, como cuidador|desejo receber alertas de horário, posologia e modo de administração do medicamento,	para assegurar que o paciente seja medicado nos horários e formas corretas e informar a família sobre o andamento do tratamento.|
+|Eu, Carlos Tobias, como cuidador|desejo cadastrar todos os medicamentos, posologia e modo de administração do medicamento ao paciente,	para ter um guia rápido durante o processo de ministrar o medicamento.|
+|Eu, Flávia Santos, como filha de paciente em tratamento|	desejo cadastrar todos os medicamentos, posologia e modo de administração do medicamento ao paciente,	para ter um guia rápido durante o processo de ministração do medicamento.|
+|Eu, Flávia Santos, como filha de paciente em tratamento|desejo emitir relatório de medicamentos, períodos de tratamento|	para me informar sobre o tratamento.
+|Eu, Sebastiana Silva, como idosa com baixa visão em tratamento|	desejo que meus filhos cadastrem meus medicamentos|	Para garantir que o site fique atualizado.
+|Eu, Sebastiana Silva, como idosa com baixa visão, em tratamento| Desejo receber alertas de horários de medicamentos. Desejo visualizar esses alertas com letras grandes| 	Para visualizar os alertas com mais facilidade.|
+|Eu, Maria Arino, como surda realizando tratamentos periódicos,	Desejo receber alertas de horários de medicamentos. O alerta deverá ativar o modo vibrar do smartfone.	O modo vibrar será importante para que eu não perca as mensagens de alerta.|
+|Eu, Joana Santos, como gestante de risco em acompanhamento|	Desejo colocar todos os medicamentos e vitaminas que tomo em um local único|	Para que possa apresentar para a minha médica no pré-natal.|
+|Eu, Joana Santos, como gestante de risco em acompanhamento|	Desejo receber alertas dos horários em que devo tomar os meus medicamentos|	Para que todo o pré-natal seja realizado da forma correta.|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -174,12 +155,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-
-
-
+|RNF-01 |O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente 	|Alta|
+|RNF-02	|O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada.	|Baixa|
+|RNF-03	|O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.	|Alta|
+|RNF-05	|O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.	|Alta|
+|RNF-06	|O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.	|Alta|
+|RNF-07	|As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão.	|Média|
+|RNF-08 |O site deve armazenar as informações em um banco de dados.	|Alta|
+|RNF-09	|O site deve conter uma barra de navegação de fácil uso.	|Baixa|
+|RNF-10 |Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas.	|\Média|
 
 
 ## Restrições
@@ -191,10 +175,6 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |01| O projeto será desenvolvido utilizando as linguagens básicas da Web no Front-End (HTML, CSS e JavaScript). Back-end na linguagem C# e banco de dados SQL Server |
 |02|O site terá maior compatibilidade com o navegador Google Chrome, sendo recomendado o seu uso.        |
 |03|Para acesso ao sistema é necessário acesso à internet estável e de boa qualidade de transmissão de dados|
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
 
 
 ## Diagrama de Casos de Uso
