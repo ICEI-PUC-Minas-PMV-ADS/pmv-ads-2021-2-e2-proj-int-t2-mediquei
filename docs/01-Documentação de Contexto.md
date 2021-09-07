@@ -3,7 +3,7 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Diante do exposto, a administração errônea de remédios é um fator que pode resultar graves problemas. O fato de não conseguir administrar corretamente o fluxo de medicamentos necessários na rotina do usuário, seja por esquecer o horário, ingerir remédio errado ou até mesmo acabar a medicação, interrompendo o seu uso de forma abrupta, gerou a necessidade de criação de uma aplicação que auxilie a organização dessas informações.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
