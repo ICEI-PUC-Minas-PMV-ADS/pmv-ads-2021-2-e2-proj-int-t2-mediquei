@@ -113,14 +113,14 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Eu, Paulo Pontes, como pessoa em tratamento de doença crônica de pele|	desejo cadastrar os medicamentos utilizados durante os vários períodos de tratamento aos quais já me submeti, informando a eficácia ou não do medicamento|	para saber quais medicamentos tiveram melhor efetividade no tratamento.|
-|Eu, Paulo Pontes, como pessoa em tratamento de doença crônica de pele,	desejo informar os medicamentos que causaram efeito colateral durante o tratamento e quais foram esses efeitos,	para evitar de repetir os erros de tratamentos anteriores.|
-|Eu, Carlos Tobias, como cuidador|desejo receber alertas de horário, posologia e modo de administração do medicamento,	para assegurar que o paciente seja medicado nos horários e formas corretas e informar a família sobre o andamento do tratamento.|
-|Eu, Carlos Tobias, como cuidador|desejo cadastrar todos os medicamentos, posologia e modo de administração do medicamento ao paciente,	para ter um guia rápido durante o processo de ministrar o medicamento.|
-|Eu, Flávia Santos, como filha de paciente em tratamento|	desejo cadastrar todos os medicamentos, posologia e modo de administração do medicamento ao paciente,	para ter um guia rápido durante o processo de ministração do medicamento.|
-|Eu, Flávia Santos, como filha de paciente em tratamento|desejo emitir relatório de medicamentos, períodos de tratamento|	para me informar sobre o tratamento.
-|Eu, Sebastiana Silva, como idosa com baixa visão em tratamento|	desejo que meus filhos cadastrem meus medicamentos|	Para garantir que o site fique atualizado.
+|Eu, Paulo Pontes, como pessoa em tratamento de doença crônica de pele|	desejo informar os medicamentos que causaram efeito colateral durante o tratamento e quais foram esses efeitos|	Para evitar de repetir os erros de tratamentos anteriores.|
+|Eu, Carlos Tobias, como cuidador|desejo receber alertas de horário, posologia e modo de administração do medicamento|	para assegurar que o paciente seja medicado nos horários e formas corretas e informar a família sobre o andamento do tratamento.|
+|Eu, Carlos Tobias, como cuidador|desejo cadastrar todos os medicamentos, posologia e modo de administração do medicamento ao paciente|	para ter um guia rápido durante o processo de ministrar o medicamento.|
+|Eu, Flávia Santos, como filha de paciente em tratamento|	desejo cadastrar todos os medicamentos, posologia e modo de administração do medicamento ao paciente|	para ter um guia rápido durante o processo de ministração do medicamento.|
+|Eu, Flávia Santos, como filha de paciente em tratamento|desejo emitir relatório de medicamentos, períodos de tratamento| Para me informar sobre o tratamento.
+|Eu, Sebastiana Silva, como idosa com baixa visão em tratamento|	Desejo que meus filhos cadastrem meus medicamentos|	Para garantir que o site fique atualizado.
 |Eu, Sebastiana Silva, como idosa com baixa visão, em tratamento| Desejo receber alertas de horários de medicamentos. Desejo visualizar esses alertas com letras grandes| 	Para visualizar os alertas com mais facilidade.|
-|Eu, Maria Arino, como surda realizando tratamentos periódicos,	Desejo receber alertas de horários de medicamentos. O alerta deverá ativar o modo vibrar do smartfone.	O modo vibrar será importante para que eu não perca as mensagens de alerta.|
+|Eu, Maria Arino, como surda realizando tratamentos periódicos|	Desejo receber alertas de horários de medicamentos. O alerta deverá ativar o modo vibrar do smartfone.	|O modo vibrar será importante para que eu não perca as mensagens de alerta.|
 |Eu, Joana Santos, como gestante de risco em acompanhamento|	Desejo colocar todos os medicamentos e vitaminas que tomo em um local único|	Para que possa apresentar para a minha médica no pré-natal.|
 |Eu, Joana Santos, como gestante de risco em acompanhamento|	Desejo receber alertas dos horários em que devo tomar os meus medicamentos|	Para que todo o pré-natal seja realizado da forma correta.|
 
