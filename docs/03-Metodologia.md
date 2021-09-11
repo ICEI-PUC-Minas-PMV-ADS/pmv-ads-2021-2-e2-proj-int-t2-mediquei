@@ -3,37 +3,19 @@
 
 A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-## Relação de Ambientes de Trabalho
+## Controle de Versão
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
+Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow. O Git Flow é um fluxo de trabalho baseado em branchs, atribuindo funções para diferentes ramificações e definindo as suas interações. O fluxo de controle do código é exemplificado na figura abaixo. 
 
-|AMBIENTE| PLATAFORMA  |OCUPAÇÃO |LINK DE ACESSO| PLTAFORMAS UTILIZADAS | FRUSTAÇÔES| MOTIVAÇÕES|
-|---------|-----------|-------------------|-----------------|------------|-------|---------|
-|Repositório de código fonte| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei|
-|Gerenciamento do Projeto| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1|
+![image](/docs/img/gitflow.png)
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
-
-Para gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-## Gestão de código fonte
-Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow. O Git Flow é um fluxo de trabalho baseado em branchs, atribuindo funções para diferentes ramificações e definindo as suas interações. O fluxo de controle do código é exemplificado na Figura. As branchs são identificados como Hotfix, Release, Develop e Feature.
+As branchs são identificados como Hotfix, Release, Develop e Feature.
 
 - `master`: irá conter todo o código já testado e que será entregue ao cliente 
 - `develop`:se encontra todo o código, como recurso e funcionalidades finalizados, e posteriormente realizar o merge com a master
 - ` Feature`: onde é realizada o desenvolvimento de uma funcionalidade específica, todas seguindo o mesmo padrão de nome
 - `Release`: funciona com o sistema de homologação, sendo removida após a realização de testes
 -  `Hotfix` é uma branch criada a partir da master, para correção após os sistemas ter entrado em produção.
-
-![image](docs/img/gitflow.png)
 
 ## Gerenciamento de Projeto
 
@@ -42,17 +24,23 @@ Para gestão do código fonte do software desenvolvido pela equipe, o grupo util
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 A equipe está organizada da seguinte maneira:
 
-- `Scrum Master`: Fernanda Salles Furtado
-- `Product Owner`: Jaqueline Poletto 
-- `Equipe de Desenvolvimento`: 
--- Adriana Neves 
--- Ana Maria Teixeira
--- Roberta Motta
--  Thainá Siqueira 
-- `Equipe de Design`:
--- Roberta Motta   
+* Scrum Master: Fernanda Salles Furtado
+* Product Owner: Jaqueline Poletto 
+* Equipe de Desenvolvimento:
+  * Adriana Neves 
+  * Ana Maria Teixeira
+  * Roberta Motta 
+  * Thainá Siqueira 
+* Equipe de Design: 
+  *Roberta Motta   
 
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Git estruturado com as seguintes listas: 
+### Processo
+
+Para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução, foi criado um quadro de backlogs no Github. O quadro encontra-se disponível através da URL https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1 e é apresentado, no estado atual, na figura abaixo. 
+
+![image](/docs/img/Backlog_Github.PNG)
+
+Para organização e distribuição das tarefas do projeto, a equipe está estruturado com as seguintes listas: 
 
 - `Backlog`: Não está em uma coluna propriamente definida. As tarefas ficam listadas na parte do To Do e reúne todas as etapas a serem trabalhadas. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
 
@@ -67,17 +55,15 @@ para a coluna “Test”. No final da semana, é feita a revisão dessa lista co
 - `Done`: Lista com as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões a serem feitas, ele está pronto para a ação.
 
 - `Locked`: Restrições que surgem ao desenvolver do projeto, impedindo alguma conclusão da tarefa, ela é movida para esta lista juntamente com um comentário sobre o que está travando a tarefa.
-
-
-### Processo
-
-Para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução, foi criado um quadro de backlogs no Github. O quadro encontra-se disponível através da URL https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1 e é apresentado, no estado atual, na Figura X. 
-
-![image](docs/img/Backlog_Github.PNG)
  
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
+
+|AMBIENTE| PLATAFORMA|LINK DE ACESSO|
+|---------|-----------|-------------------|
+|Repositório de código fonte| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei|
+|Gerenciamento do Projeto| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1|
 
 - Editor de código.
 - Ferramentas de comunicação
