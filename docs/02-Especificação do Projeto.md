@@ -185,3 +185,10 @@ https://lucid.app/lucidchart/be89a3a4-7d9f-498e-afe4-0e8ca4e8b015/edit?shared=tr
 
 ![image](https://user-images.githubusercontent.com/81448442/132403078-5de07537-3b6f-4049-be1b-ee641df70566.png)
 
+
+## Diagrama de Classes
+
+O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2-mediquei\docs\diagramas\Class Diagram Mediquei.astah 
+
+![image](/docs/img/DiagramaClasseMediquei.png)
+
