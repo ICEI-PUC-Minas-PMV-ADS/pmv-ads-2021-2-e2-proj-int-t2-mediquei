@@ -1,24 +1,22 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## Relação de Ambientes de Trabalho
 
-## Controle de Versão
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
+
+|AMBIENTE| PLATAFORMA  |OCUPAÇÃO |LINK DE ACESSO| PLTAFORMAS UTILIZADAS | FRUSTAÇÔES| MOTIVAÇÕES|
+|---------|-----------|-------------------|-----------------|------------|-------|---------|
+|Repositório de código fonte| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei|
+|Gerenciamento do Projeto| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1|
 
 A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
 
-O projeto segue a seguinte convenção para o nome de branches:
-
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
+Para gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
 - `documentation`: melhorias ou acréscimos à documentação
@@ -26,25 +24,43 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+## Gestão de código fonte
+Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow. O Git Flow é um fluxo de trabalho baseado em branchs, atribuindo funções para diferentes ramificações e definindo as suas interações. O fluxo de controle do código é exemplificado na Figura. As branchs são identificados como Hotfix, Release, Develop e Feature.
+Na master irá conter todo o código já testado e que será entregue ao cliente e a develop é onde se encontra todo o código, como recurso e funcionalidades finalizados, e posteriormente realizar o merge com a master. Feature é onde é realizada o desenvolvimento de uma funcionalidade específica, todas seguindo o mesmo padrão de nome. A Release funciona com o sistema de homologação, sendo removida após a realização de testes. E por último o Hotfix é uma branch criada a partir da master, para correção após os sistemas ter entrado em produção.
 
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
+A equipe está organizada da seguinte maneira:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- `Scrum Master`: Fernanda Salles Furtado
+- `Product Owner`: Jaqueline Poletto 
+- `Equipe de Desenvolvimento`: 
+   Adriana Neves 
+	  Ana Maria Teixeira
+	  Roberta Motta
+	  Thainá Siqueira 
+- `Equipe de Design`:
+   Roberta Motta   
+
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Git estruturado com as seguintes listas: 
+
+- `Backlog`: Não está em uma coluna propriamente definida. As tarefas ficam listadas na parte do To Do e reúne todas as etapas a serem trabalhadas. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
+
+- `To Do`: Esta lista representa o Sprint Backlog. Este é o Sprint que estará sendo trabalhado no decorrer do projeto.
+
+- `In progress`: Quando uma tarefa tiver sido iniciada, ela é movida para cá e é realizada no decorrer da Sprint.
+
+- `Test`: Teste e checagem de Qualidade. Ao concluir tarefas, elas são movidas
+
+para a coluna “Test”. No final da semana, é feita a revisão dessa lista com intuito de garantir que tudo saiu como planejado e sem erros.
+
+- `Done`: Lista com as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões a serem feitas, ele está pronto para a ação.
+
+- `Locked`: Restrições que surgem ao desenvolver do projeto, impedindo alguma conclusão da tarefa, ela é movida para esta lista juntamente com um comentário sobre o que está travando a tarefa.
+
 
 ### Processo
 
