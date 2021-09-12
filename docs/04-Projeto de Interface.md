@@ -9,7 +9,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-
+O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitations/accept/inv_e8e33923-caaa-4eb5-a54e-6a58d0ef2cc4
 
 ![Diagrama de fluxo 2](https://user-images.githubusercontent.com/81448442/133003007-8a9daedc-2c48-4929-bcf3-1049e0df5e13.png)
 
