@@ -31,8 +31,8 @@ A equipe está organizada da seguinte maneira:
   * Ana Maria Teixeira
   * Roberta Motta 
   * Thainá Siqueira 
-* Equipe de Design: 
-  *Roberta Motta   
+* Equipe de Design:
+  * Roberta Motta   
 
 ### Processo
 
