@@ -9,7 +9,7 @@ Para gestão do código fonte do software desenvolvido pela equipe, o grupo util
 
 ![image](/docs/img/gitflow.png)
 
-As branchs são identificados como Hotfix, Release, Develop e Feature.
+As branchs são identificados como Master, Hotfix, Release, Develop e Feature.
 
 - `master`: irá conter todo o código já testado e que será entregue ao cliente 
 - `develop`:se encontra todo o código, como recurso e funcionalidades finalizados, e posteriormente realizar o merge com a master
@@ -48,9 +48,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está estru
 
 - `In progress`: Quando uma tarefa tiver sido iniciada, ela é movida para cá e é realizada no decorrer da Sprint.
 
-- `Test`: Teste e checagem de Qualidade. Ao concluir tarefas, elas são movidas
-
-para a coluna “Test”. No final da semana, é feita a revisão dessa lista com intuito de garantir que tudo saiu como planejado e sem erros.
+- `Test`: Teste e checagem de Qualidade. Ao concluir tarefas, elas são movidas para a coluna “Test”. No final da semana, é feita a revisão dessa lista com intuito de garantir que tudo saiu como planejado e sem erros.
 
 - `Done`: Lista com as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões a serem feitas, ele está pronto para a ação.
 
@@ -65,11 +63,9 @@ As ferramentas empregadas no projeto são:
 |Repositório de código fonte| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei|
 |Gerenciamento do Projeto| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1|
 |Projeto de Interface e Wireframes| 	Marvel| https://marvelapp.com/prototype/h30ei94|
+|Ferramentas de comunicação| Microsoft Teams| https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software|
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+Para o gerenciamento do projeto e repositório do código escolhemos o GitHub, por ser uma ferramenta de fácil acesso para todos os integrantes do grupo e por ser amplamente utilizada no mercado de trabalho. A ferramentas de comunicação utilizada é o Microsoft Teams, pois já era a ferramenta oficial utilizada na comunicação do curso e por possuir diversas utilidades como a possibilidade de colaboração em arquivos no Word, Excel e PowerPoint. Por fim, para criar o projeto de interface utilizamos o Marvel app por atender as necessidades do projeto e já ser conhecido pelo grupo .
 
 
