@@ -64,6 +64,7 @@ As ferramentas empregadas no projeto são:
 |---------|-----------|-------------------|
 |Repositório de código fonte| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei|
 |Gerenciamento do Projeto| 	GitHub| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/projects/1|
+|Projeto de Interface e Wireframes| 	Marvel| https://marvelapp.com/prototype/h30ei94|
 
 - Editor de código.
 - Ferramentas de comunicação
