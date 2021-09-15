@@ -8,103 +8,15 @@ Para que o projeto em desenvolvimento seja efetivo e resolutivo quanto às deman
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras que se seguem. Elas são um cuidador, um paciente sem limitações ou necessidades especiais, um familiar de paciente idoso, uma paciente idosa, um paciente surdo e uma gestante.
 
-|NOME| IDADE  |OCUPAÇÃO |DESCRIÇÃO| PLTAFORMAS UTILIZADAS | FRUSTAÇÔES| MOTIVAÇÕES|
-|---------|-----------|-------------------|-----------------|------------|-------|---------|
-|PERSONA 01|
-|Paulo Fontes| 	Idade: 40| Analista de Vendas| Pessoa em tratamento de doença crônica de pele.|	Instagram, Netflix, Amazon Prime, Uber, Ifood, Spotify|	Utilizar o website para documentar e arquivar os medicamentos utilizados durante os vários períodos de tratamento,Entender quais medicamentos tiveram melhor efetividade no tratamento.|Dificuldade de arquivar todos os tratamentos já realizados.|Hobbies, História, Filmes e séries, Taekwondo, Toca bateria em uma banda.|
-|PERSONA 02|
-2)  	Carlos Tobias
-	Idade: 45
-Ocupação: Cuidador
-Descrição: Cuidador que acompanhar vários idosos com diferentes comorbidades e cuidados.	Plataformas e apps utilizados:
-•	Instagram
-•	Facebook
-•	Uber
-•	Ifood
-•	Spotify
-Motivações
-•	Auxiliar o paciente na administração e controle de medicamentos;	Frustrações
-•	Dificuldade no controle de horários de medicamentos.
-	Hobbies, História
-•	Filmes e séries
-•	Pintura
+| nº |NOME| IDADE  |OCUPAÇÃO |DESCRIÇÃO| PLTAFORMAS UTILIZADAS | MOTIVAÇÕES| FRUSTAÇÔES| HOBBIES|
+|---|----|-------|-----------|--------|-----------------------|------------|----------|---------|
+| 01 | Paulo Fontes| 40 anos | Analista de Vendas| Pessoa em tratamento de doença crônica de pele.|	Instagram, Netflix, Amazon Prime, Uber, Ifood, Spotify|	Utilizar o website para documentar e arquivar os medicamentos utilizados durante os vários períodos de tratamento,Entender quais medicamentos tiveram melhor efetividade no tratamento.|Dificuldade de arquivar todos os tratamentos já realizados.|Ler jornal, séries, Taekwondo, Toca bateria em uma banda.|
+| 02 |Carlos Tobias| Idade: 45| Cuidador| Cuidador que acompanhar vários idosos com diferentes comorbidades e cuidados.| Instagram, Facebook, Uber, Ifood, Spotify, Jogos onlime| Auxiliar o paciente na administração e controle de medicamentos| Dificuldade no controle de horários de medicamentos.| História, Filmes e séries, Pintura.|
+|03|Flávia Santos| 30 anos| Analista de Sistemas | Filha de paciente em tratamento médico| Instagram, Github, Visual Studio, LinkedIn | Aompanhar os horários e a correta ministração dos remédios por emio do relatório do website.	|Dificuldades no acompanhamento dos horários dos medicamentos| Programar apps, adora ir ao cinema, Ciclismo!
+|04|Sebastiana Silva| 76 anos| Aposentada| Idosa com baixa visão em tratamento médico de pressão alta e diabetes.|	WhatsApp, Facebook.| Organizar quais remédios estão sendo ministrados e lembrar quais os horários devem ser tomados. Compartilhar, com seus familiares e cuidadores, o histórico de tratamentos.| Dificuldade de organizar e lembrar quais remédios devem ser utilizados | dança, Jardinagem|
+|05|Maria Arino| 22 anos| Estudante| Jovem surda em tratamentos periódicos com insuficiência cardíaca.| Tinder, WhatsApp, Twitter, Ifood, Instagram, Tik Tok| 	Controlar suas medicações prescritas durante o tratamento médico. | Dificuldade de organizar acompanhar os horários das medicações| Matemática, Leitura, Caminhada na natureza, Yoga
+|06|Joana Santos| 32 anos| Administradora de empresas| Gestante de risco do primeiro filho.|	Twitter, WhatsApp, apps de jornais, 99| Ter de forma prática quais os remédios que pode tomar, devido a gravidez.| Organizar o horário das suas vitaminas e remédios. Facilitar o feedback com a sua médica de acompanhamento da gravidez.|	Necessidade de anotar todos os efeitos dos remédios para a sua médica e conseguir tomar todos no horário certo. | Yoga, tai chi chuan, Feng shui, musculação|
 
-3)   	 	Flávia Santos
-	Idade: 30
-Ocupação: Analista de Sistemas
-Descrição: Filha de paciente em tratamento médico	Plataformas e apps utilizados:
-•	Instagram
-•	Netflix
-•	Visual Studio
-•	LinkedIn
-•	Ifood
-Motivações
-•	Acompanhar os horários e correta ministração dos remédios ao pai através do histórico do website.	Frustrações
-•	Dificuldades no acompanhamento dos horários dos medicamentos	Hobbies, História
-•	Filmes e séries
-•	Adora ir ao cinema
-•	Ciclismo
-
-4) 	 	Sebastiana Silva
-	Idade: 76
-Ocupação: Aposentada
-Descrição: Idosa com baixa visão em tratamento médico de pressão alta e diabetes.	Plataformas e apps utilizados:
-•	WhatsApp
-•	Facebook
-•	YouTube
-•	Uber
-Motivações
-•	Organizar quais remédios estão sendo ministrados e lembrar quais os horários devem ser tomados.
-•	Compartilhar, com seus familiares e cuidadores, o histórico de tratamentos.	Frustrações
-•	Dificuldade de organizar e lembrar quais remédios devem ser utilizados
- 	Hobbies, História
-•	Dançar
-•	Leitura
-•	Jardinagem
-
-5)
- 	Maria Arino
-	Idade: 22
-Ocupação: Estudante
-Descrição: Jovem surda em tratamentos periódicos com insuficiência cardíaca.	Plataformas e apps utilizados:
-•	Tinder
-•	WhatsApp
-•	Twitter
-•	Ifood
-•	Instagram
-Motivações
-•	Controlar as medicações prescritas durante o tratamento médico.	Frustrações
-•	Dificuldade de organizar acompanhar os horários das medicações
- 	Hobbies, História
-•	Leitura
-•	Caminhada
-•	Yoga
-
-6)
- 	Joana Santos
-	Idade: 32
-Ocupação: Administradora de empresas
-Descrição: Gestante de risco do primeiro filho.	Plataformas e apps utilizados:
-•	Twitter
-•	WhatsApp
-•	YouTube
-•	Uber
-•	Instagram
-Motivações
-•	Ter de forma prática quais os remédios que pode tomar, devido a gravidez.
-•	Organizar o horário das suas vitaminas e remédios
-•	Facilitar o feedback com a sua médica de acompanhamento da gravidez.	Frustrações
-•	Necessidade de anotar todos os efeitos dos remédios para a sua médica e conseguir tomar todos no horário certo. 
- 	Hobbies, História
-•	Yoga
-•	Videogame
-•	Musculação
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
@@ -184,4 +96,11 @@ https://lucid.app/lucidchart/be89a3a4-7d9f-498e-afe4-0e8ca4e8b015/edit?shared=tr
 
 
 ![image](https://user-images.githubusercontent.com/81448442/132403078-5de07537-3b6f-4049-be1b-ee641df70566.png)
+
+
+## Diagrama de Classes
+
+O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2-mediquei\docs\diagramas\Class Diagram Mediquei.astah 
+
+![image](/docs/img/DiagramaClasseMediquei.png)
 
