@@ -20,3 +20,30 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 ## Wireframes
 
 Em base do fluxo de telas do projeto apresentado no item anterior, a composição e detalhes das telas do sistema são apresentadas nas telas apresentadas abaixo
+
+![image](https://user-images.githubusercontent.com/81448442/133701343-db813d63-3592-4330-b820-be52cda1b0f2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
