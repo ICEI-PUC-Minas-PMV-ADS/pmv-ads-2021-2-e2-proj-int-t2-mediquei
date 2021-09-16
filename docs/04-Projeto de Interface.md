@@ -47,7 +47,7 @@ Login
 
 
 
-Tela 5: 
+Cadastro de medicamento:  
 Essa tela é a de cadastro de medicamentos. Ela é divida em 3 partes. A primeira contém o menu principal na horizontal, a segunda parte contém o pré cadastro do medicamento e a terceira o detalhamento de uso do medicamento. Esse cadastro é feito pelo usuário. No pré cadastro, a pessoa preenche os dados conforme receita médica com o nome do medicamento, a dosagem, o nome e a especialidade médica e alguma observação que julgue necessária. 
 Na parte de detalhamento do uso e criação de alerta, a pessoa seleciona os campos que condizem com as especificações da instrução de uso. 
 Após isso, ela clica em cadastrar e o medicamento estará salvo.
