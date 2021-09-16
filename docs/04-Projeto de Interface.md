@@ -51,6 +51,11 @@ Login
 
 ![Tela 6](https://user-images.githubusercontent.com/81760044/133701766-bdaac22b-40dd-4f1f-afac-d6fb3722049c.JPG)
 
+![Tela 7](https://user-images.githubusercontent.com/81760044/133702191-2a58ac6f-9f69-4684-9326-f3a456c62a4b.JPG)
+
+![Tela 8](https://user-images.githubusercontent.com/81760044/133702210-b7f0889f-072d-406d-8ba8-2ccaf7e28b1f.JPG)
+
+
 
 
 
