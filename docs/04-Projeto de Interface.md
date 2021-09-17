@@ -54,10 +54,10 @@ Após isso, ela clica em cadastrar e o medicamento estará salvo.
 
 ![Tela5](https://user-images.githubusercontent.com/81760044/133703542-9369ea0c-99a6-4d85-b0a5-2d316ef00686.JPG)
 
+![Capturar6](https://user-images.githubusercontent.com/81760044/133704048-0000a2d6-0dac-4241-be41-e6e8d0e6ad50.JPG)
 
-![Tela 6](https://user-images.githubusercontent.com/81760044/133701766-bdaac22b-40dd-4f1f-afac-d6fb3722049c.JPG)
+![Capturar7](https://user-images.githubusercontent.com/81760044/133704040-d4e271db-9029-4e48-bffc-2302a205a352.JPG)
 
-![Tela 7](https://user-images.githubusercontent.com/81760044/133702191-2a58ac6f-9f69-4684-9326-f3a456c62a4b.JPG)
 
 ![Tela 8](https://user-images.githubusercontent.com/81760044/133702210-b7f0889f-072d-406d-8ba8-2ccaf7e28b1f.JPG)
 
