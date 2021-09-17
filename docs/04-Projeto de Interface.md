@@ -47,17 +47,28 @@ Login
 
 
 
-Cadastro de medicamento:  
+Cadastro de medicamento: 
+
 Essa tela é a de cadastro de medicamentos. Ela é divida em 3 partes. A primeira contém o menu principal na horizontal, a segunda parte contém o pré cadastro do medicamento e a terceira o detalhamento de uso do medicamento. Esse cadastro é feito pelo usuário. No pré cadastro, a pessoa preenche os dados conforme receita médica com o nome do medicamento, a dosagem, o nome e a especialidade médica e alguma observação que julgue necessária. 
 Na parte de detalhamento do uso e criação de alerta, a pessoa seleciona os campos que condizem com as especificações da instrução de uso. 
 Após isso, ela clica em cadastrar e o medicamento estará salvo.
 
 ![Tela5](https://user-images.githubusercontent.com/81760044/133703542-9369ea0c-99a6-4d85-b0a5-2d316ef00686.JPG)
 
+Minha Agenda:
+
+Nessa tela a pessoa consegue ver resumidamente os medicamentos que estão ativos no momento, ou seja, os medicamentos que ela está em uso e com alerta ligado. As informações importantes ficam em destaque e o usuário consegue editar, apagar, exportar ou imprimir as informações. 
+
 ![Capturar6](https://user-images.githubusercontent.com/81760044/133704048-0000a2d6-0dac-4241-be41-e6e8d0e6ad50.JPG)
+
+Quadro de horários dos medicamentos: 
+
 
 ![Capturar7](https://user-images.githubusercontent.com/81760044/133704040-d4e271db-9029-4e48-bffc-2302a205a352.JPG)
 
+Gerenciamento de acessos: 
+
+Nessa tela o usuário principal consegue administrar a autorização para que outros usuários entrem no seu perfil e editem algumas informações. É possível procurar um usuário já cadastrado, incluir um novo, editar ou excluir os já cadastrados. Ao incluir pode ser vinculado junto ao nome e e-mail, o tipos de usuário, como paciente, cuidador, parente facilitando o controle. 
 
 ![Tela 8](https://user-images.githubusercontent.com/81760044/133702210-b7f0889f-072d-406d-8ba8-2ccaf7e28b1f.JPG)
 
