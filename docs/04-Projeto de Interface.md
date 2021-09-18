@@ -22,6 +22,18 @@ As Wireframes do projeto encontra-se em: https://marvelapp.com/prototype/h30ei94
 
 Home
 
+A tela Home apresenta a tela de início com uma mensagem sobre o aplicativo, abaixo do texto, há dois botões, um Cadastre-se, que conduzirá o usuário a tela de cadastro e o botão de Acesso, que leva a tela de login. Além disso, há a barra superior com cinco botões, com as seguintes funções:
+
+Botão de início: permite o usuário retornar a página inicial
+Botão cadastro de medicamentos: permite os usuários inserir a medicação
+
+Botão minha agenda: permite usuário acessar a agenda de medicação
+
+Botão quadro de horário: permite usuário registrar e visualizar a medicação em forma de tabela
+
+Botão gerenciamento de acessos: permite o usuário gerenciar os usuários que poderão acessar, alterar ou incluir/excluir medicação.
+
+
 ![Tela1](https://user-images.githubusercontent.com/81760044/133887269-82ee7952-4186-4499-bd4c-c48aa082996c.JPG)
 
 Cadastro
