@@ -39,6 +39,8 @@ Tela Inicial
 ![Tela4](https://user-images.githubusercontent.com/81760044/133887291-85507702-673e-45bc-986f-d8937a634b46.JPG)
 
 
+Perguntas Frequentes
+![Perg freq](https://user-images.githubusercontent.com/81760044/133887466-2e44790a-844a-4b73-9afc-c53d9046d1e7.JPG)
 
 
 
