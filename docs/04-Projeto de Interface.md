@@ -15,6 +15,8 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 ![Diagrama de fluxo 2 - Page 1 (1)](https://user-images.githubusercontent.com/81448442/133696058-0c45355d-ddd9-4aad-89b7-4beacff2fa9e.jpeg)
 
 
+2
+![Diagrama de fluxo 2 - Page 1](https://user-images.githubusercontent.com/81760044/133888018-b3dcf685-f192-4b42-b31a-ba5ceefba0dd.png)
 
 
 ## Wireframes
