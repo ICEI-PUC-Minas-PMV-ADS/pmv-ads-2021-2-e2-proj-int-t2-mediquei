@@ -22,16 +22,15 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 Em base do fluxo de telas do projeto apresentado no item anterior, a composição e detalhes das telas do sistema são apresentadas nas telas apresentadas abaixo
 
 Home
-![image](https://user-images.githubusercontent.com/81448442/133701343-db813d63-3592-4330-b820-be52cda1b0f2.png)
+![Tela1](https://user-images.githubusercontent.com/81760044/133887269-82ee7952-4186-4499-bd4c-c48aa082996c.JPG)
 
 Cadastro
-![image](https://user-images.githubusercontent.com/81448442/133701463-1920a881-fe3f-4764-9b53-bbcd732ce64c.png)
-
+![Tela2](https://user-images.githubusercontent.com/81760044/133887276-92224323-295b-4a45-9fde-043a3772d5e5.JPG)
 Login
-![image](https://user-images.githubusercontent.com/81448442/133701511-6f113c20-e1b5-4267-b08f-b3f9e2dd227a.png)
+![Tela3](https://user-images.githubusercontent.com/81760044/133887280-bb5763ac-68d4-4fb4-9d77-664b94d60311.JPG)
+Tela Inicial
+![Tela4](https://user-images.githubusercontent.com/81760044/133887291-85507702-673e-45bc-986f-d8937a634b46.JPG)
 
-
-![image](https://user-images.githubusercontent.com/81448442/133701563-652d4f1e-3e99-4c22-b579-78c0bdd1ade9.png)
 
 
 
@@ -59,7 +58,7 @@ Minha Agenda:
 
 Nessa tela a pessoa consegue ver resumidamente os medicamentos que estão ativos no momento, ou seja, os medicamentos que ela está em uso e com alerta ligado. As informações importantes ficam em destaque e o usuário consegue editar, apagar, exportar ou imprimir as informações. 
 
-![Capturar6](https://user-images.githubusercontent.com/81760044/133704048-0000a2d6-0dac-4241-be41-e6e8d0e6ad50.JPG)
+![Tela7](https://user-images.githubusercontent.com/81760044/133887302-77e4ce8e-40a5-454e-9f2a-595e29b24d5c.JPG)
 
 Quadro de horários dos medicamentos: 
 
