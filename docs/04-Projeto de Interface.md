@@ -27,7 +27,8 @@ Home
 
 Cadastro
 
-![Tela2](https://user-images.githubusercontent.com/81760044/133887276-92224323-295b-4a45-9fde-043a3772d5e5.JPG)
+![Tela2](https://user-images.githubusercontent.com/81760044/133887351-c3670e38-0e90-49c7-b404-9fadd2728fe2.JPG)
+
 
 Login
 
