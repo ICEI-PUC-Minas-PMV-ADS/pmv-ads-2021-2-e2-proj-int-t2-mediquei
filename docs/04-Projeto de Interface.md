@@ -22,13 +22,19 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 Em base do fluxo de telas do projeto apresentado no item anterior, a composição e detalhes das telas do sistema são apresentadas nas telas apresentadas abaixo
 
 Home
+
 ![Tela1](https://user-images.githubusercontent.com/81760044/133887269-82ee7952-4186-4499-bd4c-c48aa082996c.JPG)
 
 Cadastro
+
 ![Tela2](https://user-images.githubusercontent.com/81760044/133887276-92224323-295b-4a45-9fde-043a3772d5e5.JPG)
+
 Login
+
 ![Tela3](https://user-images.githubusercontent.com/81760044/133887280-bb5763ac-68d4-4fb4-9d77-664b94d60311.JPG)
+
 Tela Inicial
+
 ![Tela4](https://user-images.githubusercontent.com/81760044/133887291-85507702-673e-45bc-986f-d8937a634b46.JPG)
 
 
