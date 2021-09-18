@@ -40,7 +40,7 @@ Tela Inicial
 
 
 Perguntas Frequentes
-![Perg freq](https://user-images.githubusercontent.com/81760044/133887466-2e44790a-844a-4b73-9afc-c53d9046d1e7.JPG)
+![Perg freq](https://user-images.githubusercontent.com/81760044/133887541-19395cc7-69fe-4033-9a00-6193a95ecd03.JPG)
 
 
 
