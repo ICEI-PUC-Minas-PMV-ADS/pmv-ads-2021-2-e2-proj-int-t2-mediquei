@@ -51,41 +51,30 @@ Tela Inicial
 
 
 Perguntas Frequentes
-![Perg freq](https://user-images.githubusercontent.com/81760044/133887541-19395cc7-69fe-4033-9a00-6193a95ecd03.JPG)
 
+![Tela de perguntas1](https://user-images.githubusercontent.com/81760044/134091821-16caf30a-266d-4ad6-9bcf-aa13e49f0f8f.JPG)
 
-
-
-
-
-
-
-
-
-
-
-
-
-Cadastro de medicamento: 
+Cadastro de medicamento 
 
 Essa tela é a de cadastro de medicamentos. Ela é divida em 3 partes. A primeira contém o menu principal na horizontal, a segunda parte contém o pré cadastro do medicamento e a terceira o detalhamento de uso do medicamento. Esse cadastro é feito pelo usuário. No pré cadastro, a pessoa preenche os dados conforme receita médica com o nome do medicamento, a dosagem, o nome e a especialidade médica e alguma observação que julgue necessária. 
 Na parte de detalhamento do uso e criação de alerta, a pessoa seleciona os campos que condizem com as especificações da instrução de uso. 
 Após isso, ela clica em cadastrar e o medicamento estará salvo.
 
-![Tela5](https://user-images.githubusercontent.com/81760044/133703542-9369ea0c-99a6-4d85-b0a5-2d316ef00686.JPG)
+![Tela Cadastro med](https://user-images.githubusercontent.com/81760044/134091791-55903189-199d-4cff-948b-cb7f2e6fe1bc.JPG)
 
-Minha Agenda:
+Minha Agenda
 
 Nessa tela a pessoa consegue ver resumidamente os medicamentos que estão ativos no momento, ou seja, os medicamentos que ela está em uso e com alerta ligado. As informações importantes ficam em destaque e o usuário consegue editar, apagar, exportar ou imprimir as informações. 
 
 ![Tela7](https://user-images.githubusercontent.com/81760044/133887302-77e4ce8e-40a5-454e-9f2a-595e29b24d5c.JPG)
 
-Quadro de horários dos medicamentos: 
+Quadro de horários dos medicamentos 
 
+Nessa tela, os medicamentos ficam visíveis de outra maneira, mas também tem o objetivo de gerar um controle sobre a agenda do paciente. 
 
-![Capturar7](https://user-images.githubusercontent.com/81760044/133704040-d4e271db-9029-4e48-bffc-2302a205a352.JPG)
+![tela quadro de hor](https://user-images.githubusercontent.com/81760044/134091773-9cce5212-969f-4b6f-9e3e-9cc5e1d38b51.JPG)
 
-Gerenciamento de acessos: 
+Gerenciamento de acessos
 
 Nessa tela o usuário principal consegue administrar a autorização para que outros usuários entrem no seu perfil e editem algumas informações. É possível procurar um usuário já cadastrado, incluir um novo, editar ou excluir os já cadastrados. Ao incluir pode ser vinculado junto ao nome e e-mail, o tipos de usuário, como paciente, cuidador, parente facilitando o controle. 
 
