@@ -72,13 +72,13 @@ Quadro de horários dos medicamentos
 
 Nessa tela, os medicamentos ficam visíveis de outra maneira, mas também tem o objetivo de gerar um controle sobre a agenda do paciente. 
 
-![tela quadro de hor](https://user-images.githubusercontent.com/81760044/134091773-9cce5212-969f-4b6f-9e3e-9cc5e1d38b51.JPG)
+![Capturar8](https://user-images.githubusercontent.com/81760044/134091992-9a705cd6-ea34-4874-ba0b-fa6acd68a2b4.PNG)
 
 Gerenciamento de acessos
 
 Nessa tela o usuário principal consegue administrar a autorização para que outros usuários entrem no seu perfil e editem algumas informações. É possível procurar um usuário já cadastrado, incluir um novo, editar ou excluir os já cadastrados. Ao incluir pode ser vinculado junto ao nome e e-mail, o tipos de usuário, como paciente, cuidador, parente facilitando o controle. 
 
-![Tela 8](https://user-images.githubusercontent.com/81760044/133702210-b7f0889f-072d-406d-8ba8-2ccaf7e28b1f.JPG)
+![Capturar9](https://user-images.githubusercontent.com/81760044/134091999-aff3395f-6da2-4df3-a7ed-b69040808a19.PNG)
 
 
 
