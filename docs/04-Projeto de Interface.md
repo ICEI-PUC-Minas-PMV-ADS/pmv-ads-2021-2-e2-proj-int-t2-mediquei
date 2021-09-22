@@ -18,6 +18,7 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 ## Wireframes
 
 ![Apresentação1](https://user-images.githubusercontent.com/81448442/134267358-1be3a197-361e-49cb-9f22-17316e0f6543.jpg)
+[1.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/files/7207052/1.pdf)
 
 
 
