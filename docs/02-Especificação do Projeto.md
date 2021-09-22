@@ -95,7 +95,7 @@ O diagrama de casos de uso desse projeto está acessível em:
 https://lucid.app/lucidchart/be89a3a4-7d9f-498e-afe4-0e8ca4e8b015/edit?shared=true&page=gOo7s90_Abiz#
 
 
-![image](https://user-images.githubusercontent.com/81448442/132403078-5de07537-3b6f-4049-be1b-ee641df70566.png)
+![image](/docs/img/DiagramaCasoUsoMediquei.jpg)
 
 
 ## Diagrama de Classes
