@@ -4,14 +4,20 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
+## Diagrama de Casos de Uso
+
+O diagrama de casos de uso desse projeto está acessível em: 
+https://lucid.app/lucidchart/be89a3a4-7d9f-498e-afe4-0e8ca4e8b015/edit?shared=true&page=gOo7s90_Abiz#
+
+
+![image](/docs/img/DiagramaCasoUsoMediquei.jpg)
+
+
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2-mediquei\docs\diagramas\Class Diagram Mediquei.astah 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+![image](/docs/img/DiagramaClasseMediquei.png)
 
 ## Modelo ER
 
