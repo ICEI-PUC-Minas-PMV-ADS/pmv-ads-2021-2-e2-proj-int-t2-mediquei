@@ -10,8 +10,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 | Caso de Teste |CT-01 - Cadastrar Usuário| 
 |---|----|
-|Requisitos Associados |RF-01 O site deve permitir o usuário cadastrar-se com um login e senha. O login deverá ser seu endereço de e-mail ou número do telefone celular. A senha é opcional.
-RF-02 O site deverá sugerir senhas de fácil memorização. Ex: os 5 primeiros dígitos do CPF.|
+|Requisitos Associados |RF-01 O site deve permitir o usuário cadastrar-se com um login e senha. O login deverá ser seu endereço de e-mail ou número do telefone celular. A senha é opcional.<br/> RF-02 O site deverá sugerir senhas de fácil memorização. Ex: os 5 primeiros dígitos do CPF.<br/> RF-03 O site deverá permitir validar o e-mail ou telefone do usuário|
 |Objetivo do Teste | |
 |Passos | |
 |Critérios de Êxito | |
