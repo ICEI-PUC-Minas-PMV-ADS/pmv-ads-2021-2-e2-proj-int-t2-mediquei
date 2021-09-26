@@ -14,9 +14,6 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 
 ![Diagrama de fluxo 2 - Page 1](https://user-images.githubusercontent.com/81760044/133888018-b3dcf685-f192-4b42-b31a-ba5ceefba0dd.png)
 
-
-## Wireframes
-
 Tendo como base o fluxo de telas do projeto apresentado no item anterior, são apresentadas abaixo as telas do sistema. 
 As Wireframes do projeto encontra-se em: https://marvelapp.com/prototype/h30ei94
 
