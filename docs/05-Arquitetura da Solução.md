@@ -23,9 +23,7 @@ O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+![image](/docs/img/Modelo entidade relacionamento alterado.jpg)
 
 ## Esquema Relacional
 
