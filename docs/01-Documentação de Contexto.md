@@ -1,23 +1,19 @@
 # Introdução
 
-#### O uso de medicamentos é algo necessário na vida de todos, segundo a Agência Nacional de Saúde Suplementar (ANS) (201-), eles são utilizados para prevenir, diagnosticar, tratar doenças e controlar sinais e sintomas. A ingestão de remédios pode ocorrer em vários ambientes, de hospitalar a domiciliar, porém a sua ingestão deve ocorrer apenas sob orientação de um profissional especializado.
-#### No decorrer do tempo, com avanço da medicina e das pesquisas científicas, o uso de medicamentos vem aumentando como forma eficiente de redução da carga de doenças e mortalidade, o que promove a melhoria da qualidade de vida dos seres humanos. Os medicamentos são fundamentais não só para o acréscimo de anos à vida, mas também como forma de viver esse acrescimento com muito mais bem estar.
-#### Apesar do lado positivo do uso de medicamentos, observa-se que seu uso muitas vezes acaba sendo feito de forma insegura e até tóxica. São inúmeros os casos de medicamentos ingeridos após o prazo de validade e de intoxicações. Segundo dados do Sistema Nacional de Informações Tóxico-Farmacológicos (Sinitox), a intoxicação por medicamentos ocupa a primeira posição do ranking entre os três principais agentes causadores de intoxicação, ganhando até para o uso de drogas, desde 1996. Só em 2007, 30,3% dos casos de intoxicação foram ocasionados por uso de medicamentos de forma errada. De acordo com a última atualização dos dados feita em maio de 2020, foram registrados mais de 20 mil casos no Brasil. Isso se dá por erros de administração e acidentes individuais que somados, resultam em mais de 30% das causas, perdendo apenas para a tentativas de suicídios. 
-#### Chamando a atenção para o público da terceira idade, que costuma ser o maior usuário de medicamentos, pode-se observar constantemente os problemas com a quantidade de informações sobre horários, formas de uso e tipos de medicamentos. Esse volume de informações é um fator que dificulta a rotina de vida de quem acompanha os idosos no dia a dia, seja um cuidador ou algum familiar.
-#### Segundo Brasil (2014 apud SILVA; SPINILLO, 2016), são várias as complicações quando o idoso faz uso de um medicamento a partir do que lhe foi prescrito. Existem aqueles que são de uso contínuo ou de prazo determinado e aqueles que não foram prescritos por um médico. O volume de informações que a pessoa tem para organizar, diante da indicação do remédio, nome, para que se propõe, o regime de aplicação da dose, frequência, horário de ingestão e duração do tratamento e, acima de tudo, como fazer uma correta administração são fatores que podem atrapalhar o tratamento, quando não seguidos corretamente.
+O uso de medicamentos é algo necessário na vida de todos, segundo a Agência Nacional de Saúde Suplementar (ANS) (201-), eles são utilizados para prevenir, diagnosticar, tratar doenças e controlar sinais e sintomas. A ingestão de remédios pode ocorrer em vários ambientes, de hospitalar a domiciliar, porém a sua ingestão deve ocorrer apenas sob orientação de um profissional especializado.
+
+No decorrer do tempo, com avanço da medicina e das pesquisas científicas, o uso de medicamentos vem aumentando como forma eficiente de redução da carga de doenças e mortalidade, o que promove a melhoria da qualidade de vida dos seres humanos. Os medicamentos são fundamentais não só para o acréscimo de anos à vida, mas também como forma de viver esse acrescimento com muito mais bem estar.
+
+Apesar do lado positivo do uso de medicamentos, observa-se que seu uso muitas vezes acaba sendo feito de forma insegura e até tóxica. São inúmeros os casos de medicamentos ingeridos após o prazo de validade e de intoxicações. Segundo dados do Sistema Nacional de Informações Tóxico-Farmacológicos (Sinitox), a intoxicação por medicamentos ocupa a primeira posição do ranking entre os três principais agentes causadores de intoxicação, ganhando até para o uso de drogas, desde 1996. Só em 2007, 30,3% dos casos de intoxicação foram ocasionados por uso de medicamentos de forma errada. De acordo com a última atualização dos dados feita em maio de 2020, foram registrados mais de 20 mil casos no Brasil. Isso se dá por erros de administração e acidentes individuais que somados, resultam em mais de 30% das causas, perdendo apenas para a tentativas de suicídios. 
+
+Chamando a atenção para o público da terceira idade, que costuma ser o maior usuário de medicamentos, pode-se observar constantemente os problemas com a quantidade de informações sobre horários, formas de uso e tipos de medicamentos. Esse volume de informações é um fator que dificulta a rotina de vida de quem acompanha os idosos no dia a dia, seja um cuidador ou algum familiar.
+
+Segundo Brasil (2014 apud SILVA; SPINILLO, 2016), são várias as complicações quando o idoso faz uso de um medicamento a partir do que lhe foi prescrito. Existem aqueles que são de uso contínuo ou de prazo determinado e aqueles que não foram prescritos por um médico. O volume de informações que a pessoa tem para organizar, diante da indicação do remédio, nome, para que se propõe, o regime de aplicação da dose, frequência, horário de ingestão e duração do tratamento e, acima de tudo, como fazer uma correta administração são fatores que podem atrapalhar o tratamento, quando não seguidos corretamente.
 
 
 ## Problema
 Diante do exposto, a administração errônea de remédios é um fator que pode resultar graves problemas. O fato de não conseguir administrar corretamente o fluxo de medicamentos necessários na rotina do usuário, seja por esquecer o horário, ingerir remédio errado ou até mesmo acabar a medicação, interrompendo o seu uso de forma abrupta, gerou a necessidade de criação de uma aplicação que auxilie a organização dessas informações.
 
-
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
@@ -40,10 +36,3 @@ O desenvolvimento deste projeto justifica-se diante da necessidade de organizaç
 Embora todas as pessoas possam se beneficiar das funcionalidades da aplicação web, desenvolvida neste trabalho, esse projeto tem como principal público-alvo: cuidadores, pessoas em tratamento de saúde e seus familiares. Esses usuários precisam ter, no mínimo, 18 anos de idade, serem alfabetizados e terem acesso ao computador ou smartphone e à internet. A faixa etária máxima não foi definida, pois acreditamos que todos podem, eventualmente, se beneficiar da aplicação. Posteriormente, serão inseridas algumas funcionalidades de acessibilidade
 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
