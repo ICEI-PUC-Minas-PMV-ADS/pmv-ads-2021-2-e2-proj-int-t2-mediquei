@@ -23,7 +23,7 @@ O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-![image](/docs/img/Modelo entidade relacionamento alterado.jpg)
+![image](docs/img/ModeloER_Alterado.jpg)
 
 ## Esquema Relacional
 
