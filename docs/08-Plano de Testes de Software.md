@@ -43,7 +43,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Gerenciamento de acessos" <br/> 6) Clicar em "Editar" e "Excluir" <br/> 7) Modificar dados cadastrados 8) Clicar em "Salvar" |
 |Critérios de Êxito |Após a edição ou exclusão uma mensagem de sucesso deve ser exibida <br/> O perfil selecionado deve ser editado ou excluído do banco de dados <br/> As novas informações atualizadas do perfil editado deve aparecer na página de gerenciamento de acessos |
 
-|**Caso de Teste** |**CT-05 - Cadastrar comorbidades**| 
+|**Caso de Teste** |**CT-06 - Cadastrar comorbidades**| 
 |---|----|
 |Requisitos Associados |RF-08 O site deve possuir uma tela de cadastro de doenças|
 |Objetivo do Teste |Verificar a possibilidade de usuário cadastrar as suas comorbidades|
