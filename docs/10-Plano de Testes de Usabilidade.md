@@ -12,31 +12,31 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 | **Caso de Teste** |**CT-01 - Forma de apresentação / Identidade da Marca**| 
 |---|----|
-|Requisitos Associados | RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. <br/> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.|
+|Requisitos Associados | RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. <br/> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho. |
 |Objetivo do Teste | Gerar uma padronização no website que fortaleça a identidade da marca. |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se" <br/> 6) Na tela inicial clicar em "Acessar" <br/> 7) Informar os campos solicitados: Email e senha <br/> 8) Clicar em "Acessar" <br/> 9) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 10) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 11) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 12) Clicar em Quadro de horários, dentro da barra de Menu <br/> 13) Clicar em Gerenciamento de Acessos, dentro da barra de Menu.<br/>|
-|Critérios de Êxito | Validar que todas as telas estão padronizadas, com a identidade da marca bem definida. <br/> O usuário deve conseguir acessar todas as páginas com facilidade.|
+|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se" <br/> 6) Na tela inicial clicar em "Acessar" <br/> 7) Informar os campos solicitados: Email e senha <br/> 8) Clicar em "Acessar" <br/> 9) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 10) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 11) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 12) Clicar em Quadro de horários, dentro da barra de Menu <br/> 13) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
+|Critérios de Êxito | Validar que todas as telas estão padronizadas, com a identidade da marca bem definida. |
 
 |**Caso de Teste** |**CT-02 - Adequação**| 
 |---|----|
-|Requisitos Associados | RNF-02 O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada.|
-|Objetivo do Teste |Verificar a adequação do website aos diversos tipos de dispositivos|
+|Requisitos Associados | RNF-02 O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada. |
+|Objetivo do Teste |Verificar a adequação do website aos diversos tipos de dispositivos |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> |
-|Critérios de Êxito |Ao acessar o site em outros dispositivos, verificar se as páginas estão resonsivas|
+|Critérios de Êxito |Ao acessar o site em outros dispositivos, verificar se as páginas estão resonsivas. |
 
 |**Caso de Teste** |**CT-03 - Inclusão e Acessibilidade**| 
 |---|----|
-|Requisitos Associados | RNF-04 O site deve possuir uma tela de cadastro de medicamentos.<br/> RNF-05 O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.<br/> RNF 06 - As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão. <br/> RNF-09 Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas.|
-|Objetivo do Teste | Verifica a possibilidade do usuário cadastrar e editar medicação <br/>|
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Se todos os campos forem preenchidos e os dados salvos uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Minha agenda" o medicamento cadastrado deve ser exibido |
+|Requisitos Associados | RNF-04 O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.<br/> RNF-05 O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.<br/> RNF 06 - As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão. <br/> RNF-09 Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas. |
+|Objetivo do Teste | Verificar se o website é acessível para os diferentes tipos de necessidades. <br/> |
+|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Fazer a leitura de todos os textos da página. |
+|Critérios de Êxito | Os usuários conseguirem acessar e utilizar todas as ferramentas do site sem ajuda de terceiros. |
 
 |**Caso de Teste** |**CT-04 - Intuitividade**| 
 |---|----|
 |Requisitos Associados | RNF-07	O site deve conter uma barra de navegação de fácil uso.<br/> |
-|Objetivo do Teste |Verificar a possibilidade do usuário emitir relatórios como os medicamento cadastrados |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/> 6) Clicar em "Exportar"|
-|Critérios de Êxito |Após a exportação um arquivo pdf deve ser gerado com todas as medicações e suas informações|
+|Objetivo do Teste | Verificar se o website é intuitivo e de fácil compreensão. |
+|Passos | 1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/>  9) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 10) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 11) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 12) Clicar em Quadro de horários, dentro da barra de Menu <br/> 13) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
+|Critérios de Êxito | O usuário deve conseguir acessar todas as páginas com facilidade. |
 
 
 ## Ferramentas de Testes (Opcional)
