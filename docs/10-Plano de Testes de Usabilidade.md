@@ -12,45 +12,32 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 | **Caso de Teste** |**CT-01 - Forma de apresentação / Identidade da Marca**| 
 |---|----|
-|Requisitos Associados |RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. </br> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.|
-
+|Requisitos Associados |RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. <br/> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.|
 |Objetivo do Teste | Gerar uma padronização no website que fortaleça a identidade da marca. |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se"|
-|Critérios de Êxito |Uma mensagem de sucesso deve ser exibida <br/> Os dados devem ser salvos no banco de dados e serem possíveis de acessar posteriormente|
+|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se"| 6) Na tela inicial clicar em "Acessar"<br/> 7) Informar os campos solicitados: Email e senha <br/> 8) Clicar em "Acessar" | 9) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" | 10) Clicar em Cadastro de medicamento, dentro da barra de Menu | 12) Clicar em Acessar Minha Agenda, dentro da barra de Menu | 13) Clicar em Quadro de horários, dentro da barra de Menu | 14) Clicar em Gerenciamento de Acessos, dentro da barra de Menu.
+|Critérios de Êxito | Validar que todas as telas estão padronizadas, com a identidade da marca bem definida. <br/> Os dados devem ser salvos no banco de dados e serem possíveis de acessar posteriormente|
 
-|**Caso de Teste** |**CT-02 - Realizar Login**| 
+|**Caso de Teste** |**CT-02 - Adequação**| 
 |---|----|
-|Requisitos Associados | RNF-02 O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada. O site deverá permitir validar o e-mail ou telefone do usuário <br/> RF-04	O site deve permitir o acesso do paciente cadastrado, seu cuidador e seu familiar.<br/>|
+|Requisitos Associados | RNF-02 O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada. <br/> |
 |Objetivo do Teste |Verificar a possibilidade do usuário realizar o login|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Informar os campos solicitados: Email e senha <br/> 5) Clicar em "Acessar" |
 |Critérios de Êxito |Ao serem informados os dados cadastrados anteriormente, o usuário será direcionado para a página home |
 
-|**Caso de Teste** |**CT-03 - Cadastrar Medicação**| 
+|**Caso de Teste** |**CT-03 - Inclusão e Acessibilidade**| 
 |---|----|
-|Requisitos Associados |RF-07 O site deve possuir uma tela de cadastro de medicamentos.<br/> RF-09 O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.|
-|Objetivo do Teste | Verifica a possibilidade do usuário cadastrar e editar medicação |
+|Requisitos Associados |RNF-04 O site deve possuir uma tela de cadastro de medicamentos.<br/> RNF-05 O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.<br/> RNF 06 - As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão. <br/> RNF-09 Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas.|
+|Objetivo do Teste | Verifica a possibilidade do usuário cadastrar e editar medicação <br/>|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
 |Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Se todos os campos forem preenchidos e os dados salvos uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Minha agenda" o medicamento cadastrado deve ser exibido |
 
-|**Caso de Teste** |**CT-04 - Emitir relatórios**| 
+|**Caso de Teste** |**CT-04 - Intuitividade**| 
 |---|----|
-|Requisitos Associados |RF-13		O site deve emitir relatório dos medicamentos utilizados em determinado período. |
+|Requisitos Associados |RNF-07	O site deve conter uma barra de navegação de fácil uso.<br/> |
 |Objetivo do Teste |Verificar a possibilidade do usuário emitir relatórios como os medicamento cadastrados |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/> 6) Clicar em "Exportar"|
 |Critérios de Êxito |Após a exportação um arquivo pdf deve ser gerado com todas as medicações e suas informações|
 
-|**Caso de Teste** |**CT-05 - Gerenciar acessos**| 
-|---|----|
-|Requisitos Associados | **Ainda sem requisitos associados** |
-|Objetivo do Teste |Verificar a possibilidade do usuário gerenciar todos os perfis que acessam seus dados|
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Gerenciamento de acessos" <br/> 6) Clicar em "Editar" e "Excluir" <br/> 7) Modificar dados cadastrados 8) Clicar em "Salvar" |
-|Critérios de Êxito |Após a edição ou exclusão uma mensagem de sucesso deve ser exibida <br/> O perfil selecionado deve ser editado ou excluído do banco de dados <br/> As novas informações atualizadas do perfil editado deve aparecer na página de gerenciamento de acessos |
 
-|**Caso de Teste** |**CT-06 - Cadastrar comorbidades**| 
-|---|----|
-|Requisitos Associados |RF-08 O site deve possuir uma tela de cadastro de doenças|
-|Objetivo do Teste |Verificar a possibilidade de usuário cadastrar as suas comorbidades|
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Comorbidade" <br/> 6) Informar todos os campos solicitados <br/> 7) Clicar em "Salvar"|
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados |
 ## Ferramentas de Testes (Opcional)
 
