@@ -2,35 +2,25 @@
 
 O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
-
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
-
-
-# Plano de Testes de Software
-
-Os requisitos para realização dos testes de software são:
-* Site publicado na Internet
-* Navegador da Internet - Chrome, Firefox ou Edge 
-* Conectividade de Internet para acesso às plataformas (APISs)
+Os requisitos para realização dos testes de usabilidade são:
+* Conectividade de internet por dados móveis ou por banda larga;
+* Navegador da Internet - Chrome, Safari, Firefox ou Edge; 
+* Disponibilidade do usuário em acessar ferramentas de videoconferência com compartilhamento de tela - Zoom, Google Meet, Teams;
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 
-| **Caso de Teste** |**CT-01 - Cadastrar Usuário**| 
+| **Caso de Teste** |**CT-01 - Forma de apresentação / Identidade da Marca**| 
 |---|----|
-|Requisitos Associados |RF-01 O site deve permitir o usuário cadastrar-se com um login e senha. O login deverá ser seu endereço de e-mail ou número do telefone celular. A senha é opcional.<br/> RF-02 O site deverá sugerir senhas de fácil memorização. Ex: os 5 primeiros dígitos do CPF.<br/> RF-05 O site deve possuir uma tela de cadastro de dados pessoais do paciente.|
-|Objetivo do Teste | Verificar a possibilidade de cadastro de novos usuários|
+|Requisitos Associados |RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. </br> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.|
+
+|Objetivo do Teste | Gerar uma padronização no website que fortaleça a identidade da marca. |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se"|
 |Critérios de Êxito |Uma mensagem de sucesso deve ser exibida <br/> Os dados devem ser salvos no banco de dados e serem possíveis de acessar posteriormente|
 
 |**Caso de Teste** |**CT-02 - Realizar Login**| 
 |---|----|
-|Requisitos Associados | RF-03 O site deverá permitir validar o e-mail ou telefone do usuário <br/> RF-04	O site deve permitir o acesso do paciente cadastrado, seu cuidador e seu familiar.<br/>|
+|Requisitos Associados | RNF-02 O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada. O site deverá permitir validar o e-mail ou telefone do usuário <br/> RF-04	O site deve permitir o acesso do paciente cadastrado, seu cuidador e seu familiar.<br/>|
 |Objetivo do Teste |Verificar a possibilidade do usuário realizar o login|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Informar os campos solicitados: Email e senha <br/> 5) Clicar em "Acessar" |
 |Critérios de Êxito |Ao serem informados os dados cadastrados anteriormente, o usuário será direcionado para a página home |
