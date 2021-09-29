@@ -75,7 +75,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-06	|As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão.	|Média|
 |RNF-07 |O site deve armazenar as informações em um banco de dados.	|Alta|
 |RNF-08	|O site deve conter uma barra de navegação de fácil uso.	|Baixa|
-|RNF-09 |Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas.	|\Média|
+|RNF-09 |Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas.	|Média|
 
 
 ## Restrições
