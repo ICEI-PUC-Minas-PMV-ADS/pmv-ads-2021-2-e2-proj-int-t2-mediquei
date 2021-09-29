@@ -38,12 +38,8 @@ Luicdchart
 Marvel
 Brmodel
 
-linguagens 
-HTML 
-CSS
-JavaScript
-C#
-Banco de Dados - SQL Server
+O projeto será desenvolvido utilizando as linguagens básicas da Web no Front-End (HTML, CSS e JavaScript). Para o Back-end será usado a linguagem C# e no banco de dados SQL Server
+
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
