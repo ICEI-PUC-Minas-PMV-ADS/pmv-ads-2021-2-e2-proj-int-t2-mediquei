@@ -4,7 +4,7 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 Os requisitos para realização dos testes de usabilidade são:
 * Conectividade de internet por dados móveis ou por banda larga;
-* Navegador da Internet - Chrome, Safari, Firefox ou Edge; 
+* Navegador da Internet: Chrome, Safari; 
 * Disponibilidade do usuário em acessar ferramentas de videoconferência com compartilhamento de tela - Zoom, Google Meet, Teams;
 
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
