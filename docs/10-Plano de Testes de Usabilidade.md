@@ -26,7 +26,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 |**Caso de Teste** |**CT-03 - Inclusão e Acessibilidade**| 
 |---|----|
-|Requisitos Associados | RNF-04 O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.<br/> RNF-05 O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.<br/> RNF 06 - As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão. <br/> RNF-09 Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas. |
+|Requisitos Associados | RNF-04 O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.<br/> RNF-05 O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.<br/> RNF 06 - As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão. |
 |Objetivo do Teste | Verificar se o website é acessível para os diferentes tipos de necessidades. |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Fazer a leitura de todos os textos da página. |
 |Critérios de Êxito | Os usuários conseguirem acessar e utilizar todas as ferramentas do site sem ajuda de terceiros. |
