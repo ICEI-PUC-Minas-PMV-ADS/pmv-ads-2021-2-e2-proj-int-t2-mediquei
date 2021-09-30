@@ -10,7 +10,7 @@ Os requisitos para realização dos testes de usabilidade são:
 Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 
-| **Caso de Teste** |**CT-01 - Forma de apresentação / Identidade da Marca**| 
+| **Caso de Teste** |**CT-01 - Apresentação da identidade da Marca**| 
 |---|----|
 |Requisitos Associados | RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. <br/> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho. |
 |Objetivo do Teste | Gerar uma padronização no website que fortaleça a identidade da marca. |
@@ -33,8 +33,8 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 |**Caso de Teste** |**CT-04 - Intuitividade**| 
 |---|----|
-|Requisitos Associados | RNF-08	O site deve conter uma barra de navegação de fácil uso.<br/> |
-|Objetivo do Teste | Verificar se o website é intuitivo e de fácil compreensão. |
+|Requisitos Associados | RNF-08	O site deve conter uma barra de navegação de fácil uso.<br/> RFN-09 O website deve ser de fácil compreensão e utilização. |
+|Objetivo do Teste | Verificar se o website é fácil de ser utilizado. |
 |Passos | 1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/>  6) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 7) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 8) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 9) Clicar em Quadro de horários, dentro da barra de Menu <br/> 10) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
 |Critérios de Êxito | O usuário deve conseguir acessar todas as páginas com facilidade. |
 
