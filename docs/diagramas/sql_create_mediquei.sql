@@ -22,11 +22,6 @@ UserName VARCHAR(10),
 FOREIGN KEY(UserName) REFERENCES Usuario (UserName)
 )
 
-CREATE TABLE EfeitoAdverso (
-codEfeito INTEGER PRIMARY KEY,
-descEfeito VARCHAR(30)
-)
-
 CREATE TABLE Remedio (
 codRemedio INTEGER PRIMARY KEY,
 farmaco VARCHAR(40),
@@ -35,11 +30,6 @@ medicamento VARCHAR(40),
 registroANS VARCHAR(10),
 concentracao VARCHAR(20),
 formaFarmaceutica VARCHAR(20)
-)
-
-CREATE TABLE DesafioSaude (
-codDesafio INTEGER PRIMARY KEY,
-nomeDesafio VARCHAR(40)
 )
 
 CREATE TABLE Paciente (
@@ -51,6 +41,11 @@ FOREIGN KEY(UserName) REFERENCES Usuario (UserName),
 FOREIGN KEY(codFamiliar1) REFERENCES Familiar (codFamiliar)
 )
 
+CREATE TABLE DesafioSaude (
+codDesafio INTEGER PRIMARY KEY,
+nomeDesafio VARCHAR(40)
+)
+
 CREATE TABLE Tratamento (
 codPaciente INTEGER,
 dataInicial DATETIME,
@@ -59,14 +54,12 @@ codRemedio INTEGER,
 codEfeito1 INTEGER,
 codEfeito2 INTEGER,
 codEfeito3 INTEGER,
+dataFinal DATETIME,
 Observacao Text,
 PRIMARY KEY(codPaciente,dataInicial,codDesafio,codRemedio),
 FOREIGN KEY(codPaciente) REFERENCES Paciente (codPaciente),
 FOREIGN KEY(codDesafio) REFERENCES DesafioSaude (codDesafio),
-FOREIGN KEY(codRemedio) REFERENCES Remedio (codRemedio),
-FOREIGN KEY(codEfeito1) REFERENCES EfeitoAdverso (codEfeito),
-FOREIGN KEY(codEfeito2) REFERENCES EfeitoAdverso (codEfeito),
-FOREIGN KEY(codEfeito3) REFERENCES EfeitoAdverso (codEfeito)
+FOREIGN KEY(codRemedio) REFERENCES Remedio (codRemedio)
 )
 
 CREATE TABLE ContratoCuidador (
@@ -82,3 +75,12 @@ PRIMARY KEY(codPaciente,codCuidador,dataInicial),
 FOREIGN KEY(codPaciente) REFERENCES Paciente (codPaciente),
 FOREIGN KEY(codCuidador) REFERENCES Cuidador (codCuidador)
 )
+
+CREATE TABLE EfeitoAdverso (
+codEfeito INTEGER PRIMARY KEY,
+descEfeito VARCHAR(30)
+)
+
+ALTER TABLE Tratamento ADD FOREIGN KEY(codEfeito1) REFERENCES EfeitoAdverso (codEfeito)
+ALTER TABLE Tratamento ADD FOREIGN KEY(codEfeito2) REFERENCES EfeitoAdverso (codEfeito)
+ALTER TABLE Tratamento ADD FOREIGN KEY(codEfeito3) REFERENCES EfeitoAdverso (codEfeito)
