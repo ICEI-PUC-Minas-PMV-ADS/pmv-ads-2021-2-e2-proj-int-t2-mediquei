@@ -27,7 +27,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Esquema Relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária. O ER desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2-mediquei\docs\img\esquemarelacionalmediquei.jpg
+O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária. O ER desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2-mediquei\docs\diagramas\Esquema Relacional Mediquei.brm
 
 ![image](/docs/img/esquemarelacionalmediquei.jpg)
 
