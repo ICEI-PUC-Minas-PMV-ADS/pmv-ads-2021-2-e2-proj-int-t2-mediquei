@@ -1,11 +1,11 @@
 -- Geração de Modelo físico
 -- Sql ANSI 2003 - brModelo.
 
-
-
 CREATE TABLE Usuario (
 UserName VARCHAR(10) PRIMARY KEY,
-Password VARCHAR(10)
+Password VARCHAR(10),
+eMail VARCHAR(50),
+eMailRecuperar VARCHAR(50)
 )
 
 CREATE TABLE Familiar (
@@ -37,6 +37,7 @@ codPaciente INTEGER PRIMARY KEY,
 nomePaciente VARCHAR(30),
 UserName VARCHAR(10),
 codFamiliar1 INTEGER,
+dataNascimento DATETIME,
 FOREIGN KEY(UserName) REFERENCES Usuario (UserName),
 FOREIGN KEY(codFamiliar1) REFERENCES Familiar (codFamiliar)
 )
