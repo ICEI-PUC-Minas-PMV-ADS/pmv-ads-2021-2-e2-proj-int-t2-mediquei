@@ -12,7 +12,7 @@ Segundo Brasil (2014 apud SILVA; SPINILLO, 2016), são várias as complicações
 
 
 ## Problema
-Diante do exposto, a administração errônea de remédios é um fator que pode resultar graves problemas. O fato de não conseguir administrar corretamente o fluxo de medicamentos necessários na rotina do usuário, seja por esquecer o horário, ingerir remédio errado ou até mesmo acabar a medicação, interrompendo o seu uso de forma abrupta, gerou a necessidade de criação de uma aplicação que auxilie a organização dessas informações.
+Diante do exposto, a administração errônea de remédios é um fator que pode resultar graves problemas. O fato de não conseguir administrar corretamente o fluxo de medicamentos necessários na rotina do usuário, seja por esquecer o horário, ingerir remédio errado ou até mesmo acabar a medicação, interrompendo o seu uso de forma abrupta, gerou a necessidade de criação de uma plataforma que auxilie a organização dessas informações.
 
 
 ## Objetivos
@@ -22,17 +22,17 @@ Objetivo geral
 
 Objetivos específicos
 > - Estabelecer uma aplicação web Front-end por meio das linguagens de marcação HTML e CSS e a partir da linguagem de programação JavaScript
-> - Construir a aplicação de acordo com os requisitos funcionais e não funcionais de acordo com o perfil do público-alvo
+> - Construir a plataforma de acordo com os requisitos funcionais e não funcionais de acordo com o perfil do público-alvo
 > - Auxiliar no controle de horários e posologia de medicamentos, exibindo lembretes e descrição do remédio de modo a facilitar a identificação do medicamento (cor, tamanho, quantidade)
 
 
 ## Justificativa
 
-O desenvolvimento deste projeto justifica-se diante da necessidade de organização e administração correta de medicamentos pelos usuários para evitar intoxicações ou o uso ineficiente. Diante da facilidade e popularização de smartphones, as pessoas de modo geral, conseguem compartilhar dados e informações com quem precisar, auxiliando muito o trabalho de registro detalhado das necessidades de ingestão de medicamentos para tratamentos médicos. Pensando nessa dificuldade e nos dados apresentados, o projeto “Mediquei” tem o intuito de criar uma aplicação onde será possível ministrar as informações sobre medicamentos e fazer o acompanhamento correto da rotina de uso desses medicamentos, a fim de minimizar os casos de erros de ingestão medicamentosa.
+O desenvolvimento deste projeto justifica-se diante da necessidade de organização e administração correta de medicamentos pelos usuários para evitar intoxicações ou o uso ineficiente. Diante da facilidade e popularização de smartphones, as pessoas de modo geral, conseguem compartilhar dados e informações com quem precisar, auxiliando muito o trabalho de registro detalhado das necessidades de ingestão de medicamentos para tratamentos médicos. Pensando nessa dificuldade e nos dados apresentados, o projeto “Mediquei” tem o intuito de criar uma plataforma onde será possível ministrar as informações sobre medicamentos e fazer o acompanhamento correto da rotina de uso desses medicamentos, a fim de minimizar os casos de erros de ingestão medicamentosa.
 
 
 ## Público-Alvo
 
-Embora todas as pessoas possam se beneficiar das funcionalidades da aplicação web, desenvolvida neste trabalho, esse projeto tem como principal público-alvo: cuidadores, pessoas em tratamento de saúde e seus familiares. Esses usuários precisam ter, no mínimo, 18 anos de idade, serem alfabetizados e terem acesso ao computador ou smartphone e à internet. A faixa etária máxima não foi definida, pois acreditamos que todos podem, eventualmente, se beneficiar da aplicação. Posteriormente, serão inseridas algumas funcionalidades de acessibilidade
+Embora todas as pessoas possam se beneficiar das funcionalidades da plataforma, desenvolvida neste trabalho, esse projeto tem como principal público-alvo: cuidadores, pessoas em tratamento de saúde e seus familiares. Esses usuários precisam ter, no mínimo, 18 anos de idade, serem alfabetizados e terem acesso ao computador ou smartphone e à internet. A faixa etária máxima não foi definida, pois acreditamos que todos podem, eventualmente, se beneficiar da plataforma. Posteriormente, serão inseridas algumas funcionalidades de acessibilidade
 
 

@@ -73,8 +73,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-04	|O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.	|Alta|
 |RNF-05	|O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.	|Alta|
 |RNF-06	|As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão.	|Baixa|
-|RNF-07 |O site deve armazenar as informações em um banco de dados.	|Alta|
-|RNF-08	|O site deve conter uma barra de navegação de fácil uso.	|Média|
+|RNF-07	|O website deve conter uma barra de navegação de fácil uso.	|Média|
+|RNF-08 |O website deve ser de fácil compreensão e utilização. |Alta| 
 
 
 ## Restrições
