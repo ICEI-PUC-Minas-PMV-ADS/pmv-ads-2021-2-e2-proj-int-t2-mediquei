@@ -23,7 +23,7 @@ O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/blob/40ca3a0d3578a0345ce979d2ebfa249353f4c39a/docs/img/ModeloER_Alterado.jpg)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/blob/main/docs/img/ModeloER_2.jpg)
 
 ## Esquema Relacional
 
