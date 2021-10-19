@@ -39,9 +39,7 @@ body,html
 .fundoTela
 {
   background-color:white;
-stop-opacity: 50%;
-
-  width: 800px;
+  width: 1000px;
   padding: 2em;
   border: 2px solid #CCC;
   border-radius: 1em;
