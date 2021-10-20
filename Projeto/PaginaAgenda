@@ -24,7 +24,8 @@
     
     <a href="#" class="button">Editar</a>
     <a href="#" class="button">Excluir</a>
-</div>
+
+
     <div class="card-body">
         <form action="" class="cardMed">
           <h3 class="card-title"><strong>Nome do medicamento</strong> </h3>
