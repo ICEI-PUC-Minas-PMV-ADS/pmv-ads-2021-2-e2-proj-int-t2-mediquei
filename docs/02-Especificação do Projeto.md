@@ -68,14 +68,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-01 |O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente 	|Alta|
-|RNF-02	|O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada.	|Baixa|
+|RNF-02	|O website deverá ser responsivo, permitindo a visualização em um celular de forma adequada.	|Média|
 |RNF-03	|O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.	|Alta|
-|RNF-05	|O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.	|Alta|
-|RNF-06	|O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.	|Alta|
-|RNF-07	|As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão.	|Média|
-|RNF-08 |O site deve armazenar as informações em um banco de dados.	|Alta|
-|RNF-09	|O site deve conter uma barra de navegação de fácil uso.	|Baixa|
-|RNF-10 |Ao emitir um alerta de horário, o smartphone deverá vibrar para facilitar o acesso de pessoas com baixa audição ou surdas.	|\Média|
+|RNF-04	|O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.	|Alta|
+|RNF-05	|O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.	|Alta|
+|RNF-06	|As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão.	|Baixa|
+|RNF-07	|O website deve conter uma barra de navegação de fácil uso.	|Média|
+|RNF-08 |O website deve ser de fácil compreensão e utilização. |Alta| 
 
 
 ## Restrições

@@ -23,19 +23,23 @@ O diagrama de classes desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-mediquei/blob/main/docs/img/ModeloER_2.jpg)
 
 ## Esquema Relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
+O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária. O ER desse projeto está na pasta pmv-ads-2021-2-e2-proj-int-t2-mediquei\docs\diagramas\Esquema Relacional Mediquei.brm
 
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+![image](/docs/img/esquemarelacionalmediquei.jpg)
 
 ## Tecnologias Utilizadas
+
+
+Luicdchart
+Marvel
+Brmodel
+
+O projeto será desenvolvido utilizando as linguagens básicas da Web no Front-End (HTML, CSS e JavaScript). Para o Back-end será usado a linguagem C# e no banco de dados SQL Server
+
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 

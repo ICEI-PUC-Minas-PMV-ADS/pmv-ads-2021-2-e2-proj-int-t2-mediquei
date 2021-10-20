@@ -14,7 +14,12 @@ O diagrama de fluxo está acessível em: https://lucid.app/lucidchart/invitation
 
 ![Diagrama de fluxo 2 - Page 1](https://user-images.githubusercontent.com/81760044/133888018-b3dcf685-f192-4b42-b31a-ba5ceefba0dd.png)
 
-Tendo como base o fluxo de telas do projeto apresentado no item anterior, são apresentadas abaixo as telas do sistema. 
+
+
+Tendo como base o fluxo de telas do projeto apresentado no item anterior, a figura abaixo apresenta o fluxo no sistema Mediquei. As setas vermelhas mostram os passos antes do login ser feito. Após login executado, as setas azuis continuas mostram o fluxo de saida da página prinicpal, já as setas azuis tracejadas mostram o caminho inverso, o caminho de retorno a página principal.
+
+![image](https://user-images.githubusercontent.com/81448442/134993332-77ac6c80-54f4-4cf4-ab9b-b66215ea3c12.png)
+
 As Wireframes do projeto encontra-se em: https://marvelapp.com/prototype/h30ei94
 
 Home
