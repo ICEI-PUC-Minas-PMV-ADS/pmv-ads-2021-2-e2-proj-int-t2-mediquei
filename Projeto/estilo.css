@@ -47,12 +47,25 @@ body,html
   position: center;
   }
 
-.cardMed
+.cardMed, .container
   {
+  display: inline-flexbox;
+  align-items: center;
   background-color: white;
   width: 250px;
   padding: 2em;
   border: 2px solid #CCC;
   border-radius: 1em;
-  position: center;
+  
+  }
+  
+  .botãoSalvar
+{
+  background-color: green;
+
+}
+
+  .botãoExcluir
+  {
+    background-color: red;
   }
