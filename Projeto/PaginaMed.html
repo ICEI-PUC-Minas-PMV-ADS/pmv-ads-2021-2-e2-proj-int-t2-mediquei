@@ -11,5 +11,26 @@
 <body class="backgroundInicial">
   <section class=""> </section>
  <div class="card-body">
-  <form action="" class="cardMed">
+  <form action="" class="fundoTela">
  
+
+    <div class="user-input-info">
+      <div class="input-name">
+          <input name="nomeMed" type="text" placeholder="Nome do medicamento">
+      </div>
+
+      <div class="input-solicitante">
+          <input name="nomeSolicitante" type="text" placeholder="Solicitante">
+      </div>
+  
+    <div class="input-especialidade">
+        <input name="nomeEspecialidade" type="text" placeholder="Especialidade">
+    </div>
+  </div>
+       
+      <form action="/form/submit" method="POST">
+        <textarea class="comment" type="text" placeholder="Dosagem:"></textarea>
+        <form action="/form/submit" method="POST">
+      <textarea class="comment"type="text" placeholder="Observações"></textarea>
+      <input type="submit" name="submit" value="Salvar">
+    </form>
