@@ -58,14 +58,14 @@ body,html
   border-radius: 1em;
   
   }
-  
+
   .botãoSalvar
 {
-  background-color: green;
+  background-color: gray;
 
 }
 
   .botãoExcluir
   {
-    background-color: red;
+    background-color: rgb(233, 118, 118);
   }
