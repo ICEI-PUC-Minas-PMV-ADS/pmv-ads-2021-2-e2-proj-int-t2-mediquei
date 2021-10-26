@@ -7,6 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Cuidadores\**" />
+    <Compile Remove="Views\NovaPasta\**" />
+    <Content Remove="Views\Cuidadores\**" />
+    <Content Remove="Views\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Cuidadores\**" />
+    <EmbeddedResource Remove="Views\NovaPasta\**" />
+    <None Remove="Views\Cuidadores\**" />
+    <None Remove="Views\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211022023146_M00.cs" />
+    <Compile Remove="Migrations\20211022023146_M00.Designer.cs" />
+    <Compile Remove="Migrations\20211022033108_M01.cs" />
+    <Compile Remove="Migrations\20211022033108_M01.Designer.cs" />
+    <Compile Remove="Views\Cuidadores.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
@@ -21,6 +44,14 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Cuidadores\Create.cshtml" />
+    <None Include="Views\Cuidadores\Delete.cshtml" />
+    <None Include="Views\Cuidadores\Details.cshtml" />
+    <None Include="Views\Cuidadores\Edit.cshtml" />
+    <None Include="Views\Cuidadores\Index.cshtml" />
   </ItemGroup>
 
 </Project>

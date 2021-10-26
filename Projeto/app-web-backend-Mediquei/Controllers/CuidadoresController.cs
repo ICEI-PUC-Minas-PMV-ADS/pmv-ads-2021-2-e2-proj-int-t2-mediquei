@@ -21,7 +21,8 @@ namespace app_web_backend_Mediquei.Controllers
         // GET: Cuidadores
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cuidadores.ToListAsync());
+            var applicationDbContext = _context.Cuidadores.Include(c => c.Usuario);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Cuidadores/Details/5
@@ -33,6 +34,7 @@ namespace app_web_backend_Mediquei.Controllers
             }
 
             var cuidador = await _context.Cuidadores
+                .Include(c => c.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {
@@ -45,6 +47,7 @@ namespace app_web_backend_Mediquei.Controllers
         // GET: Cuidadores/Create
         public IActionResult Create()
         {
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome");
             return View();
         }
 
@@ -53,7 +56,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome")] Cuidador cuidador)
+        public async Task<IActionResult> Create([Bind("Id,Nome,UserId")] Cuidador cuidador)
         {
             if (ModelState.IsValid)
             {
@@ -61,6 +64,7 @@ namespace app_web_backend_Mediquei.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
             return View(cuidador);
         }
 
@@ -77,6 +81,7 @@ namespace app_web_backend_Mediquei.Controllers
             {
                 return NotFound();
             }
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
             return View(cuidador);
         }
 
@@ -85,7 +90,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Cuidador cuidador)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,UserId")] Cuidador cuidador)
         {
             if (id != cuidador.Id)
             {
@@ -112,6 +117,7 @@ namespace app_web_backend_Mediquei.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
             return View(cuidador);
         }
 
@@ -124,6 +130,7 @@ namespace app_web_backend_Mediquei.Controllers
             }
 
             var cuidador = await _context.Cuidadores
+                .Include(c => c.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {
