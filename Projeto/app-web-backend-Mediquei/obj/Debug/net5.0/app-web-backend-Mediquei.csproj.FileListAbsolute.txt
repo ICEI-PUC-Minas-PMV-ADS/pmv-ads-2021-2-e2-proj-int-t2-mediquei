@@ -437,3 +437,6 @@ C:\ProjetosPUC\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Me
 C:\ProjetosPUC\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\Razor\Views\Usuarios\Edit.cshtml.g.cs
 C:\ProjetosPUC\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\Razor\Views\Usuarios\Index.cshtml.g.cs
 C:\ProjetosPUC\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\bin\Debug\net5.0\BCrypt.Net-Next.dll
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.dll
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\ref\app-web-backend-Mediquei.dll
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.pdb
