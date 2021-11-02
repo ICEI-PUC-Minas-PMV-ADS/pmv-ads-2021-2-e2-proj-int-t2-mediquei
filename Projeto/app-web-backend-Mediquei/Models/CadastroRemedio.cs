@@ -31,7 +31,7 @@ namespace app_web_backend_Mediquei.Models
         [Required(ErrorMessage = "*Campo obrigatório!")]
         public Time horainicial { get; set; }
 
-        public string Idefeito { get; set; }
+        public string idefeito { get; set; }
 
     }
 }

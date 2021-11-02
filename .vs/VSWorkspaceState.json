@@ -3,9 +3,9 @@
     "",
     "\\Projeto",
     "\\Projeto\\app-web-backend-Mediquei",
-    "\\Projeto\\app-web-backend-Mediquei\\wwwroot",
+    "\\Projeto\\app-web-backend-Mediquei\\Models",
     "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Projeto\\app-web-backend-Mediquei\\Startup.cs",
+  "SelectedNode": "\\Projeto\\app-web-backend-Mediquei\\Models\\Usuario.cs",
   "PreviewInSolutionExplorer": false
 }
