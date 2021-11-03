@@ -3,9 +3,12 @@
     "",
     "\\Projeto",
     "\\Projeto\\app-web-backend-Mediquei",
-    "\\Projeto\\app-web-backend-Mediquei\\Models",
-    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\css"
+    "\\Projeto\\app-web-backend-Mediquei\\Controllers",
+    "\\Projeto\\app-web-backend-Mediquei\\wwwroot",
+    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\css",
+    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\js",
+    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\lib\\bootstrap"
   ],
-  "SelectedNode": "\\Projeto\\app-web-backend-Mediquei\\Models\\Usuario.cs",
+  "SelectedNode": "\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.sln",
   "PreviewInSolutionExplorer": false
 }

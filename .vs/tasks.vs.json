@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarefa-CadastroRemedioController",
+      "appliesTo": "Projeto/app-web-backend-Mediquei/Controllers/CadastroRemedioController.cs",
+      "type": "launch"
+    }
+  ]
+}
