@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - app_web_backend_Mediquei</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediquei</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -11,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">app_web_backend_Mediquei</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Mediquei</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,9 +21,6 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cuidadores" asp-action="Index">Cuidadores</a>
@@ -35,8 +33,13 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="backgroundInicial">
         <main role="main" class="pb-3">
+            <h1>Mediquei é a melhor forma de organizar e ministrar corretamete sua medicação.</h1>
+            Com o Mediquei, será possível um registro detalhado que irá auxíliar no controle de horários e posologia dos medicamentos.<br>
+            Fazer o uso correto da medicação é essencial para um tratamento eficaz.<br>
+            Nunca mais esqueça de tomar seu medicamentos, somo parceiros da saúde.<br>
+
             @RenderBody()
         </main>
     </div>
