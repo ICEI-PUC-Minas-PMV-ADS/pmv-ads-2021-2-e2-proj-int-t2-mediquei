@@ -10036,3 +10036,49 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.backgroundCadastroLogin {
+    background-image: url("Imagens/logo.jpeg");
+    background-repeat: repeat;
+    background-position: unset;
+    background-attachment: fixed;
+    background-size: 9cm;
+}
+
+.formularioCadastro, .formularioLogin {
+    background-color: white;
+    /* para centralizar*/
+    margin: 0 auto;
+    width: 400px;
+    /* para moldar o fundo do formulário*/
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.fundoTela {
+    background-color: white;
+    width: 1000px;
+    padding: 2em;
+    border: 2px solid #CCC;
+    border-radius: 1em;
+    position: center;
+}
+
+.cardMed, .container {
+    display: inline-flexbox;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    padding: 2em;
+    border: 2px solid #CCC;
+    border-radius: 1em;
+}
+
+.botãoSalvar {
+    background-color: gray;
+}
+
+.botãoExcluir {
+    background-color: rgb(233, 118, 118);
+}
