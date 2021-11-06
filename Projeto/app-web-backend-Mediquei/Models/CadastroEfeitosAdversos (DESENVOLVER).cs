@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace app_web_backend_Mediquei.Models
 {
-    [Table ("Cadastro de Remedio")]
-    public class CadastroRemedio
+    [Table ("Efeitos Adversos")]
+    public class CadastroEfeitosAdversos
     {
         [Key]
-        public int Id { get; set; }
+        public int Idefeito { get; set; }
 
         [Required(ErrorMessage ="*Campo obrigatório!")]
         public string Nome { get; set; }

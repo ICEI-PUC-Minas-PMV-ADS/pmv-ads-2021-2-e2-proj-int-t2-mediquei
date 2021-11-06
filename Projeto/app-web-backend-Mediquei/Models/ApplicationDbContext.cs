@@ -15,5 +15,7 @@ namespace app_web_backend_Mediquei.Models
         public DbSet<Cuidador> Cuidadores { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<CadastroRemedio> Remedios  { get; set; }
+        public DbSet<CadastroEfeitosAdversos> Efeitos Adversos {get; set;}
+
     }
 }

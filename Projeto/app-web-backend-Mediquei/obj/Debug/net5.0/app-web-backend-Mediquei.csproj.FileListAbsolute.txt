@@ -440,3 +440,12 @@ C:\ProjetosPUC\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Me
 C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.dll
 C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\ref\app-web-backend-Mediquei.dll
 C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.pdb
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.csproj.AssemblyReference.cache
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.AssemblyInfoInputs.cache
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.AssemblyInfo.cs
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.csproj.CoreCompileInputs.cache
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.RazorAssemblyInfo.cache
+C:\Users\ADRIANA\Documents\GitHub\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.RazorAssemblyInfo.cs
