@@ -23,13 +23,24 @@ namespace app_web_backend_Mediquei.Models
         public int Intervalo { get; set; }
 
         [Required(ErrorMessage = "*Campo obrigatório!")]
-        public DateTime datainicial { get; set; }
+        public DateTime Datainicial { get; set; }
 
         [Required(ErrorMessage = "*Campo obrigatório!")]
-        public DateTime datafinal { get; set; }
+        public DateTime Datafinal { get; set; }
 
         [Required(ErrorMessage = "*Campo obrigatório!")]
-        public Time horainicial { get; set; }
+        public DateTime Horainicial { get; set; }
+
+           [Required(ErrorMessage = "*Campo obrigatório!")]
+        public int Recomendação { get; set; }
+
+      public Enum Recomendação
+        {
+            Antes das refeções
+                Durante as refeições
+                após as refeições
+                Não há recomendação
+        }
 
         public string idefeito { get; set; }
 
