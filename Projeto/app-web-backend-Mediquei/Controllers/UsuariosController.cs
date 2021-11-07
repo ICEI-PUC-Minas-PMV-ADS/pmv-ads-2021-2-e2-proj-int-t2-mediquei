@@ -17,6 +17,10 @@ namespace app_web_backend_Mediquei.Controllers
         {
             _context = context;
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
 
         // GET: Usuarios
         public async Task<IActionResult> Index()

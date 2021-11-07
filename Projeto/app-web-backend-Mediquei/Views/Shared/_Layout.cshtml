@@ -1,9 +1,8 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mediquei</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
@@ -29,17 +28,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="backgroundInicial">
+    <div class="container">
         <main role="main" class="pb-3">
-            <h1>Mediquei é a melhor forma de organizar e ministrar corretamete sua medicação.</h1>
-            Com o Mediquei, será possível um registro detalhado que irá auxíliar no controle de horários e posologia dos medicamentos.<br>
-            Fazer o uso correto da medicação é essencial para um tratamento eficaz.<br>
-            Nunca mais esqueça de tomar seu medicamentos, somo parceiros da saúde.<br>
-
             @RenderBody()
         </main>
     </div>
