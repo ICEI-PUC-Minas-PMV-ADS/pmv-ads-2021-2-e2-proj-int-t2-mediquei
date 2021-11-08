@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend_Mediquei.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CuidadoresController : Controller
     {
         private readonly ApplicationDbContext _context;
