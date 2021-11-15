@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Projeto"
+    "\\Projeto",
+    "\\Projeto\\app-web-backend-Mediquei",
+    "\\Projeto\\app-web-backend-Mediquei\\wwwroot",
+    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\css",
+    "\\Projeto\\Imagens"
   ],
-  "SelectedNode": "\\Mediquei.sql",
+  "SelectedNode": "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\css\\medication-calendar.jpg",
   "PreviewInSolutionExplorer": false
 }

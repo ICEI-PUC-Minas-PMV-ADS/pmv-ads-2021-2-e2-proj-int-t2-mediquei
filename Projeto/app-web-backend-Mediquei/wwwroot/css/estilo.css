@@ -6,20 +6,19 @@ body,html
 }
 
 .backgroundInicial {
-    background-image: C:\Users\ADRIANA\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\wwwroot\css\medication-calendar.jpg;
-       background-repeat: no-repeat;
+    background-image: url("medication-calendar.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.backgroundCadastroLogin
-{
-  background-image: url("Imagens/logo.jpeg");
-  background-repeat: repeat;
-  background-position: unset;
-  background-attachment: fixed;
-  background-size: 9cm;
+.backgroundCadastroLogin {
+    background-image: url("medication-calendar.jpg";
+    background-repeat: repeat;
+    background-position: unset;
+    background-attachment: fixed;
+    background-size: 9cm;
 }
 
 .formularioCadastro, .formularioLogin
