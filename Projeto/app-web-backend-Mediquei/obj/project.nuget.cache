@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LehOEko4f+TPCYCZRbEQa55+uyP2VarmHgM380eWtl94kGXOWf60oQb+IGimqyQ1sZS18U136xRtXYd9NSWCEA==",
+  "dgSpecHash": "qv4CF4lYZ1UHh+ei4kAvvcFDL8/m0zE5HEgtxUoN5U/bj7bd8oQCbBPvFSKWk/wCQMmiJJsGipE05wgfFrFsHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADRIANA\\Documents\\GitHub\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+  "projectFilePath": "C:\\Users\\ADRIANA\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADRIANA\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\ADRIANA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
