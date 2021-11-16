@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class UsuariosController : Controller
     {
         private readonly ApplicationDbContext _context;
