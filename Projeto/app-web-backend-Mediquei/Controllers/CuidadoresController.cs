@@ -46,6 +46,25 @@ namespace app_web_backend_Mediquei.Controllers
             return View(cuidador);
         }
 
+        // GET: Cuidadores/Relatórios/5
+        public async Task<IActionResult> Relatorio(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cuidador = await _context.Cuidadores
+                .Include(c => c.ContratoCuidador)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cuidador == null)
+            {
+                return NotFound();
+            }
+
+            return View(cuidador);
+        }
+
         // GET: Cuidadores/Create
         public IActionResult Create()
         {

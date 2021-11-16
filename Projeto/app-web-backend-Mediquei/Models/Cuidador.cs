@@ -12,7 +12,7 @@ namespace app_web_backend_Mediquei.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required(ErrorMessage ="*Campo obrigatório!")]
+        [Required(ErrorMessage = "*Campo obrigatório!")]
         public string Nome { get; set; }
 
         /* Criando a chave estrangeira para usuário */
@@ -21,5 +21,7 @@ namespace app_web_backend_Mediquei.Models
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         public Usuario Usuario { get; set; }
+
+        public ICollection<ContratosCuidador> ContratoCuidador  { get; set; }
     }
 }
