@@ -6,28 +6,25 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend_Mediquei.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    public class CuidadoresController : Controller
+    public class FamiliaresController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public CuidadoresController(ApplicationDbContext context)
+        public FamiliaresController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Cuidadores
+        // GET: Familiares
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Cuidadores.Include(c => c.Usuario);
-            return View(await applicationDbContext.ToListAsync());
+            return View(await _context.Familiares.ToListAsync());
         }
 
-        // GET: Cuidadores/Details/5
+        // GET: Familiares/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,61 +32,39 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var cuidador = await _context.Cuidadores
-                .Include(c => c.Usuario)
+            var familiar = await _context.Familiares
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (cuidador == null)
+            if (familiar == null)
             {
                 return NotFound();
             }
 
-            return View(cuidador);
+            return View(familiar);
         }
 
-        // GET: Cuidadores/Relatórios/5
-        public async Task<IActionResult> Relatorio(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var cuidador = await _context.Cuidadores
-                .Include(c => c.ContratoCuidador)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (cuidador == null)
-            {
-                return NotFound();
-            }
-
-            return View(cuidador);
-        }
-
-        // GET: Cuidadores/Create
+        // GET: Familiares/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome");
             return View();
         }
 
-        // POST: Cuidadores/Create
+        // POST: Familiares/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,UserId")] Cuidador cuidador)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Familiar familiar)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(cuidador);
+                _context.Add(familiar);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
-            return View(cuidador);
+            return View(familiar);
         }
 
-        // GET: Cuidadores/Edit/5
+        // GET: Familiares/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -97,23 +72,22 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var cuidador = await _context.Cuidadores.FindAsync(id);
-            if (cuidador == null)
+            var familiar = await _context.Familiares.FindAsync(id);
+            if (familiar == null)
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
-            return View(cuidador);
+            return View(familiar);
         }
 
-        // POST: Cuidadores/Edit/5
+        // POST: Familiares/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,UserId")] Cuidador cuidador)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Familiar familiar)
         {
-            if (id != cuidador.Id)
+            if (id != familiar.Id)
             {
                 return NotFound();
             }
@@ -122,12 +96,12 @@ namespace app_web_backend_Mediquei.Controllers
             {
                 try
                 {
-                    _context.Update(cuidador);
+                    _context.Update(familiar);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CuidadorExists(cuidador.Id))
+                    if (!FamiliarExists(familiar.Id))
                     {
                         return NotFound();
                     }
@@ -138,11 +112,10 @@ namespace app_web_backend_Mediquei.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
-            return View(cuidador);
+            return View(familiar);
         }
 
-        // GET: Cuidadores/Delete/5
+        // GET: Familiares/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -150,31 +123,30 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var cuidador = await _context.Cuidadores
-                .Include(c => c.Usuario)
+            var familiar = await _context.Familiares
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (cuidador == null)
+            if (familiar == null)
             {
                 return NotFound();
             }
 
-            return View(cuidador);
+            return View(familiar);
         }
 
-        // POST: Cuidadores/Delete/5
+        // POST: Familiares/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var cuidador = await _context.Cuidadores.FindAsync(id);
-            _context.Cuidadores.Remove(cuidador);
+            var familiar = await _context.Familiares.FindAsync(id);
+            _context.Familiares.Remove(familiar);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CuidadorExists(int id)
+        private bool FamiliarExists(int id)
         {
-            return _context.Cuidadores.Any(e => e.Id == id);
+            return _context.Familiares.Any(e => e.Id == id);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<app_web_backend_Mediquei.Models.Cuidador>
+﻿@model IEnumerable<app_web_backend_Mediquei.Models.Familiar>
 
 @{
     ViewData["Title"] = "Index";
@@ -15,9 +15,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -28,13 +25,9 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Nome)
-            </td>
-            <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
-                <a asp-action="Relatorio" asp-route-id="@item.Id">Relatório</a>
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

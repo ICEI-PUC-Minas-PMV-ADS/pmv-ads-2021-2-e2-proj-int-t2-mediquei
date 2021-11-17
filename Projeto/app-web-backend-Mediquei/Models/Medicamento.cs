@@ -7,21 +7,12 @@ using System.Threading.Tasks;
 
 namespace app_web_backend_Mediquei.Models
 {
-    [Table("Cuidadores")]
-    public class Cuidador
+    [Table("Medicamentos")]
+    public class Medicamento
     {
         [Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "*Campo obrigatório!")]
         public string Nome { get; set; }
-
-        /* Criando a chave estrangeira para usuário */
-        [Display(Name = "Usuário")]
-        [Required(ErrorMessage = "*Campo Obrigatório")]
-        public int UserId { get; set; }
-        [ForeignKey("UserId")]
-        public Usuario Usuario { get; set; }
-
-        public ICollection<ContratosCuidador> ContratoCuidador  { get; set; }
     }
 }
