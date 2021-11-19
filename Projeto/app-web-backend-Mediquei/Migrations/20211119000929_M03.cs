@@ -16,27 +16,27 @@ namespace app_web_backend_Mediquei.Migrations
                     CuidadorId = table.Column<int>(type: "int", nullable: false),
                     PacienteId = table.Column<int>(type: "int", nullable: false),
                     DataInicial = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DataFinal = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DataFinal = table.Column<DateTime>(type: "datetime2", nullable: false),
                     HoraEntrada1 = table.Column<DateTime>(type: "datetime2", nullable: false),
                     HoraSaida1 = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    HoraEntrada2 = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    HoraSaida2 = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    HoraEntrada2 = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    HoraSaida2 = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ContratosCuidador", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ContrCuidador_CuidadorId",
+                        name: "FK_ContratosCuidador_Cuidadores_CuidadorId",
                         column: x => x.CuidadorId,
                         principalTable: "Cuidadores",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ContrCuidador_PacienteId",
+                        name: "FK_ContratosCuidador_Pacientes_PacienteId",
                         column: x => x.PacienteId,
                         principalTable: "Pacientes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

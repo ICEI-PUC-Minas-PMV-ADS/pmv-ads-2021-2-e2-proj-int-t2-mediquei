@@ -9,7 +9,7 @@ using app_web_backend_Mediquei.Models;
 namespace app_web_backend_Mediquei.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211114230839_M02")]
+    [Migration("20211119000504_M02")]
     partial class M02
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,7 +68,12 @@ namespace app_web_backend_Mediquei.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Familiares");
                 });
@@ -150,6 +155,17 @@ namespace app_web_backend_Mediquei.Migrations
                 });
 
             modelBuilder.Entity("app_web_backend_Mediquei.Models.Cuidador", b =>
+                {
+                    b.HasOne("app_web_backend_Mediquei.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("app_web_backend_Mediquei.Models.Familiar", b =>
                 {
                     b.HasOne("app_web_backend_Mediquei.Models.Usuario", "Usuario")
                         .WithMany()
