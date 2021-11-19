@@ -16,11 +16,11 @@ namespace app_web_backend_Mediquei.Models
         public string Nome { get; set; }
 
         /* Criando a chave estrangeira para usuário */
-        /*[Display(Name = "Usuário")]
+        [Display(Name = "Usuário")]
         [Required(ErrorMessage = "*Campo Obrigatório")]
         public int UserId { get; set; }
         [ForeignKey("UserId")]
-        public Usuario Usuario { get; set; }*/
+        public Usuario Usuario { get; set; }
     }
 }
 

@@ -26,7 +26,7 @@
                 <select asp-for="FamiliarId" class ="form-control" asp-items="ViewBag.FamiliarId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="grauParentesco" class="control-label"></label>
+                <label asp-for="grauParentesco" class="control-label"></label>                
                 <select asp-for="grauParentesco" class="form-control" asp-items="Html.GetEnumSelectList<GrauParentesco>()"></select>
                 <span asp-validation-for="grauParentesco" class="text-danger"></span>
             </div>

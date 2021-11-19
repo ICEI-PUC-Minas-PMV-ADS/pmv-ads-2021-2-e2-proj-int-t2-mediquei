@@ -6,26 +6,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend_Mediquei.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
-    public class FamiliaresController : Controller
+    [Authorize(Roles = "Admin")]
+    public class MedicamentosController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public FamiliaresController(ApplicationDbContext context)
+        public MedicamentosController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Familiares
+        // GET: Medicamentos
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Familiares.Include(f => f.Usuario);
-            return View(await applicationDbContext.ToListAsync());
+            return View(await _context.Medicamentos.ToListAsync());
         }
 
-        // GET: Familiares/Details/5
+        // GET: Medicamentos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,42 +34,39 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var familiar = await _context.Familiares
-                .Include(f => f.Usuario)
+            var medicamento = await _context.Medicamentos
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (familiar == null)
+            if (medicamento == null)
             {
                 return NotFound();
             }
 
-            return View(familiar);
+            return View(medicamento);
         }
 
-        // GET: Familiares/Create
+        // GET: Medicamentos/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail");
             return View();
         }
 
-        // POST: Familiares/Create
+        // POST: Medicamentos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,UserId")] Familiar familiar)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Medicamento medicamento)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(familiar);
+                _context.Add(medicamento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", familiar.UserId);
-            return View(familiar);
+            return View(medicamento);
         }
 
-        // GET: Familiares/Edit/5
+        // GET: Medicamentos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -76,23 +74,22 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var familiar = await _context.Familiares.FindAsync(id);
-            if (familiar == null)
+            var medicamento = await _context.Medicamentos.FindAsync(id);
+            if (medicamento == null)
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", familiar.UserId);
-            return View(familiar);
+            return View(medicamento);
         }
 
-        // POST: Familiares/Edit/5
+        // POST: Medicamentos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,UserId")] Familiar familiar)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Medicamento medicamento)
         {
-            if (id != familiar.Id)
+            if (id != medicamento.Id)
             {
                 return NotFound();
             }
@@ -101,12 +98,12 @@ namespace app_web_backend_Mediquei.Controllers
             {
                 try
                 {
-                    _context.Update(familiar);
+                    _context.Update(medicamento);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FamiliarExists(familiar.Id))
+                    if (!MedicamentoExists(medicamento.Id))
                     {
                         return NotFound();
                     }
@@ -117,11 +114,10 @@ namespace app_web_backend_Mediquei.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", familiar.UserId);
-            return View(familiar);
+            return View(medicamento);
         }
 
-        // GET: Familiares/Delete/5
+        // GET: Medicamentos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -129,31 +125,30 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var familiar = await _context.Familiares
-                .Include(f => f.Usuario)
+            var medicamento = await _context.Medicamentos
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (familiar == null)
+            if (medicamento == null)
             {
                 return NotFound();
             }
 
-            return View(familiar);
+            return View(medicamento);
         }
 
-        // POST: Familiares/Delete/5
+        // POST: Medicamentos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var familiar = await _context.Familiares.FindAsync(id);
-            _context.Familiares.Remove(familiar);
+            var medicamento = await _context.Medicamentos.FindAsync(id);
+            _context.Medicamentos.Remove(medicamento);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FamiliarExists(int id)
+        private bool MedicamentoExists(int id)
         {
-            return _context.Familiares.Any(e => e.Id == id);
+            return _context.Medicamentos.Any(e => e.Id == id);
         }
     }
 }

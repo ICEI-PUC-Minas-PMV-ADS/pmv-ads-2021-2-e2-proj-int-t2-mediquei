@@ -12,12 +12,19 @@ namespace app_web_backend_Mediquei.Models
         {
         }
 
+        // Migration M00
         public DbSet<Cuidador> Cuidadores { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Paciente> Pacientes { get; set; }
-        public DbSet<Familiar> Familiares { get; set; }
+        // Migration M01
+        public DbSet<Familiar> Familiares { get; set; }        
         public DbSet<Medicamento> Medicamentos { get; set; }
         public DbSet<DesafioSaude> DesafiosSaude { get; set; }
+        // Migration M02
+        public DbSet<Paciente> Pacientes { get; set; }  
+        
+        // Migration M03
         public DbSet<ContratosCuidador> ContratosCuidador { get; set; }
+
+        //public DbSet<TratamentoSaude> TratamentosSaude { get; set; }
     }
 }

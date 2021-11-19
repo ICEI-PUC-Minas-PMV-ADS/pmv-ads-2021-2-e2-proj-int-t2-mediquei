@@ -6,26 +6,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend_Mediquei.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
-    public class FamiliaresController : Controller
+    [Authorize(Roles = "Admin")]
+    public class DesafiosSaudeController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public FamiliaresController(ApplicationDbContext context)
+        public DesafiosSaudeController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Familiares
+        // GET: DesafiosSaude
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Familiares.Include(f => f.Usuario);
-            return View(await applicationDbContext.ToListAsync());
+            return View(await _context.DesafiosSaude.ToListAsync());
         }
 
-        // GET: Familiares/Details/5
+        // GET: DesafiosSaude/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,42 +34,39 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var familiar = await _context.Familiares
-                .Include(f => f.Usuario)
+            var desafioSaude = await _context.DesafiosSaude
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (familiar == null)
+            if (desafioSaude == null)
             {
                 return NotFound();
             }
 
-            return View(familiar);
+            return View(desafioSaude);
         }
 
-        // GET: Familiares/Create
+        // GET: DesafiosSaude/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail");
             return View();
         }
 
-        // POST: Familiares/Create
+        // POST: DesafiosSaude/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,UserId")] Familiar familiar)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] DesafioSaude desafioSaude)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(familiar);
+                _context.Add(desafioSaude);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", familiar.UserId);
-            return View(familiar);
+            return View(desafioSaude);
         }
 
-        // GET: Familiares/Edit/5
+        // GET: DesafiosSaude/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -76,23 +74,22 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var familiar = await _context.Familiares.FindAsync(id);
-            if (familiar == null)
+            var desafioSaude = await _context.DesafiosSaude.FindAsync(id);
+            if (desafioSaude == null)
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", familiar.UserId);
-            return View(familiar);
+            return View(desafioSaude);
         }
 
-        // POST: Familiares/Edit/5
+        // POST: DesafiosSaude/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,UserId")] Familiar familiar)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] DesafioSaude desafioSaude)
         {
-            if (id != familiar.Id)
+            if (id != desafioSaude.Id)
             {
                 return NotFound();
             }
@@ -101,12 +98,12 @@ namespace app_web_backend_Mediquei.Controllers
             {
                 try
                 {
-                    _context.Update(familiar);
+                    _context.Update(desafioSaude);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FamiliarExists(familiar.Id))
+                    if (!DesafioSaudeExists(desafioSaude.Id))
                     {
                         return NotFound();
                     }
@@ -117,11 +114,10 @@ namespace app_web_backend_Mediquei.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", familiar.UserId);
-            return View(familiar);
+            return View(desafioSaude);
         }
 
-        // GET: Familiares/Delete/5
+        // GET: DesafiosSaude/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -129,31 +125,30 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            var familiar = await _context.Familiares
-                .Include(f => f.Usuario)
+            var desafioSaude = await _context.DesafiosSaude
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (familiar == null)
+            if (desafioSaude == null)
             {
                 return NotFound();
             }
 
-            return View(familiar);
+            return View(desafioSaude);
         }
 
-        // POST: Familiares/Delete/5
+        // POST: DesafiosSaude/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var familiar = await _context.Familiares.FindAsync(id);
-            _context.Familiares.Remove(familiar);
+            var desafioSaude = await _context.DesafiosSaude.FindAsync(id);
+            _context.DesafiosSaude.Remove(desafioSaude);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FamiliarExists(int id)
+        private bool DesafioSaudeExists(int id)
         {
-            return _context.Familiares.Any(e => e.Id == id);
+            return _context.DesafiosSaude.Any(e => e.Id == id);
         }
     }
 }
