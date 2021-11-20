@@ -28,7 +28,8 @@ namespace app_web_backend_Mediquei.Models
         public DesafioSaude DesafioSaude { get; set; }
 
         public string Observacao { get; set; }
-        
+
+        public ICollection<TratamentoSaudeDet> TratamentoSaudeDet { get; set; }
 
     }
 }

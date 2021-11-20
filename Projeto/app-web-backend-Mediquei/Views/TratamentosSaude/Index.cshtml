@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Tratamentos de Saúde</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -19,31 +19,7 @@
                 @Html.DisplayNameFor(model => model.DesafioSaude)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Posologia)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Observacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataInicial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataFinal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HoraInicial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.intervalo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EfeitoAdverso1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EfeitoAdverso2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EfeitoAdverso3)
             </th>
             <th></th>
         </tr>
@@ -58,36 +34,12 @@
                 @Html.DisplayFor(modelItem => item.DesafioSaude.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Posologia)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Observacao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataInicial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataFinal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HoraInicial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.intervalo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EfeitoAdverso1.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EfeitoAdverso2.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EfeitoAdverso3.Descricao)
-            </td>
-            <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                <a asp-action="TratamentoSaudeDetalhe" asp-route-id="@item.Id">Detalhes do tratamento</a>                
             </td>
         </tr>
 }

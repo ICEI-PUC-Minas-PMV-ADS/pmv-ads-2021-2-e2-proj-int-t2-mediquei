@@ -21,7 +21,7 @@ namespace app_web_backend_Mediquei.Controllers
         // GET: TratamentosSaude
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.TratamentosSaude.Include(t => t.DesafioSaude).Include(t => t.EfeitoAdverso1).Include(t => t.EfeitoAdverso2).Include(t => t.EfeitoAdverso3).Include(t => t.Paciente);
+            var applicationDbContext = _context.TratamentosSaude.Include(t => t.DesafioSaude).Include(t => t.Paciente);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -35,9 +35,6 @@ namespace app_web_backend_Mediquei.Controllers
 
             var tratamentoSaude = await _context.TratamentosSaude
                 .Include(t => t.DesafioSaude)
-                .Include(t => t.EfeitoAdverso1)
-                .Include(t => t.EfeitoAdverso2)
-                .Include(t => t.EfeitoAdverso3)
                 .Include(t => t.Paciente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (tratamentoSaude == null)
@@ -52,11 +49,27 @@ namespace app_web_backend_Mediquei.Controllers
         public IActionResult Create()
         {
             ViewData["DesafioId"] = new SelectList(_context.DesafiosSaude, "Id", "Nome");
-            ViewData["EfeitoId1"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao");
-            ViewData["EfeitoId2"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao");
-            ViewData["EfeitoId3"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao");
             ViewData["PacienteId"] = new SelectList(_context.Pacientes, "Id", "Nome");
             return View();
+        }
+
+        // GET: TratamentosSaude/Detalhes/5
+        public async Task<IActionResult> TratamentoSaudeDetalhe(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tratamentoSaude = await _context.TratamentosSaude
+                .Include(c => c.TratamentoSaudeDet)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (tratamentoSaude == null)
+            {
+                return NotFound();
+            }
+
+            return View(tratamentoSaude);
         }
 
         // POST: TratamentosSaude/Create
@@ -64,7 +77,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,PacienteId,DesafioId,Posologia,Observacao,DataInicial,DataFinal,HoraInicial,intervalo,EfeitoId1,EfeitoId2,EfeitoId3")] TratamentoSaude tratamentoSaude)
+        public async Task<IActionResult> Create([Bind("Id,PacienteId,DesafioId,Observacao")] TratamentoSaude tratamentoSaude)
         {
             if (ModelState.IsValid)
             {
@@ -73,9 +86,6 @@ namespace app_web_backend_Mediquei.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DesafioId"] = new SelectList(_context.DesafiosSaude, "Id", "Nome", tratamentoSaude.DesafioId);
-            ViewData["EfeitoId1"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId1);
-            ViewData["EfeitoId2"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId2);
-            ViewData["EfeitoId3"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId3);
             ViewData["PacienteId"] = new SelectList(_context.Pacientes, "Id", "Nome", tratamentoSaude.PacienteId);
             return View(tratamentoSaude);
         }
@@ -94,9 +104,6 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
             ViewData["DesafioId"] = new SelectList(_context.DesafiosSaude, "Id", "Nome", tratamentoSaude.DesafioId);
-            ViewData["EfeitoId1"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId1);
-            ViewData["EfeitoId2"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId2);
-            ViewData["EfeitoId3"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId3);
             ViewData["PacienteId"] = new SelectList(_context.Pacientes, "Id", "Nome", tratamentoSaude.PacienteId);
             return View(tratamentoSaude);
         }
@@ -106,7 +113,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,PacienteId,DesafioId,Posologia,Observacao,DataInicial,DataFinal,HoraInicial,intervalo,EfeitoId1,EfeitoId2,EfeitoId3")] TratamentoSaude tratamentoSaude)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,PacienteId,DesafioId,Observacao")] TratamentoSaude tratamentoSaude)
         {
             if (id != tratamentoSaude.Id)
             {
@@ -134,9 +141,6 @@ namespace app_web_backend_Mediquei.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["DesafioId"] = new SelectList(_context.DesafiosSaude, "Id", "Nome", tratamentoSaude.DesafioId);
-            ViewData["EfeitoId1"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId1);
-            ViewData["EfeitoId2"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId2);
-            ViewData["EfeitoId3"] = new SelectList(_context.Set<EfeitoAdverso>(), "Id", "Descricao", tratamentoSaude.EfeitoId3);
             ViewData["PacienteId"] = new SelectList(_context.Pacientes, "Id", "Nome", tratamentoSaude.PacienteId);
             return View(tratamentoSaude);
         }
@@ -151,9 +155,6 @@ namespace app_web_backend_Mediquei.Controllers
 
             var tratamentoSaude = await _context.TratamentosSaude
                 .Include(t => t.DesafioSaude)
-                .Include(t => t.EfeitoAdverso1)
-                .Include(t => t.EfeitoAdverso2)
-                .Include(t => t.EfeitoAdverso3)
                 .Include(t => t.Paciente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (tratamentoSaude == null)

@@ -25,6 +25,12 @@ namespace app_web_backend_Mediquei.Models
         // Migration M03
         public DbSet<ContratosCuidador> ContratosCuidador { get; set; }
 
-        //public DbSet<TratamentoSaude> TratamentosSaude { get; set; }
+        // Migration M04
+        public DbSet<TratamentoSaude> TratamentosSaude { get; set; }
+
+        // Migration M05
+        public DbSet<EfeitoAdverso> EfeitosAdversos { get; set; }
+        public DbSet<TratamentoSaudeDet> TratamentosSaudeDet { get; set; }
+        
     }
 }
