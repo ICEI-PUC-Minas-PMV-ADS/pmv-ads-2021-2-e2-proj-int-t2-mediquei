@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend_Mediquei.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CuidadoresController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -35,6 +37,25 @@ namespace app_web_backend_Mediquei.Controllers
 
             var cuidador = await _context.Cuidadores
                 .Include(c => c.Usuario)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cuidador == null)
+            {
+                return NotFound();
+            }
+
+            return View(cuidador);
+        }
+
+        // GET: Cuidadores/Relatórios/5
+        public async Task<IActionResult> Relatorio(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cuidador = await _context.Cuidadores
+                .Include(c => c.ContratoCuidador)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {
