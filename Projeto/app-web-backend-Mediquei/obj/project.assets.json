@@ -8927,19 +8927,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thain\\.nuget\\packages\\": {}
+    "C:\\Users\\Roberta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thain\\Desktop\\ajuste main\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+      "projectUniqueName": "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
       "projectName": "app-web-backend-Mediquei",
-      "projectPath": "C:\\Users\\thain\\Desktop\\ajuste main\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
-      "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thain\\Desktop\\ajuste main\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\obj\\",
+      "projectPath": "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+      "packagesPath": "C:\\Users\\Roberta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Roberta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9020,7 +9020,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

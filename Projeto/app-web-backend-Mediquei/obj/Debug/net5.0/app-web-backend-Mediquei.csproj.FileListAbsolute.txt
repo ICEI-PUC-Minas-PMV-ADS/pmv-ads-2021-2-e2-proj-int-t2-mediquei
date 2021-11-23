@@ -933,3 +933,6 @@ C:\Users\thain\Desktop\ajuste main\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projet
 C:\Users\thain\Desktop\ajuste main\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.Views.pdb
 C:\Users\thain\Desktop\ajuste main\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.csproj.CopyComplete
 C:\Users\thain\Desktop\ajuste main\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.genruntimeconfig.cache
+C:\Users\Roberta\Source\Repos\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.dll
+C:\Users\Roberta\Source\Repos\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\ref\app-web-backend-Mediquei.dll
+C:\Users\Roberta\Source\Repos\pmv-ads-2021-2-e2-proj-int-t2-mediquei\Projeto\app-web-backend-Mediquei\obj\Debug\net5.0\app-web-backend-Mediquei.pdb
