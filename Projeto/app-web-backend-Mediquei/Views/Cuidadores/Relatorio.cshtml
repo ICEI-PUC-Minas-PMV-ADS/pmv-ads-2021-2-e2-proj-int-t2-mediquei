@@ -4,7 +4,7 @@
     ViewData["Title"] = "Relatorio";
 }
 
-<h1>Cuidador: @Model.Nome</h1>
+<h1>Cuidador: @Model.Nome </h1>
 
 <div>
     <h4>Vigência dos Contratos</h4>
@@ -29,31 +29,37 @@
                 <th>
                     Hora Saída 2
                 </th>
+                <th>
+                    Nome do Paciente
+                </th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model.ContratoCuidador.OrderByDescending(c => c.DataInicial))
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataInicial)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataFinal)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.HoraEntrada1)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.HoraSaida1)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.HoraEntrada2)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.HoraSaida2)
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataFinal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoraEntrada1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoraSaida1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoraEntrada2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoraSaida2)
+                </td>                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Paciente.Nome)
+                </td>
+            </tr>
             }
         </tbody>
     </table>

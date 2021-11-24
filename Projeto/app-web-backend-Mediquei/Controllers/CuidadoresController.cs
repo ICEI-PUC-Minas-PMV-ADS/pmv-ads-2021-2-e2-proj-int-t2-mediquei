@@ -6,11 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using app_web_backend_Mediquei.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace app_web_backend_Mediquei.Controllers
 {
-    [Authorize(Roles = "Admin")]
     public class CuidadoresController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -54,21 +52,22 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
+            //jaque: aqui incluir alguma coisa para conseguir pegar o nome do paciente no relatório de cuidadores, igual feito em TratamentoSaudeDetalhe
             var cuidador = await _context.Cuidadores
-                .Include(c => c.ContratoCuidador)
+                .Include(c => c.ContratoCuidador)                
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {
                 return NotFound();
             }
 
-            return View(cuidador);
+            return View(cuidador);            
         }
 
         // GET: Cuidadores/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome");
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail");
             return View();
         }
 
@@ -85,7 +84,7 @@ namespace app_web_backend_Mediquei.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", cuidador.UserId);
             return View(cuidador);
         }
 
@@ -102,7 +101,7 @@ namespace app_web_backend_Mediquei.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", cuidador.UserId);
             return View(cuidador);
         }
 
@@ -138,7 +137,7 @@ namespace app_web_backend_Mediquei.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "Nome", cuidador.UserId);
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", cuidador.UserId);
             return View(cuidador);
         }
 
