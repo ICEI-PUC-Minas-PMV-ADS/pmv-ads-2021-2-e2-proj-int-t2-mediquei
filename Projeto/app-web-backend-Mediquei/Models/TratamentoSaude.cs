@@ -27,6 +27,7 @@ namespace app_web_backend_Mediquei.Models
         [ForeignKey("DesafioId")]
         public DesafioSaude DesafioSaude { get; set; }
 
+        [Display(Name = "Observação")]
         public string Observacao { get; set; }
 
         public ICollection<TratamentoSaudeDet> TratamentoSaudeDet { get; set; }
