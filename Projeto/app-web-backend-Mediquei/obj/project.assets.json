@@ -8927,19 +8927,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thain\\.nuget\\packages\\": {}
+    "C:\\Users\\ADRIANA\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thain\\Desktop\\ajuste main\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+      "projectUniqueName": "C:\\Users\\ADRIANA\\Documents\\GitHub\\med\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
       "projectName": "app-web-backend-Mediquei",
-      "projectPath": "C:\\Users\\thain\\Desktop\\ajuste main\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
-      "packagesPath": "C:\\Users\\thain\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thain\\Desktop\\ajuste main\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\obj\\",
+      "projectPath": "C:\\Users\\ADRIANA\\Documents\\GitHub\\med\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+      "packagesPath": "C:\\Users\\ADRIANA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADRIANA\\Documents\\GitHub\\med\\Projeto\\app-web-backend-Mediquei\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\thain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADRIANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

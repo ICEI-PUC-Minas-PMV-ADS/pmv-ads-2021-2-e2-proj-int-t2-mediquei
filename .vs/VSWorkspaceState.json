@@ -1,16 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Projeto",
-    "\\Projeto\\app-web-backend-Mediquei",
-    "\\Projeto\\app-web-backend-Mediquei\\Controllers",
-    "\\Projeto\\app-web-backend-Mediquei\\Models",
-    "\\Projeto\\app-web-backend-Mediquei\\Views",
-    "\\Projeto\\app-web-backend-Mediquei\\Views\\Shared",
-    "\\Projeto\\app-web-backend-Mediquei\\wwwroot",
-    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\css",
-    "\\Projeto\\app-web-backend-Mediquei\\wwwroot\\js"
+    ""
   ],
-  "SelectedNode": "\\Projeto\\PaginaAgenda.html",
   "PreviewInSolutionExplorer": false
 }
