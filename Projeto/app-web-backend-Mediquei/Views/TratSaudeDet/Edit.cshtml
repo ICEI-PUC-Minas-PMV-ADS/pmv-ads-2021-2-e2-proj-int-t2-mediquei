@@ -1,0 +1,79 @@
+﻿@model app_web_backend_Mediquei.Models.TratSaudeDet
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TratSaudeDet</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TratSaudeDetId" />
+            <div class="form-group">
+                <label asp-for="MedicamentoId" class="control-label"></label>
+                <select asp-for="MedicamentoId" class="form-control" asp-items="ViewBag.MedicamentoId"></select>
+                <span asp-validation-for="MedicamentoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Posologia" class="control-label"></label>
+                <input asp-for="Posologia" class="form-control" />
+                <span asp-validation-for="Posologia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observacao" class="control-label"></label>
+                <input asp-for="Observacao" class="form-control" />
+                <span asp-validation-for="Observacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataInicial" class="control-label"></label>
+                <input asp-for="DataInicial" class="form-control" />
+                <span asp-validation-for="DataInicial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataFinal" class="control-label"></label>
+                <input asp-for="DataFinal" class="form-control" />
+                <span asp-validation-for="DataFinal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoraInicial" class="control-label"></label>
+                <input asp-for="HoraInicial" class="form-control" />
+                <span asp-validation-for="HoraInicial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="intervalo" class="control-label"></label>
+                <input asp-for="intervalo" class="form-control" />
+                <span asp-validation-for="intervalo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EfeitoId1" class="control-label"></label>
+                <select asp-for="EfeitoId1" class="form-control" asp-items="ViewBag.EfeitoId1"></select>
+                <span asp-validation-for="EfeitoId1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EfeitoId2" class="control-label"></label>
+                <select asp-for="EfeitoId2" class="form-control" asp-items="ViewBag.EfeitoId2"></select>
+                <span asp-validation-for="EfeitoId2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EfeitoId3" class="control-label"></label>
+                <select asp-for="EfeitoId3" class="form-control" asp-items="ViewBag.EfeitoId3"></select>
+                <span asp-validation-for="EfeitoId3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

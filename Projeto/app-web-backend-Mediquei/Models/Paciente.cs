@@ -10,6 +10,11 @@ namespace app_web_backend_Mediquei.Models
     [Table("Pacientes")]
     public class Paciente
     {
+        public Paciente()
+        {
+            this.DesafiosSaude = new HashSet<DesafioSaude>();
+        }
+
         [Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "*Campo obrigatório!")]
@@ -30,6 +35,8 @@ namespace app_web_backend_Mediquei.Models
         
         [Display(Name = "Grau de Parentesco")]
         public GrauParentesco grauParentesco { get; set; }
+
+        public virtual ICollection<DesafioSaude> DesafiosSaude { get; set; }
     }
 
     public enum GrauParentesco
