@@ -32,7 +32,7 @@ namespace app_web_backend_Mediquei.Models
         public DateTime DataInicial { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime DataFinal { get; set; }
+        public Nullable<DateTime> DataFinal { get; set; }
 
         [DataType(DataType.Time)]
         public DateTime HoraEntrada1 { get; set; }
@@ -41,10 +41,10 @@ namespace app_web_backend_Mediquei.Models
         public DateTime HoraSaida1 { get; set; }
 
         [DataType(DataType.Time)]
-        public DateTime HoraEntrada2 { get; set; }
+        public Nullable<DateTime> HoraEntrada2 { get; set; }
 
         [DataType(DataType.Time)]
-        public DateTime HoraSaida2 { get; set; }
+        public Nullable<DateTime> HoraSaida2 { get; set; }
 
     }
 }
