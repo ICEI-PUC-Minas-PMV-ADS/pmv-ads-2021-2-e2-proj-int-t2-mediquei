@@ -36,7 +36,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste | Verifica a possibilidade do usuário cadastrar medicações |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
 |Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Se todos os campos forem preenchidos e os dados salvos uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Minha agenda" o medicamento cadastrado deve ser exibido |
-|Resultados obtidos | Requisito parcialmente atendido -  |
+|Resultados obtidos | Requisito não atendido |
 
 
 |**Caso de Teste** |**CT-04 - Editar Medicação**| 
