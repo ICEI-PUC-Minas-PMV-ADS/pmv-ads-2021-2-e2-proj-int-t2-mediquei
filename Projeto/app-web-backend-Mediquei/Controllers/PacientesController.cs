@@ -158,7 +158,7 @@ namespace app_web_backend_Mediquei.Controllers
             {
                 return NotFound();
             }
-
+            
             if (ModelState.IsValid)
             {
                 try
@@ -195,10 +195,10 @@ namespace app_web_backend_Mediquei.Controllers
                 }
 
                 foreach (var item in paciente.DesafiosSaude)
-                {
+                {                    
                     if (item.Checked)
                     {
-                        _context.TratSaude.Add(new TratSaude() { PacienteId = paciente.Id, DesafioSaudeId = item.IdLookup });
+                        _context.TratSaude.Add(new TratSaude() { PacienteId = paciente.Id, DesafioSaudeId = item.Id });
                     }
                 }
 

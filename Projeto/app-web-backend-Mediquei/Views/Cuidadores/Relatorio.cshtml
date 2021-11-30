@@ -37,6 +37,13 @@
         <tbody>
             @foreach (var item in Model.ContratoCuidador.OrderByDescending(c => c.DataInicial))
             {
+                /*var pac = from c in @Model.Paciente
+                          select new
+                          {
+                              c.Id,
+                              c.Nome
+                          };*/
+
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.DataInicial)
@@ -56,8 +63,8 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.HoraSaida2)
                 </td>                
-                <td>
-                    @Html.DisplayFor(modelItem => item.PacienteId)
+                <td>                    
+                    @Html.DisplayFor(modelItem => item.Paciente.Nome)
                 </td>
             </tr>
             }
