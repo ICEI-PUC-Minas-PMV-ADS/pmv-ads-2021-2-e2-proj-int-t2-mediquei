@@ -4,62 +4,101 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<head>
+    <title>Cadastro Cuidador</title>
 
-<h4>ContratosCuidador</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CuidadorId" class="control-label"></label>
-                <select asp-for="CuidadorId" class ="form-control" asp-items="ViewBag.CuidadorId"></select>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="~/css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="cartao">
+                <div class="card-header">
+                    <h3>Cadastrar Contrato</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="CuidadorId" class="control-label"></label>
+                                    <select asp-for="CuidadorId" class="form-control" asp-items="ViewBag.CuidadorId"></select>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="PacienteId" class="control-label"></label>
+                                    <select asp-for="PacienteId" class="form-control" asp-items="ViewBag.PacienteId"></select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="DataInicial" class="control-label">Data Inicial</label>
+                                    <input asp-for="DataInicial" class="form-control input-sm" placeholder="Data Inicial" />
+                                    <span asp-validation-for="DataInicial" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="DataFinal" class="control-label">Data Final</label>
+                                    <input asp-for="DataFinal" class="form-control input-sm" placeholder="Data Final" />
+                                    <span asp-validation-for="DataFinal" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="HoraEntrada1" class="control-label"> Hora Entrada</label>
+                                    <input asp-for="HoraEntrada1" class="form-control input-sm" />
+                                    <span asp-validation-for="HoraEntrada1" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="HoraSaida1" class="control-label"> Hora Saida</label>
+                                    <input asp-for="HoraSaida1" class="form-control input-sm" />
+                                    <span asp-validation-for="HoraSaida1" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="HoraEntrada2" class="control-label"> Hora Entrada</label>
+                                    <input asp-for="HoraEntrada2" class="form-control input-sm" />
+                                    <span asp-validation-for="HoraEntrada1" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="HoraSaida2" class="control-label"> Hora Saida</label>
+                                    <input asp-for="HoraSaida2" class="form-control input-sm" />
+                                    <span asp-validation-for="HoraSaida1" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="form-group">
+                            <a class="btn btn-info" asp-controller="Home" asp-action="Index">Voltar</a>
+                            <input type="submit" value="Cadastrar" class="btn float-right login_btn" />
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PacienteId" class="control-label"></label>
-                <select asp-for="PacienteId" class ="form-control" asp-items="ViewBag.PacienteId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataInicial" class="control-label"></label>
-                <input asp-for="DataInicial" class="form-control" />
-                <span asp-validation-for="DataInicial" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataFinal" class="control-label"></label>
-                <input asp-for="DataFinal" class="form-control" />
-                <span asp-validation-for="DataFinal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="HoraEntrada1" class="control-label"></label>
-                <input asp-for="HoraEntrada1" class="form-control" />
-                <span asp-validation-for="HoraEntrada1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="HoraSaida1" class="control-label"></label>
-                <input asp-for="HoraSaida1" class="form-control" />
-                <span asp-validation-for="HoraSaida1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="HoraEntrada2" class="control-label"></label>
-                <input asp-for="HoraEntrada2" class="form-control" />
-                <span asp-validation-for="HoraEntrada2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="HoraSaida2" class="control-label"></label>
-                <input asp-for="HoraSaida2" class="form-control" />
-                <span asp-validation-for="HoraSaida2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+</body>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

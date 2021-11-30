@@ -13,6 +13,14 @@ html, body {
     align-content: center;
 }
 
+.cartao {
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1300px;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
 .card {
     height: 360px;
     margin-top: auto;
@@ -23,6 +31,14 @@ html, body {
 
 .card2 {
     height: 420px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.card3 {
+    height: 320px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
@@ -76,7 +92,7 @@ input:focus {
 .login_btn {
     color: black;
     background-color: #FFC312;
-    width: 100px;
+    card-header width: 100px;
 }
 
     .login_btn:hover {
