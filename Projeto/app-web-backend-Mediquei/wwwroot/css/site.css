@@ -1,6 +1,19 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+<style >
+@import url(tiny.css) (min-width:300px);
+@import url(small.css) (min-width:600px);
+@import url(big.css) (min-width:900px);
+</style >
+@media screen and (max-width: 300px) {
+    /* estilos */
+}
+
+@media screen and (max-width: 600px) {
+    /* Estilos */
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
