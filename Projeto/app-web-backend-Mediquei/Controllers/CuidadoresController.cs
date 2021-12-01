@@ -52,39 +52,14 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
-            //jaque: aqui incluir alguma coisa para conseguir pegar o nome do paciente no relatório de cuidadores, igual feito em TratamentoSaudeDetalhe
+            //jaque: para pegar o nome do paciente no relatório de cuidadores, fazer o .Include(c => c.ContratoCuidador).ThenInclude(c=>c.Paciente) que funciona como um join
             var cuidador = await _context.Cuidadores
-                .Include(c => c.ContratoCuidador)    
+                .Include(c => c.ContratoCuidador).ThenInclude(c=>c.Paciente)    
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {
                 return NotFound();
-            }
-
-            //jaque: tentativa de fazer um select em paciente para retornar o nome
-            /*var pac = await _context.Pacientes.FindAsync(1);
-            if (pac == null)
-            {
-                return NotFound();
-            }
-            ViewData["PacienteId"] = new SelectList(_context.Pacientes, "Id", "Nome", 1);
-            */
-
-            /*var pac = from c in _context.Pacientes
-                      select new
-                            {
-                                c.Id,
-                                c.Nome                                
-                            };
-            ViewData["PacienteId"] = new SelectList(pac, "Id", "Nome");*/
-
-            var paciente = await _context.Pacientes.FindAsync(id);
-            if (paciente == null)
-            {
-                return NotFound();
-            }
-            //ViewData["PacienteIdTodos"] = new SelectList(_context.Pacientes, "Id", "Nome", 2);
-            //ViewData["PacienteId"] = new SelectList(_context.Pacientes, "Id", "Nome",contratosCuidador.PacienteId);
+            }          
 
             return View(cuidador);            
         }
