@@ -18,14 +18,6 @@ namespace app_web_backend_Mediquei.Models
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         public Usuario Usuario { get; set; }
-
-        /* Criando a chave estrangeira para familiar */
-        [Display(Name = "Familiar")]
-        public int FamiliarId { get; set; }
-        [ForeignKey("FamiliarId")]
-        public Familiar Familiar { get; set; }
-        public GrauParentesco grauParentesco { get; set; }
-
-        public List<CheckBoxViewModel> DesafiosSaude { get; set; }        
+        public List<CheckBoxViewModel> CheckBoxTratSaude { get; set; }        
     }
 }

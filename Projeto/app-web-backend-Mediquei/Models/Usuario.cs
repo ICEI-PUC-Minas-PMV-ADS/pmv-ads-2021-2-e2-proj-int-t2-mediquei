@@ -37,7 +37,6 @@ namespace app_web_backend_Mediquei.Models
     {
         Admin,
         Paciente,
-        Cuidador,
-        Familiar        
+        Cuidador                
     }
 }

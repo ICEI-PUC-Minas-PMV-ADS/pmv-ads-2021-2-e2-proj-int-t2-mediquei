@@ -38,5 +38,10 @@ namespace app_web_backend_Mediquei.Models
         // Migration M07
         public DbSet<TratSaudeDet> TratSaudeDet { get; set; }
 
+        // Migration M09
+        // inclusão do campo checked em TratSaude
+
+        //Migration M10
+        // Retirada dos campos FamiliarId e grauParentesco de Pacientes
     }
 }

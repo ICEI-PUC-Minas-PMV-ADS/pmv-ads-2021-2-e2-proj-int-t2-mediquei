@@ -23,10 +23,9 @@ namespace app_web_backend_Mediquei.Models
         public virtual DesafioSaude DesafioSaude { get; set; }
         public virtual Paciente Paciente { get; set; }
 
-        [Display(Name = "Observação")]
-        public string Observacao { get; set; }
+        public bool Checked { get; set; }
 
         public ICollection<TratSaudeDet> TratSaudeDet { get; set; }
 
-    }
+    }  
 }
