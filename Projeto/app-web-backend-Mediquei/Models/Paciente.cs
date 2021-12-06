@@ -25,33 +25,7 @@ namespace app_web_backend_Mediquei.Models
         [Required(ErrorMessage = "*Campo Obrigatório")]
         public int UserId { get; set; }
         [ForeignKey("UserId")]
-        public Usuario Usuario { get; set; }
-
-        /* Criando a chave estrangeira para familiar */
-        [Display(Name = "Familiar")]
-        public int FamiliarId { get; set; }
-        [ForeignKey("FamiliarId")]
-        public Familiar Familiar { get; set; }
-        
-        [Display(Name = "Grau de Parentesco")]
-        public GrauParentesco grauParentesco { get; set; }
-
+        public Usuario Usuario { get; set; }        
         public virtual ICollection<DesafioSaude> DesafiosSaude { get; set; }
-    }
-
-    public enum GrauParentesco
-    {
-        Pai,
-        Mae,
-        Filho,
-        Filha,
-        Sobrinho,
-        Sobrinha,
-        Enteado,
-        Enteada,
-        Sogro,
-        Sogra,
-        Irmão,
-        Irmã
     }
 }
