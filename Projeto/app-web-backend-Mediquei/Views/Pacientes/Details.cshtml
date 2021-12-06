@@ -4,10 +4,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Detalhes do Paciente/Desafio</h1>
+<h3>Detalhes do Paciente</h3>
 
 <div>
-    <h4>Paciente</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -34,29 +33,9 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.grauParentesco)
         </dd>
-        <dt>@Html.DisplayNameFor(model => model.DesafiosSaude)</dt>
-        <dd>
-            @if (Model.DesafiosSaude != null)
-            {
-                foreach (var item in Model.DesafiosSaude)
-                {
-                    if (item.Checked)
-                    {
-                        <div>
-                            <span class="glyphicon glyphicon-list-alt"></span><Text>&nbsp;</Text>
-                            @item.Nome
-                        </div>
-                    }
-                }
-            }
-            else
-            {
-                <span class="glyphicon glyphicon-list-alt"></span><text>Sem Cursos Registrados</Text>
-            }
-        </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a href=/Pacientes/Edit/2 type="button" class="btn btn-secondary">Voltar</a>
+    <a href=/Pacientes type="button" class="btn btn-secondary">Voltar</a>
 </div>
