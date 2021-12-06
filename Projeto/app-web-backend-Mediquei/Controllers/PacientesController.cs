@@ -203,14 +203,24 @@ namespace app_web_backend_Mediquei.Controllers
                         //var tr = _context.TratSaude.FindAsync(trat);
 
                         //quando executa esse comando, sempre cria novo registro na tabela
-                        _context.TratSaude.Update(new TratSaude()
+                        /*_context.TratSaude.Update(new TratSaude()
                         {
+                            //TratSaudeId = trat.
                             PacienteId = pacientevm.Id,
                             DesafioSaudeId = item.IdLookup,
                             Checked = item.Checked
-                            
-                        });                        
-                    }
+
+                        });*/
+                        foreach (var item2 in trat)
+                        {                            
+                            _context.TratSaude.Update(new TratSaude()
+                            {                                
+                                PacienteId = pacientevm.Id,
+                                DesafioSaudeId = item.IdLookup,
+                                Checked = item.Checked
+
+                            });
+                        };
                     else
                     {
                         if (item.Checked)
