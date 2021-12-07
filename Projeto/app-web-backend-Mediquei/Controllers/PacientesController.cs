@@ -184,43 +184,21 @@ namespace app_web_backend_Mediquei.Controllers
 
                 foreach (var item in pacientevm.CheckBoxTratSaude)
                 {
-
-                    //jaqueline: esse add está inserindo dados na TratSaude indefinidamente. Continuar tratando aqui
                     if (TratSaudeExists(pacientevm.Id, item.IdLookup))
                     {
-                        //jaque aqui
-                        // tentativa 1
-                        //var trat = _context.TratSaude.
-                        //    Where(t => t.PacienteId == pacientevm.Id && t.DesafioSaudeId == item.IdLookup);
-
-
-
-                        // tentativa 2
-                        var trat = from t in _context.TratSaude
+                        var qryTratSaudeId = from t in _context.TratSaude
                                    .Where(t => t.PacienteId == pacientevm.Id && t.DesafioSaudeId == item.IdLookup)
-                                   select new { t.TratSaudeId };
+                                   select new { t.TratSaudeId };                        
 
-                        //var tr = _context.TratSaude.FindAsync(trat);
-
-                        //quando executa esse comando, sempre cria novo registro na tabela
-                        /*_context.TratSaude.Update(new TratSaude()
+                        foreach (var item2 in qryTratSaudeId)
                         {
-                            //TratSaudeId = trat.
-                            PacienteId = pacientevm.Id,
-                            DesafioSaudeId = item.IdLookup,
-                            Checked = item.Checked
+                            var tratsaude = await _context.TratSaude.FindAsync(item2.TratSaudeId);
 
-                        });*/
-                        foreach (var item2 in trat)
-                        {                            
-                            _context.TratSaude.Update(new TratSaude()
-                            {                                
-                                PacienteId = pacientevm.Id,
-                                DesafioSaudeId = item.IdLookup,
-                                Checked = item.Checked
+                            tratsaude.Checked = item.Checked;
+                            _context.Update(tratsaude);
+                        }
 
-                            });
-                        };
+                    }
                     else
                     {
                         if (item.Checked)
@@ -235,8 +213,7 @@ namespace app_web_backend_Mediquei.Controllers
                     }
 
                     try
-                    {
-                        //_context.Update(tratsaude);
+                    {                        
                         await _context.SaveChangesAsync();
                     }
                     catch (DbUpdateConcurrencyException)
