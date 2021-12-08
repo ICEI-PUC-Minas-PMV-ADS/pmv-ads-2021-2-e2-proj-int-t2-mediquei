@@ -54,7 +54,7 @@ namespace app_web_backend_Mediquei.Controllers
 
             //jaque: aqui incluir alguma coisa para conseguir pegar o nome do paciente no relatório de cuidadores, igual feito em TratamentoSaudeDetalhe
             var cuidador = await _context.Cuidadores
-                .Include(c => c.ContratoCuidador)                
+                .Include(c => c.ContratoCuidador).ThenInclude(c => c.Paciente)                
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {

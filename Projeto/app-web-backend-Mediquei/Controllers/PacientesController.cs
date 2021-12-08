@@ -21,7 +21,7 @@ namespace app_web_backend_Mediquei.Controllers
         // GET: Pacientes
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Pacientes.Include(p => p.Familiar).Include(p => p.Usuario);
+            var applicationDbContext = _context.Pacientes.Include(p => p.Usuario);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -34,7 +34,6 @@ namespace app_web_backend_Mediquei.Controllers
             }
 
             var paciente = await _context.Pacientes
-                .Include(p => p.Familiar)
                 .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (paciente == null)
@@ -49,7 +48,7 @@ namespace app_web_backend_Mediquei.Controllers
                                 c.Nome,
                                 Checked = ((from ce in _context.TratSaude
                                             where (ce.PacienteId == id) & (ce.DesafioSaudeId == c.Id)
-                                            select ce).Count() > 0)
+                                            select ce.Checked).Count() > 0)
                             };
 
             var pacienteViewModel = new PacientesViewModel();
@@ -57,17 +56,20 @@ namespace app_web_backend_Mediquei.Controllers
             pacienteViewModel.Id = id.Value;
             pacienteViewModel.Nome = paciente.Nome;
             pacienteViewModel.UserId = paciente.UserId;
-            pacienteViewModel.FamiliarId = paciente.FamiliarId;
-            pacienteViewModel.grauParentesco = paciente.grauParentesco;
 
-            var checkboxListDesafios = new List<CheckBoxViewModel>();
+            var checkboxListTratSaude = new List<CheckBoxViewModel>();
 
             foreach (var item in TratSaude)
             {
-                checkboxListDesafios.Add(new CheckBoxViewModel { IdLookup = item.Id, Nome = item.Nome, Checked = item.Checked });
+                checkboxListTratSaude.Add(new CheckBoxViewModel
+                {
+                    IdLookup = item.Id,
+                    Nome = item.Nome,
+                    Checked = item.Checked
+                });
             }
 
-            pacienteViewModel.DesafiosSaude = checkboxListDesafios;
+            pacienteViewModel.CheckBoxTratSaude = checkboxListTratSaude;
 
             return View(pacienteViewModel);
             //return View(paciente);
@@ -76,7 +78,6 @@ namespace app_web_backend_Mediquei.Controllers
         // GET: Pacientes/Create
         public IActionResult Create()
         {
-            ViewData["FamiliarId"] = new SelectList(_context.Familiares, "Id", "Nome");
             ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail");
             return View();
         }
@@ -86,7 +87,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,UserId,FamiliarId,grauParentesco")] Paciente paciente)
+        public async Task<IActionResult> Create([Bind("Id,Nome,UserId")] Paciente paciente)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +95,6 @@ namespace app_web_backend_Mediquei.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FamiliarId"] = new SelectList(_context.Familiares, "Id", "Nome", paciente.FamiliarId);
             ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", paciente.UserId);
             return View(paciente);
         }
@@ -118,29 +118,28 @@ namespace app_web_backend_Mediquei.Controllers
                                 c.Id,
                                 c.Nome,
                                 Checked = ((from ce in _context.TratSaude
-                                            where (ce.PacienteId == id) & (ce.DesafioSaudeId == c.Id)
-                                            select ce).Count() > 0)
+                                            where (ce.PacienteId == id) & (ce.DesafioSaudeId == c.Id) &
+                                            (ce.Checked == true)
+                                            select ce.Checked).Count() > 0)
+
 
                             };
             var pacienteViewModel = new PacientesViewModel();
             pacienteViewModel.Id = id.Value;
             pacienteViewModel.Nome = paciente.Nome;
-            pacienteViewModel.FamiliarId = paciente.FamiliarId;
             pacienteViewModel.UserId = paciente.UserId;
-            pacienteViewModel.grauParentesco = paciente.grauParentesco;
-            var checkboxListDesafios = new List<CheckBoxViewModel>();
+            var checkboxListTratSaude = new List<CheckBoxViewModel>();
 
             foreach (var item in TratSaude)
             {
-                checkboxListDesafios.Add(new CheckBoxViewModel
+                checkboxListTratSaude.Add(new CheckBoxViewModel
                 {
                     IdLookup = item.Id,
                     Nome = item.Nome,
                     Checked = item.Checked
                 });
             }
-            pacienteViewModel.DesafiosSaude = checkboxListDesafios;
-            ViewData["FamiliarId"] = new SelectList(_context.Familiares, "Id", "Nome", paciente.FamiliarId);
+            pacienteViewModel.CheckBoxTratSaude = checkboxListTratSaude;
             ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", paciente.UserId);
 
             return View(pacienteViewModel);
@@ -151,16 +150,21 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,UserId,FamiliarId,grauParentesco")] PacientesViewModel paciente)
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,UserId,FamiliarId,grauParentesco")] Paciente paciente)
+        // Alterando o método Edit/Post para salvar a seleção feita pelo usuário para os desafios de saúde
+        public async Task<IActionResult> Edit(int id, PacientesViewModel pacientevm)
         {
-            if (id != paciente.Id)
+
+            if (id != pacientevm.Id)
             {
                 return NotFound();
             }
 
             if (ModelState.IsValid)
             {
+                var paciente = await _context.Pacientes.FindAsync(id);
+                paciente.Nome = pacientevm.Nome;
+                paciente.UserId = pacientevm.UserId;
+
                 try
                 {
                     _context.Update(paciente);
@@ -178,74 +182,53 @@ namespace app_web_backend_Mediquei.Controllers
                     }
                 }
 
-                /**** jaque - AQUI SALVA AS ALTERAÇÕES DO CHECKBOX DE DOENÇAS, MAS NÃO ESTÁ FUNCIONANDO****/
-                /*var pacienteSelecionado = _context.Pacientes.Find(paciente.Id);
-
-                pacienteSelecionado.Nome = paciente.Nome;
-                pacienteSelecionado.UserId = paciente.UserId;
-                pacienteSelecionado.FamiliarId = paciente.FamiliarId;
-                pacienteSelecionado.grauParentesco = paciente.grauParentesco;
-
-                foreach (var item in _context.TratSaude)
+                foreach (var item in pacientevm.CheckBoxTratSaude)
                 {
-                    if (item.PacienteId == paciente.Id)
+                    if (TratSaudeExists(pacientevm.Id, item.IdLookup))
                     {
-                        _context.Entry(item).State = EntityState.Deleted;
+                        var qryTratSaudeId = from t in _context.TratSaude
+                                   .Where(t => t.PacienteId == pacientevm.Id && t.DesafioSaudeId == item.IdLookup)
+                                             select new { t.TratSaudeId };
+
+                        foreach (var item2 in qryTratSaudeId)
+                        {
+                            var tratsaude = await _context.TratSaude.FindAsync(item2.TratSaudeId);
+
+                            tratsaude.Checked = item.Checked;
+                            _context.Update(tratsaude);
+                        }
+
+                    }
+                    else
+                    {
+                        if (item.Checked)
+                        {
+                            _context.TratSaude.Add(new TratSaude()
+                            {
+                                PacienteId = pacientevm.Id,
+                                DesafioSaudeId = item.IdLookup,
+                                Checked = item.Checked
+                            });
+                        }
+                    }
+
+                    try
+                    {
+                        await _context.SaveChangesAsync();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        throw;
                     }
                 }
 
-                foreach (var item in paciente.DesafiosSaude)
-                {
-                    if (item.Checked)
-                    {
-                        _context.TratSaude.Add(new TratSaude() { PacienteId = paciente.Id, DesafioSaudeId = item.IdLookup });
-                    }
-                }
-
-                _context.SaveChanges();*/
+                _context.SaveChanges();
 
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FamiliarId"] = new SelectList(_context.Familiares, "Id", "Nome", paciente.FamiliarId);
-            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", paciente.UserId);
-            return View(paciente);
+            ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", pacientevm.UserId);
+            return View(pacientevm);
         }
-
-        // POST: Pacientes/Edit/5
-        /*public ActionResult Edit(PacientesViewModel paciente)//[Bind(Include = "EstudanteId,Nome,Idade,Sexo")] Estudante estudante)
-        {
-            if (ModelState.IsValid)
-            {
-                var pacienteSelecionado = _context.Pacientes.Find(paciente.Id);
-
-                pacienteSelecionado.Nome = paciente.Nome;
-                pacienteSelecionado.UserId = paciente.UserId;
-                pacienteSelecionado.FamiliarId = paciente.FamiliarId;
-                pacienteSelecionado.grauParentesco = paciente.grauParentesco;
-
-                foreach (var item in _context.TratSaude)
-                {
-                    if (item.PacienteId == paciente.Id)
-                    {
-                        _context.Entry(item).State = EntityState.Deleted;
-                    }
-                }
-
-                foreach (var item in paciente.DesafiosSaude)
-                {
-                    if (item.Checked)
-                    {
-                        _context.TratSaude.Add(new TratSaude() { PacienteId = paciente.Id, DesafioSaudeId = item.IdLookup });
-                    }
-                }
-
-                //db.Entry(estudante).State = EntityState.Modified;
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(paciente);
-        }*/
-
 
         // GET: Pacientes/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -256,7 +239,6 @@ namespace app_web_backend_Mediquei.Controllers
             }
 
             var paciente = await _context.Pacientes
-                .Include(p => p.Familiar)
                 .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (paciente == null)
@@ -282,6 +264,12 @@ namespace app_web_backend_Mediquei.Controllers
         {
             return _context.Pacientes.Any(e => e.Id == id);
         }
+
+        private bool TratSaudeExists(int idPaciente, int idDesafio)
+        {
+            return _context.TratSaude.Any(e => e.PacienteId == idPaciente & e.DesafioSaudeId == idDesafio);
+        }
+
     }
 }
 

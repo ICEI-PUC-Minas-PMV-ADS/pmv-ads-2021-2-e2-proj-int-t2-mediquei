@@ -35,14 +35,14 @@
             <div class="form-group">                
                 <h4>Desafios de Saúde</h4>
                 <div class="col-md-10">
-                    @for (int i = 0; i < Model.DesafiosSaude.Count(); i++)
+                    @for (int i = 0; i < Model.CheckBoxTratSaude.Count(); i++)
                     {
-                        @Html.EditorFor(m => Model.DesafiosSaude[i].Checked)<text>&nbsp;</text>
-                        @Html.DisplayFor(m => Model.DesafiosSaude[i].Nome)<text>&nbsp;</text>
+                        @Html.EditorFor(m => Model.CheckBoxTratSaude[i].Checked)<text>&nbsp;</text>
+                        @Html.DisplayFor(m => Model.CheckBoxTratSaude[i].Nome)<text>&nbsp;</text>
                         //<a asp-action="ViewTratSaudeDet" asp-route-id="@Model.Id">TratSaudeDet</a>
                         <br />
-                        @Html.HiddenFor(m => Model.DesafiosSaude[i].Nome)
-                        @Html.HiddenFor(m => Model.DesafiosSaude[i].IdLookup)                        
+                        @Html.HiddenFor(m => Model.CheckBoxTratSaude[i].Nome)
+                        @Html.HiddenFor(m => Model.CheckBoxTratSaude[i].IdLookup)                        
                     }
                 </div>
             </div>

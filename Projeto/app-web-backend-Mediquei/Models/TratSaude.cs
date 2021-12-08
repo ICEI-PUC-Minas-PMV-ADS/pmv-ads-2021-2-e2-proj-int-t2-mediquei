@@ -26,6 +26,8 @@ namespace app_web_backend_Mediquei.Models
         [Display(Name = "Observação")]
         public string Observacao { get; set; }
 
+        public bool Checked { get; set; }
+
         public ICollection<TratSaudeDet> TratSaudeDet { get; set; }
 
     }

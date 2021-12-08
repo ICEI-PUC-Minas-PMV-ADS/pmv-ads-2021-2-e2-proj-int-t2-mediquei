@@ -26,6 +26,6 @@ namespace app_web_backend_Mediquei.Models
         public Familiar Familiar { get; set; }
         public GrauParentesco grauParentesco { get; set; }
 
-        public List<CheckBoxViewModel> DesafiosSaude { get; set; }        
+        public List<CheckBoxViewModel> CheckBoxTratSaude { get; set; }        
     }
 }
