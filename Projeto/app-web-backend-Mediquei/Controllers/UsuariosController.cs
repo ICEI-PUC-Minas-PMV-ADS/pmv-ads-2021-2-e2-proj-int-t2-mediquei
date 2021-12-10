@@ -128,6 +128,38 @@ namespace app_web_backend_Mediquei.Controllers
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
+                
+                if((usuario.Perfil == Perfil.Paciente) ||
+                   (usuario.Perfil == Perfil.Cuidador))
+                {
+                    if (usuario.Perfil == Perfil.Paciente)
+                    {
+                        _context.Pacientes.Add(new Paciente()
+                        {
+                            UserId = usuario.Id,
+                            Nome = usuario.Nome
+                        });
+                    }
+                    else
+                    {
+                        _context.Cuidadores.Add(new Cuidador()
+                        {
+                            UserId = usuario.Id,
+                            Nome = usuario.Nome
+                        });
+                    }
+
+                    try
+                    {
+                        await _context.SaveChangesAsync();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        throw;
+                    }
+                }
+
+                
                 return RedirectToAction(nameof(Index));
             }
             return View(usuario);
@@ -218,5 +250,6 @@ namespace app_web_backend_Mediquei.Controllers
         {
             return _context.Usuarios.Any(e => e.Id == id);
         }
+
     }
 }
