@@ -1,0 +1,47 @@
+﻿@model IEnumerable<app_web_backend_Mediquei.Models.TratamentoSaude>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Tratamentos de Saúde</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesafioSaude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paciente.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesafioSaude.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observacao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                <a asp-action="TratamentoSaudeDetalhe" asp-route-id="@item.Id">Detalhes do tratamento</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

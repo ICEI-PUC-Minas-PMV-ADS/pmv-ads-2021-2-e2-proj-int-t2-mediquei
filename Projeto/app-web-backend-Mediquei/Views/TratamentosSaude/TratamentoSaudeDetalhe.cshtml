@@ -1,0 +1,111 @@
+﻿@model app_web_backend_Mediquei.Models.TratamentoSaude
+
+@{
+    ViewData["Title"] = "TratamentoSaudeDetalhe";
+}
+
+
+<div>
+    <h4>Tratamento de Saude: </h4>    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Paciente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Paciente.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesafioSaude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesafioSaude.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Observacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Observacao)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Detalhes do tratamento</h4>
+    <a asp-controller="TratamentosSaudeDet" asp-action="Create" asp-route-id="@Model.Id">Create</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Data Inicial
+                </th>
+                <th>
+                    Data Final
+                </th>
+                <th>
+                    Medicamento
+                </th>
+                <th>
+                    Posologia
+                </th>
+                <th>
+                    Observação
+                </th>
+                <th>
+                    Hora Inicial
+                </th>
+                <th>
+                    Intervalo
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.TratamentoSaudeDet.OrderByDescending(c => c.DataInicial))
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataFinal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Medicamento.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Posologia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Observacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoraInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intervalo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EfeitoAdverso1.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EfeitoAdverso2.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EfeitoAdverso3.Descricao)
+                </td>
+
+                <td>
+                    <a asp-controller="TratamentosSaudeDet" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-controller="TratamentosSaudeDet" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div>    
+    <a asp-action="Index">Voltar para a lista de Tratamentos</a>
+</div>

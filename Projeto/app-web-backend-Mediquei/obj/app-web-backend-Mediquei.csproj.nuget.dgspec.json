@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosPUC\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj": {}
+    "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosPUC\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj": {
+    "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosPUC\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+        "projectUniqueName": "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
         "projectName": "app-web-backend-Mediquei",
-        "projectPath": "C:\\ProjetosPUC\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
-        "packagesPath": "C:\\Users\\Jaqueline Poletto\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosPUC\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\obj\\",
+        "projectPath": "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\app-web-backend-Mediquei.csproj",
+        "packagesPath": "C:\\Users\\Roberta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roberta\\Source\\Repos\\pmv-ads-2021-2-e2-proj-int-t2-mediquei\\Projeto\\app-web-backend-Mediquei\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jaqueline Poletto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Roberta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,23 +44,31 @@
               "target": "Package",
               "version": "[4.0.2, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer.Design": {
               "target": "Package",
@@ -70,7 +78,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
