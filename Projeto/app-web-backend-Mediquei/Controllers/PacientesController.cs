@@ -22,6 +22,17 @@ namespace app_web_backend_Mediquei.Controllers
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Pacientes.Include(p => p.Usuario);
+
+            if (!User.IsInRole("Admin"))
+            {
+                // Visualizar apenas o paciente associado ao usuário
+                var id = User.Claims.ElementAt(2).Value;                
+                applicationDbContext =
+                       _context.Pacientes
+                       .Where(d => d.UserId.ToString() == id)
+                       .Include(p => p.Usuario);
+            }
+
             return View(await applicationDbContext.ToListAsync());
         }
 
