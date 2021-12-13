@@ -20,9 +20,21 @@ namespace app_web_backend_Mediquei.Controllers
 
         // GET: Cuidadores
         public async Task<IActionResult> Index()
-        {
+        {            
             var applicationDbContext = _context.Cuidadores.Include(c => c.Usuario);
+            
+            if(!User.IsInRole("Admin"))
+            {
+                // Visualizar apenas o cuidador associado ao usuário
+                var id = User.Claims.ElementAt(2).Value;                
+                applicationDbContext =
+                       _context.Cuidadores
+                       .Where(d => d.UserId.ToString() == id)  
+                       .Include(c => c.Usuario);
+            }           
+                   
             return View(await applicationDbContext.ToListAsync());
+
         }
 
         // GET: Cuidadores/Details/5
