@@ -4,9 +4,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>Paciente</h4>
+<h3>Adicionar Paciente</h3>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,26 +18,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>
-                <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="FamiliarId" class="control-label"></label>
-                <select asp-for="FamiliarId" class ="form-control" asp-items="ViewBag.FamiliarId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="grauParentesco" class="control-label"></label>                
-                <select asp-for="grauParentesco" class="form-control" asp-items="Html.GetEnumSelectList<GrauParentesco>()"></select>
-                <span asp-validation-for="grauParentesco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a href=/Pacientes type="button" class="btn btn-secondary">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

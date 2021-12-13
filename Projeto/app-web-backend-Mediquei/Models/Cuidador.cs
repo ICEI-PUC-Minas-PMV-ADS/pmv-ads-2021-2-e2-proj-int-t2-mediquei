@@ -22,6 +22,6 @@ namespace app_web_backend_Mediquei.Models
         [ForeignKey("UserId")]
         public Usuario Usuario { get; set; }
 
-        public ICollection<ContratosCuidador> ContratoCuidador  { get; set; }
+        public ICollection<ContratosCuidador> ContratoCuidador  { get; set; } 
     }
 }

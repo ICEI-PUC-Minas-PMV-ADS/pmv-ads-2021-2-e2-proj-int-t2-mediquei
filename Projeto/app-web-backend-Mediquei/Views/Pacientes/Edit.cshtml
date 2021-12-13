@@ -1,13 +1,11 @@
-﻿@model app_web_backend_Mediquei.Models.Paciente
+﻿@model app_web_backend_Mediquei.Models.PacientesViewModel
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h3>Editar Paciente/Desafio Saúde</h3>
 
-<h4>Paciente</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -23,25 +21,28 @@
                 <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FamiliarId" class="control-label"></label>
-                <select asp-for="FamiliarId" class="form-control" asp-items="ViewBag.FamiliarId"></select>
-                <span asp-validation-for="FamiliarId" class="text-danger"></span>
+
+            <div class="form-group">                
+                <h4>Desafios de Saúde</h4>
+                <div class="col-md-10">
+                    @for (int i = 0; i < Model.CheckBoxTratSaude.Count(); i++)
+                    {
+                        @Html.EditorFor(m => Model.CheckBoxTratSaude[i].Checked)<text>&nbsp;</text>
+                        @Html.DisplayFor(m => Model.CheckBoxTratSaude[i].Nome)<text>&nbsp;</text>
+                        //<a asp-action="ViewTratSaudeDet" asp-route-id="@Model.Id">TratSaudeDet</a>
+                        <br />
+                        @Html.HiddenFor(m => Model.CheckBoxTratSaude[i].Nome)
+                        @Html.HiddenFor(m => Model.CheckBoxTratSaude[i].IdLookup)                        
+                    }
+                </div>
             </div>
+
             <div class="form-group">
-                <label asp-for="grauParentesco" class="control-label"></label>                
-                <select asp-for="grauParentesco" class="form-control" asp-items="Html.GetEnumSelectList<GrauParentesco>()"></select>
-                <span asp-validation-for="grauParentesco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a href=/Pacientes type="button" class="btn btn-secondary">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

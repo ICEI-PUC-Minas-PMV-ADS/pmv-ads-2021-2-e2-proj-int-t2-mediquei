@@ -19,6 +19,21 @@ namespace app_web_backend_Mediquei.Migrations
                 .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("DesafioSaudePaciente", b =>
+                {
+                    b.Property<int>("DesafiosSaudeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PacientesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DesafiosSaudeId", "PacientesId");
+
+                    b.HasIndex("PacientesId");
+
+                    b.ToTable("DesafioSaudePaciente");
+                });
+
             modelBuilder.Entity("app_web_backend_Mediquei.Models.ContratosCuidador", b =>
                 {
                     b.Property<int>("Id")
@@ -29,7 +44,7 @@ namespace app_web_backend_Mediquei.Migrations
                     b.Property<int>("CuidadorId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("DataFinal")
+                    b.Property<DateTime?>("DataFinal")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataInicial")
@@ -38,13 +53,13 @@ namespace app_web_backend_Mediquei.Migrations
                     b.Property<DateTime>("HoraEntrada1")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("HoraEntrada2")
+                    b.Property<DateTime?>("HoraEntrada2")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("HoraSaida1")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("HoraSaida2")
+                    b.Property<DateTime?>("HoraSaida2")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("PacienteId")
@@ -156,9 +171,6 @@ namespace app_web_backend_Mediquei.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("FamiliarId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -166,66 +178,61 @@ namespace app_web_backend_Mediquei.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<int>("grauParentesco")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("FamiliarId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Pacientes");
                 });
 
-            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratamentoSaude", b =>
+            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratSaude", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TratSaudeId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("DesafioId")
-                        .HasColumnType("int");
+                    b.Property<bool>("Checked")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("Observacao")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("DesafioSaudeId")
+                        .HasColumnType("int");
 
                     b.Property<int>("PacienteId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("TratSaudeId");
 
-                    b.HasIndex("DesafioId");
+                    b.HasIndex("DesafioSaudeId");
 
                     b.HasIndex("PacienteId");
 
-                    b.ToTable("TratamentosSaude");
+                    b.ToTable("TratSaude");
                 });
 
-            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratamentoSaudeDet", b =>
+            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratSaudeDet", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TratSaudeDetId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("DataFinal")
+                    b.Property<DateTime?>("DataFinal")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataInicial")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("EfeitoId1")
+                    b.Property<int?>("EfeitoId1")
                         .HasColumnType("int");
 
-                    b.Property<int>("EfeitoId2")
+                    b.Property<int?>("EfeitoId2")
                         .HasColumnType("int");
 
-                    b.Property<int>("EfeitoId3")
+                    b.Property<int?>("EfeitoId3")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("HoraInicial")
+                    b.Property<DateTime?>("HoraInicial")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("MedicamentoId")
@@ -237,13 +244,13 @@ namespace app_web_backend_Mediquei.Migrations
                     b.Property<string>("Posologia")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TratamentoId")
+                    b.Property<int?>("TratSaudeId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("intervalo")
+                    b.Property<DateTime?>("intervalo")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("Id");
+                    b.HasKey("TratSaudeDetId");
 
                     b.HasIndex("EfeitoId1");
 
@@ -253,9 +260,9 @@ namespace app_web_backend_Mediquei.Migrations
 
                     b.HasIndex("MedicamentoId");
 
-                    b.HasIndex("TratamentoId");
+                    b.HasIndex("TratSaudeId");
 
-                    b.ToTable("TratamentosSaudeDet");
+                    b.ToTable("TratSaudeDet");
                 });
 
             modelBuilder.Entity("app_web_backend_Mediquei.Models.Usuario", b =>
@@ -287,6 +294,21 @@ namespace app_web_backend_Mediquei.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("DesafioSaudePaciente", b =>
+                {
+                    b.HasOne("app_web_backend_Mediquei.Models.DesafioSaude", null)
+                        .WithMany()
+                        .HasForeignKey("DesafiosSaudeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("app_web_backend_Mediquei.Models.Paciente", null)
+                        .WithMany()
+                        .HasForeignKey("PacientesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("app_web_backend_Mediquei.Models.ContratosCuidador", b =>
@@ -332,28 +354,20 @@ namespace app_web_backend_Mediquei.Migrations
 
             modelBuilder.Entity("app_web_backend_Mediquei.Models.Paciente", b =>
                 {
-                    b.HasOne("app_web_backend_Mediquei.Models.Familiar", "Familiar")
-                        .WithMany()
-                        .HasForeignKey("FamiliarId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("app_web_backend_Mediquei.Models.Usuario", "Usuario")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Familiar");
-
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratamentoSaude", b =>
+            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratSaude", b =>
                 {
                     b.HasOne("app_web_backend_Mediquei.Models.DesafioSaude", "DesafioSaude")
                         .WithMany()
-                        .HasForeignKey("DesafioId")
+                        .HasForeignKey("DesafioSaudeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -368,7 +382,7 @@ namespace app_web_backend_Mediquei.Migrations
                     b.Navigation("Paciente");
                 });
 
-            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratamentoSaudeDet", b =>
+            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratSaudeDet", b =>
                 {
                     b.HasOne("app_web_backend_Mediquei.Models.EfeitoAdverso", "EfeitoAdverso1")
                         .WithMany()
@@ -385,13 +399,12 @@ namespace app_web_backend_Mediquei.Migrations
                     b.HasOne("app_web_backend_Mediquei.Models.Medicamento", "Medicamento")
                         .WithMany()
                         .HasForeignKey("MedicamentoId")
-                        .IsRequired();
-
-                    b.HasOne("app_web_backend_Mediquei.Models.TratamentoSaude", "TratamentoSaude")
-                        .WithMany()
-                        .HasForeignKey("TratamentoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("app_web_backend_Mediquei.Models.TratSaude", null)
+                        .WithMany("TratSaudeDet")
+                        .HasForeignKey("TratSaudeId");
 
                     b.Navigation("EfeitoAdverso1");
 
@@ -400,13 +413,16 @@ namespace app_web_backend_Mediquei.Migrations
                     b.Navigation("EfeitoAdverso3");
 
                     b.Navigation("Medicamento");
-
-                    b.Navigation("TratamentoSaude");
                 });
 
             modelBuilder.Entity("app_web_backend_Mediquei.Models.Cuidador", b =>
                 {
                     b.Navigation("ContratoCuidador");
+                });
+
+            modelBuilder.Entity("app_web_backend_Mediquei.Models.TratSaude", b =>
+                {
+                    b.Navigation("TratSaudeDet");
                 });
 #pragma warning restore 612, 618
         }

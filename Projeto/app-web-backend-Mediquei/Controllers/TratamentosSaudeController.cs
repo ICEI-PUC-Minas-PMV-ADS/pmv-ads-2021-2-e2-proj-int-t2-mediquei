@@ -61,8 +61,11 @@ namespace app_web_backend_Mediquei.Controllers
                 return NotFound();
             }
 
+            //jaque: para incluir as informações de desafio saúde e Paciente na tela detalhe do tratamento
             var tratamentoSaude = await _context.TratamentosSaude
                 .Include(c => c.TratamentoSaudeDet)
+                .Include(t => t.DesafioSaude)
+                .Include(t => t.Paciente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (tratamentoSaude == null)
             {

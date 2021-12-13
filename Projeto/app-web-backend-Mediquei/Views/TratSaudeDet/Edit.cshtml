@@ -1,23 +1,16 @@
-﻿@model app_web_backend_Mediquei.Models.TratamentoSaudeDet
+﻿@model app_web_backend_Mediquei.Models.TratSaudeDet
 
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>TratamentoSaudeDet</h4>
+<h3>Editar informações do Tratamento Saúde</h3>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="TratamentoId" class="control-label"></label>
-                <select asp-for="TratamentoId" class="form-control" asp-items="ViewBag.TratamentoId"></select>
-                <span asp-validation-for="TratamentoId" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="TratSaudeDetId" />
             <div class="form-group">
                 <label asp-for="MedicamentoId" class="control-label"></label>
                 <select asp-for="MedicamentoId" class="form-control" asp-items="ViewBag.MedicamentoId"></select>
@@ -69,14 +62,11 @@
                 <span asp-validation-for="EfeitoId3" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a href=/TratSaudeDet type="button" class="btn btn-secondary">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Voltar</a>
 </div>
 
 @section Scripts {

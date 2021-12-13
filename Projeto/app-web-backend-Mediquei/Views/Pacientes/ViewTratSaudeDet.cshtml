@@ -1,0 +1,58 @@
+﻿@model app_web_backend_Mediquei.Models.TratSaude
+
+@{
+    ViewData["Title"] = "ViewTratSaudeDet";
+}
+
+<h1>ViewTratSaudeDet</h1>
+
+<div>
+    <h4>Detalhes do tratamento de: </h4>
+    <a asp-controller="TratSaudeDet" asp-action="Create">Inserir</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Data Inicial
+                </th>
+                <th>
+                    Data Final
+                </th>
+                <th>
+                    Hora Inicial
+                </th>
+                <th>
+                    Intervalo
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.TratSaudeDet.OrderByDescending(c => c.DataInicial))
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataFinal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoraInicial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intervalo)
+                </td>
+                <td>
+                    <a asp-controller="TratSaudeDet" asp-action="Edit" asp-route-id="@item.TratSaudeDetId">Edit</a> |
+                    <a asp-controller="TratSaudeDet" asp-action="Details" asp-route-id="@item.TratSaudeDetId">Details</a> |
+                    <a asp-controller="TratSaudeDet" asp-action="Delete" asp-route-id="@item.TratSaudeDetId">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.TratSaudeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

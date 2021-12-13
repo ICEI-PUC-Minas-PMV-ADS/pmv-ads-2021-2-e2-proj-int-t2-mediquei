@@ -1,12 +1,10 @@
-﻿@model app_web_backend_Mediquei.Models.TratamentoSaudeDet
+﻿@model app_web_backend_Mediquei.Models.TratSaudeDet
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>TratamentoSaudeDet</h4>
+<h3>Tratamento Saúde</h3>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,7 +12,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="MedicamentoId" class="control-label"></label>
-                <select asp-for="MedicamentoId" class ="form-control" asp-items="ViewBag.MedicamentoId"></select>
+                <select asp-for="MedicamentoId" class="form-control" asp-items="ViewBag.MedicamentoId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Posologia" class="control-label"></label>
@@ -48,25 +46,22 @@
             </div>
             <div class="form-group">
                 <label asp-for="EfeitoId1" class="control-label"></label>
-                <select asp-for="EfeitoId1" class ="form-control" asp-items="ViewBag.EfeitoId1"></select>
+                <select asp-for="EfeitoId1" class="form-control" asp-items="ViewBag.EfeitoId1"></select>
             </div>
             <div class="form-group">
                 <label asp-for="EfeitoId2" class="control-label"></label>
-                <select asp-for="EfeitoId2" class ="form-control" asp-items="ViewBag.EfeitoId2"></select>
+                <select asp-for="EfeitoId2" class="form-control" asp-items="ViewBag.EfeitoId2"></select>
             </div>
             <div class="form-group">
                 <label asp-for="EfeitoId3" class="control-label"></label>
-                <select asp-for="EfeitoId3" class ="form-control" asp-items="ViewBag.EfeitoId3"></select>
+                <select asp-for="EfeitoId3" class="form-control" asp-items="ViewBag.EfeitoId3"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a href=/TratSaudeDet type="button" class="btn btn-secondary">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-controller="TratamentosSaude" asp-action="Index">Voltar</a>    
 </div>
 
 @section Scripts {
