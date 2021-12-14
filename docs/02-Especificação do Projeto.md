@@ -55,7 +55,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-07|	O site deve possuir uma tela de cadastro de doenças.	|Alta|
 |RF-08|	O site deve possuir uma tela de cadastro do período de tratamento.	|Alta|
 |## RELATÓRIOS|
-
 |RF-10|	O site deve emitir relatório dos medicamentos utilizados em determinado período.|	Baixa|
 
 
