@@ -18,7 +18,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 |Objetivo do Teste |Verificar a adequação do website aos diversos tipos de dispositivos |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site |
 |Critérios de Êxito |Ao acessar o site em outros dispositivos, verificar se as páginas estão resonsivas. |
-|Resultados obtidos | Requisito atendido - As telas aqpresentaram responsividade, alterando o layout em diferentes dispositivos. |
+|Resultados obtidos | Requisito atendido - As telas apresentaram responsividade, alterando o layout em diferentes dispositivos. |
 
 |**Caso de Teste** |**CT-03 - Inclusão e Acessibilidade**| 
 |---|----|
@@ -26,13 +26,13 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 |Objetivo do Teste | Verificar se o website é acessível para os diferentes tipos de necessidades. |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Fazer a leitura de todos os textos da página. |
 |Critérios de Êxito | Os usuários conseguirem acessar e utilizar todas as ferramentas do site sem ajuda de terceiros. |
-|Resultados obtidos | Requisito atendido - As telas aqpresentaram responsividade e padrão, é utilizada linguagem coloquial e de fácil entendimento. Não foi apresentado mensagens de alerta. |
+|Resultados obtidos | Requisito atendido - As telas apresentaram responsividade e padrão, é utilizada linguagem coloquial e de fácil entendimento. Não foi apresentado mensagens de alerta. |
 
 |**Caso de Teste** |**CT-04 - Intuitividade**| 
 |---|----|
 |Requisitos Associados | RNF-07	O site deve conter uma barra de navegação de fácil uso.<br/> RFN-08 O website deve ser de fácil compreensão e utilização. |
 |Objetivo do Teste | Verificar se o website é fácil de ser utilizado. |
-|Passos | 1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/>  6) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 7) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 8) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 9) Clicar em Quadro de horários, dentro da barra de Menu <br/> 10) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
+|Passos | 1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/>  6) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 7) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 8)  Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
 |Critérios de Êxito | O usuário deve conseguir acessar todas as páginas com facilidade. |
 |Resultados obtidos | Requisito atendido - As telas apresentaram dois tipos de barra de navegação, um tipo antes de ser feito o login e outro após logado. Após o login, todas as opções de acesso, estavam disponíveis na barra de navegação.|
 
