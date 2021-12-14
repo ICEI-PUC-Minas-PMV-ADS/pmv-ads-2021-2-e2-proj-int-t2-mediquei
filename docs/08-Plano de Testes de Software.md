@@ -14,6 +14,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste | Verificar a possibilidade de cadastro de novos usuários|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se"|
 |Critérios de Êxito |Uma mensagem de sucesso deve ser exibida <br/> Os dados devem ser salvos no banco de dados e serem possíveis de acessar posteriormente|
+|Resultados obtidos | Requisito atendido - Ao acessar o site foi possivel fazer cadastro por meio de email e senha |
 
 |**Caso de Teste** |**CT-02 - Realizar Login**| 
 |---|----|
@@ -21,43 +22,22 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste |Verificar a possibilidade do usuário realizar o login|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Informar os campos solicitados: Email e senha <br/> 5) Clicar em "Acessar" |
 |Critérios de Êxito |Ao serem informados os dados cadastrados anteriormente, o usuário será direcionado para a página home |
+|Resultados obtidos |Requisito atendido - Ao acessar o site foi possivel acessar por meio de email e senha pré cadastrados |
 
 |**Caso de Teste** |**CT-03 - Cadastrar Medicação**| 
 |---|----|
-|Requisitos Associados |RF-07 O site deve possuir uma tela de cadastro de medicamentos.<br/> RF-09 O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.|
+|Requisitos Associados |RF-07 O site deve possuir uma tela de cadastro de medicamentos.<br/> RF-09 O site deve possuir uma tela para cadastro do medicamento do paciente.|
 |Objetivo do Teste | Verifica a possibilidade do usuário cadastrar medicações |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Se todos os campos forem preenchidos e os dados salvos uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Minha agenda" o medicamento cadastrado deve ser exibido |
+|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
+|Critérios de Êxito | Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Medicamentos" o medicamento cadastrado deve ser exibido |
+|Resultados obtidos | Requisito atendido  - Por meio do link na barra de ferramentas, é possivel cadatrar medicamentos |
 
-|**Caso de Teste** |**CT-04 - Editar Medicação**| 
-|---|----|
-|Requisitos Associados |RF-07 O site deve possuir uma tela de cadastro de medicamentos.<br/> RF-09 O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.|
-|Objetivo do Teste | Verifica a possibilidade do usuário editar medicações |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha agenda" <br/> 6) Clicar em "editar" <br/> 7) Preencher todos os campos disponiveis <br/> 8) Clicar em "Salvar" |
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Se todos os campos forem preenchidos e os dados editados uma mensagem de sucesso da operação deve ser exibida <br/> Os dados editados devem ser atualizados no banco de dados <br/>Ao acessar "Minha agenda" o medicamento atualizado deve ser exibido |
 
-|**Caso de Teste** |**CT-05 - Emitir relatórios**| 
-|---|----|
-|Requisitos Associados |RF-11 O site deverá permitir gerar um relatório com os medicamentos que tiveram melhor efetividade durante um tratamento. <br/> RF-12 O site deve permitir que o usuário de um feedback em relação ao uso dos medicamentos, informando se houve e quais foram eles. <br/> RF-13		O site deve emitir relatório dos medicamentos utilizados em determinado período.|
-|Objetivo do Teste |Verificar a possibilidade do usuário emitir relatórios como os medicamento cadastrados |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/> 6) Clicar em "Exportar"|
-|Critérios de Êxito |Após a exportação um arquivo pdf deve ser gerado com todas as medicações e suas informações|
-
-|**Caso de Teste** |**CT-06 - Gerenciar acessos**| 
+|**Caso de Teste** |**CT-04 - Gerenciar acessos**| 
 |---|----|
 |Requisitos Associados | RF-14 O site deverá permitir gerencias os acessos dos usuários.|
 |Objetivo do Teste |Verificar a possibilidade do usuário gerenciar todos os perfis que acessam seus dados|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Gerenciamento de acessos" <br/> 6) Clicar em "Editar" e "Excluir" <br/> 7) Modificar dados cadastrados 8) Clicar em "Salvar" |
 |Critérios de Êxito |Após a edição ou exclusão uma mensagem de sucesso deve ser exibida <br/> O perfil selecionado deve ser editado ou excluído do banco de dados <br/> As novas informações atualizadas do perfil editado deve aparecer na página de gerenciamento de acessos |
+|Resultados obtidos | Requisito atendido - É possivel acessar os usuários cadastrados, verificar o perfil de acesso definido, alterar e salvar |
 
-|**Caso de Teste** |**CT-07 - Cadastrar comorbidades**| 
-|---|----|
-|Requisitos Associados |RF-08 O site deve possuir uma tela de cadastro de doenças|
-|Objetivo do Teste |Verificar a possibilidade de usuário cadastrar as suas comorbidades|
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Comorbidade" <br/> 6) Informar todos os campos solicitados <br/> 7) Clicar em "Salvar"|
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados |
-
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
