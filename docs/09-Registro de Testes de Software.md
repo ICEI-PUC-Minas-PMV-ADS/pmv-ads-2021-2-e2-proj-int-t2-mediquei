@@ -32,11 +32,11 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 |**Caso de Teste** |**CT-03 - Cadastrar Medicação**| 
 |---|----|
-|Requisitos Associados |RF-07 O site deve possuir uma tela de cadastro de medicamentos.<br/> RF-09 O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.|
+|Requisitos Associados |RF-07 O site deve possuir uma tela de cadastro de medicamentos.<br/> RF-09 O site deve possuir uma tela para cadastro do medicamento do paciente.|
 |Objetivo do Teste | Verifica a possibilidade do usuário cadastrar medicações |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Se todos os campos forem preenchidos e os dados salvos uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Minha agenda" o medicamento cadastrado deve ser exibido |
-|Resultados obtidos | Requisito não atendido |
+|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
+|Critérios de Êxito | Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Medicamentos" o medicamento cadastrado deve ser exibido |
+|Resultados obtidos | Requisito atendido  - Por meio do link na barra de ferramentas, é possivel cadatrar medicamentos |
 
 
 |**Caso de Teste** |**CT-04 - Editar Medicação**| 
@@ -48,16 +48,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Resultados obtidos | Requisito não atendido |
 
 
-|**Caso de Teste** |**CT-05 - Emitir relatórios**| 
-|---|----|
-|Requisitos Associados |RF-11 O site deverá permitir gerar um relatório com os medicamentos que tiveram melhor efetividade durante um tratamento. <br/> RF-12 O site deve permitir que o usuário de um feedback em relação ao uso dos medicamentos, informando se houve e quais foram eles. <br/> RF-13		O site deve emitir relatório dos medicamentos utilizados em determinado período.|
-|Objetivo do Teste |Verificar a possibilidade do usuário emitir relatórios como os medicamento cadastrados |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/> 6) Clicar em "Exportar"|
-|Critérios de Êxito |Após a exportação um arquivo pdf deve ser gerado com todas as medicações e suas informações |
-|Resultados obtidos | Requisito não atendido |
-
-
-|**Caso de Teste** |**CT-06 - Gerenciar acessos**| 
+|**Caso de Teste** |**CT-05 - Gerenciar acessos**| 
 |---|----|
 |Requisitos Associados | RF-14 O site deverá permitir gerencias os acessos dos usuários.|
 |Objetivo do Teste |Verificar a possibilidade do usuário gerenciar todos os perfis que acessam seus dados|
@@ -66,18 +57,3 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Resultados obtidos | Requisito atendido - É possivel acessar os usuários cadastrados, verificar o perfil de acesso definido, alterar e salvar |
 
 
-|**Caso de Teste** |**CT-07 - Cadastrar comorbidades**| 
-|---|----|
-|Requisitos Associados |RF-08 O site deve possuir uma tela de cadastro de doenças|
-|Objetivo do Teste |Verificar a possibilidade de usuário cadastrar as suas comorbidades|
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Cadastro de Comorbidade" <br/> 6) Informar todos os campos solicitados <br/> 7) Clicar em "Salvar"|
-|Critérios de Êxito | Caso algum campo obrigatório não for preenchido, o usuário deve ser informado sobre o campo <br/> Uma mensagem de sucesso da operação deve ser exibida <br/> Os dados cadastrados devem ser salvos no banco de dados |
-|Resultados obtidos | Requisito não atendido |
-
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
