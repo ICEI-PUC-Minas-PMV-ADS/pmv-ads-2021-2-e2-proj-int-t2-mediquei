@@ -26,7 +26,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 |Objetivo do Teste | Verificar se o website é acessível para os diferentes tipos de necessidades. |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Fazer a leitura de todos os textos da página. |
 |Critérios de Êxito | Os usuários conseguirem acessar e utilizar todas as ferramentas do site sem ajuda de terceiros. |
-|Resultados obtidos | Requisito parcialmente atendido - As telas aqpresentaram responsividade e padrão, é utilizada linguagem coloquial e de fácil entendimento. Não foi apresentado mensagens de alerta. |
+|Resultados obtidos | Requisito atendido - As telas aqpresentaram responsividade e padrão, é utilizada linguagem coloquial e de fácil entendimento. Não foi apresentado mensagens de alerta. |
 
 |**Caso de Teste** |**CT-04 - Intuitividade**| 
 |---|----|
