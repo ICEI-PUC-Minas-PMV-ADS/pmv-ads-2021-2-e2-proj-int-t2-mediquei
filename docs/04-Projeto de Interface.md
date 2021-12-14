@@ -64,17 +64,7 @@ Após isso, ela clica em cadastrar e o medicamento estará salvo.
 
 ![Tela Cadastro med](https://user-images.githubusercontent.com/81760044/134091791-55903189-199d-4cff-948b-cb7f2e6fe1bc.JPG)
 
-Minha Agenda
 
-Nessa tela a pessoa consegue ver resumidamente os medicamentos que estão ativos no momento, ou seja, os medicamentos que ela está em uso e com alerta ligado. As informações importantes ficam em destaque e o usuário consegue editar, apagar, exportar ou imprimir as informações. 
-
-![Tela7](https://user-images.githubusercontent.com/81760044/133887302-77e4ce8e-40a5-454e-9f2a-595e29b24d5c.JPG)
-
-Quadro de horários dos medicamentos 
-
-Nessa tela, os medicamentos ficam visíveis de outra maneira, mas também tem o objetivo de gerar um controle sobre a agenda do paciente. 
-
-![Capturar8](https://user-images.githubusercontent.com/81760044/134091992-9a705cd6-ea34-4874-ba0b-fa6acd68a2b4.PNG)
 
 Gerenciamento de acessos
 
