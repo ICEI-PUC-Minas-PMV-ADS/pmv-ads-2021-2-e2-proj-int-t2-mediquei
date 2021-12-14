@@ -14,7 +14,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |---|----|
 |Requisitos Associados | RNF-01 O website deverá apresentar um layout padrão para todas as telas, podendo ser criado ou utilizado um existente. <br/> RNF-03 O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho. |
 |Objetivo do Teste | Gerar uma padronização no website que fortaleça a identidade da marca. |
-|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se" <br/> 6) Na tela inicial clicar em "Acessar" <br/> 7) Informar os campos solicitados: Email e senha <br/> 8) Clicar em "Acessar" <br/> 9) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 10) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 11) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 12) Clicar em Quadro de horários, dentro da barra de Menu <br/> 13) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
+|Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se" <br/> 6) Na tela inicial clicar em "Acessar" <br/> 7) Informar os campos solicitados: Email e senha <br/> 8) Clicar em "Acessar" <br/> 9) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 10) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 11) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 12) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
 |Critérios de Êxito | Validar que todas as telas estão padronizadas, com a identidade da marca bem definida. |
 
 |**Caso de Teste** |**CT-02 - Adequação**| 
@@ -35,7 +35,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |---|----|
 |Requisitos Associados | RNF-07	O site deve conter uma barra de navegação de fácil uso.<br/> RFN-08 O website deve ser de fácil compreensão e utilização. |
 |Objetivo do Teste | Verificar se o website é fácil de ser utilizado. |
-|Passos | 1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/>  6) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 7) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 8) Clicar em Acessar Minha Agenda, dentro da barra de Menu <br/> 9) Clicar em Quadro de horários, dentro da barra de Menu <br/> 10) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
+|Passos | 1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Minha Agenda" <br/>  6) Clicar dentro da tela principal em  "Precisa de ajuda? Clique Aqui" <br/> 7) Clicar em Cadastro de medicamento, dentro da barra de Menu <br/> 8) Clicar em Gerenciamento de Acessos, dentro da barra de Menu. |
 |Critérios de Êxito | O usuário deve conseguir acessar todas as páginas com facilidade. |
 
 
