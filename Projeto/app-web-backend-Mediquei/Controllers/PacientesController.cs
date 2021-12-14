@@ -26,7 +26,7 @@ namespace app_web_backend_Mediquei.Controllers
             if (!User.IsInRole("Admin"))
             {
                 // Visualizar apenas o paciente associado ao usuário
-                var id = User.Claims.ElementAt(2).Value;                
+                var id = User.Claims.ElementAt(2).Value;
                 applicationDbContext =
                        _context.Pacientes
                        .Where(d => d.UserId.ToString() == id)
@@ -67,16 +67,16 @@ namespace app_web_backend_Mediquei.Controllers
             pacienteViewModel.Id = id.Value;
             pacienteViewModel.Nome = paciente.Nome;
             pacienteViewModel.UserId = paciente.UserId;
-            
+
             var checkboxListTratSaude = new List<CheckBoxViewModel>();
 
             foreach (var item in TratSaude)
             {
-                checkboxListTratSaude.Add(new CheckBoxViewModel 
-                { 
-                    IdLookup = item.Id, 
-                    Nome = item.Nome, 
-                    Checked = item.Checked 
+                checkboxListTratSaude.Add(new CheckBoxViewModel
+                {
+                    IdLookup = item.Id,
+                    Nome = item.Nome,
+                    Checked = item.Checked
                 });
             }
 
@@ -130,7 +130,7 @@ namespace app_web_backend_Mediquei.Controllers
                                 c.Nome,
                                 Checked = ((from ce in _context.TratSaude
                                             where (ce.PacienteId == id) & (ce.DesafioSaudeId == c.Id) &
-                                            (ce.Checked==true)
+                                            (ce.Checked == true)
                                             select ce.Checked).Count() > 0)
 
 
@@ -138,7 +138,7 @@ namespace app_web_backend_Mediquei.Controllers
             var pacienteViewModel = new PacientesViewModel();
             pacienteViewModel.Id = id.Value;
             pacienteViewModel.Nome = paciente.Nome;
-                        pacienteViewModel.UserId = paciente.UserId;
+            pacienteViewModel.UserId = paciente.UserId;
             var checkboxListTratSaude = new List<CheckBoxViewModel>();
 
             foreach (var item in TratSaude)
@@ -150,7 +150,7 @@ namespace app_web_backend_Mediquei.Controllers
                     Checked = item.Checked
                 });
             }
-            pacienteViewModel.CheckBoxTratSaude = checkboxListTratSaude;            
+            pacienteViewModel.CheckBoxTratSaude = checkboxListTratSaude;
             ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", paciente.UserId);
 
             return View(pacienteViewModel);
@@ -163,18 +163,18 @@ namespace app_web_backend_Mediquei.Controllers
         [ValidateAntiForgeryToken]
         // Alterando o método Edit/Post para salvar a seleção feita pelo usuário para os desafios de saúde
         public async Task<IActionResult> Edit(int id, PacientesViewModel pacientevm)
-        {                    
+        {
 
             if (id != pacientevm.Id)
             {
                 return NotFound();
             }
-            
+
             if (ModelState.IsValid)
             {
                 var paciente = await _context.Pacientes.FindAsync(id);
                 paciente.Nome = pacientevm.Nome;
-                paciente.UserId = pacientevm.UserId;                
+                paciente.UserId = pacientevm.UserId;
 
                 try
                 {
@@ -199,7 +199,7 @@ namespace app_web_backend_Mediquei.Controllers
                     {
                         var qryTratSaudeId = from t in _context.TratSaude
                                    .Where(t => t.PacienteId == pacientevm.Id && t.DesafioSaudeId == item.IdLookup)
-                                   select new { t.TratSaudeId };                        
+                                             select new { t.TratSaudeId };
 
                         foreach (var item2 in qryTratSaudeId)
                         {
@@ -224,22 +224,22 @@ namespace app_web_backend_Mediquei.Controllers
                     }
 
                     try
-                    {                        
+                    {
                         await _context.SaveChangesAsync();
                     }
                     catch (DbUpdateConcurrencyException)
                     {
-                            throw;
+                        throw;
                     }
-                }                
+                }
 
-                _context.SaveChanges(); 
+                _context.SaveChanges();
 
                 return RedirectToAction(nameof(Index));
-            }            
+            }
             ViewData["UserId"] = new SelectList(_context.Usuarios, "Id", "EMail", pacientevm.UserId);
             return View(pacientevm);
-        }        
+        }
 
         // GET: Pacientes/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -283,6 +283,3 @@ namespace app_web_backend_Mediquei.Controllers
 
     }
 }
-
-
-

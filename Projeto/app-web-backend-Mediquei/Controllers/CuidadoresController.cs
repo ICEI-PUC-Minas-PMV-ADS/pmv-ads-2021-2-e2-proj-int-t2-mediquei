@@ -20,19 +20,19 @@ namespace app_web_backend_Mediquei.Controllers
 
         // GET: Cuidadores
         public async Task<IActionResult> Index()
-        {            
+        {
             var applicationDbContext = _context.Cuidadores.Include(c => c.Usuario);
-            
-            if(!User.IsInRole("Admin"))
+
+            if (!User.IsInRole("Admin"))
             {
                 // Visualizar apenas o cuidador associado ao usuário
-                var id = User.Claims.ElementAt(2).Value;                
+                var id = User.Claims.ElementAt(2).Value;
                 applicationDbContext =
                        _context.Cuidadores
-                       .Where(d => d.UserId.ToString() == id)  
+                       .Where(d => d.UserId.ToString() == id)
                        .Include(c => c.Usuario);
-            }           
-                   
+            }
+
             return View(await applicationDbContext.ToListAsync());
 
         }
@@ -66,14 +66,14 @@ namespace app_web_backend_Mediquei.Controllers
 
             //jaque: para pegar o nome do paciente no relatório de cuidadores, fazer o .Include(c => c.ContratoCuidador).ThenInclude(c=>c.Paciente) que funciona como um join
             var cuidador = await _context.Cuidadores
-                .Include(c => c.ContratoCuidador).ThenInclude(c=>c.Paciente)    
+                .Include(c => c.ContratoCuidador).ThenInclude(c => c.Paciente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cuidador == null)
             {
                 return NotFound();
-            }          
+            }
 
-            return View(cuidador);            
+            return View(cuidador);
         }
 
         // GET: Cuidadores/Create
