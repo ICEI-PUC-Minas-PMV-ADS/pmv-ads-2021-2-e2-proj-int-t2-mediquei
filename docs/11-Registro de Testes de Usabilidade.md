@@ -36,5 +36,4 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 |Critérios de Êxito | O usuário deve conseguir acessar todas as páginas com facilidade. |
 |Resultados obtidos | Requisito atendido - As telas apresentaram dois tipos de barra de navegação, um tipo antes de ser feito o login e outro após logado. Após o login, todas as opções de acesso, estavam disponíveis na barra de navegação.|
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+
