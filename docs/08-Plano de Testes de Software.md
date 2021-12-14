@@ -14,7 +14,6 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste | Verificar a possibilidade de cadastro de novos usuários|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Cadastre-se"<br/> 4) Informar os campos solicitados: Nome Completo, email e senha <br/> 5) Clicar em"Cadastre-se"|
 |Critérios de Êxito |Uma mensagem de sucesso deve ser exibida <br/> Os dados devem ser salvos no banco de dados e serem possíveis de acessar posteriormente|
-|Resultados obtidos | Requisito atendido - Ao acessar o site foi possivel fazer cadastro por meio de email e senha |
 
 |**Caso de Teste** |**CT-02 - Realizar Login**| 
 |---|----|
@@ -22,7 +21,6 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste |Verificar a possibilidade do usuário realizar o login|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Informar os campos solicitados: Email e senha <br/> 5) Clicar em "Acessar" |
 |Critérios de Êxito |Ao serem informados os dados cadastrados anteriormente, o usuário será direcionado para a página home |
-|Resultados obtidos |Requisito atendido - Ao acessar o site foi possivel acessar por meio de email e senha pré cadastrados |
 
 |**Caso de Teste** |**CT-03 - Cadastrar Medicação**| 
 |---|----|
@@ -30,8 +28,6 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste | Verifica a possibilidade do usuário cadastrar medicações |
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Medicamentos" <br/> 6) Preencher todos os campos disponiveis <br/> 7) Clicar em "Salvar" |
 |Critérios de Êxito | Os dados cadastrados devem ser salvos no banco de dados <br/>Ao acessar "Medicamentos" o medicamento cadastrado deve ser exibido |
-|Resultados obtidos | Requisito atendido  - Por meio do link na barra de ferramentas, é possivel cadatrar medicamentos |
-
 
 |**Caso de Teste** |**CT-04 - Gerenciar acessos**| 
 |---|----|
@@ -39,5 +35,4 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Objetivo do Teste |Verificar a possibilidade do usuário gerenciar todos os perfis que acessam seus dados|
 |Passos |1) Acessar o navegador <br/> 2) Acessar o site <br/> 3) Na tela inicial clicar em "Acessar"<br/> 4) Realizar Login <br/> 5) Clicar em "Gerenciamento de acessos" <br/> 6) Clicar em "Editar" e "Excluir" <br/> 7) Modificar dados cadastrados 8) Clicar em "Salvar" |
 |Critérios de Êxito |Após a edição ou exclusão uma mensagem de sucesso deve ser exibida <br/> O perfil selecionado deve ser editado ou excluído do banco de dados <br/> As novas informações atualizadas do perfil editado deve aparecer na página de gerenciamento de acessos |
-|Resultados obtidos | Requisito atendido - É possivel acessar os usuários cadastrados, verificar o perfil de acesso definido, alterar e salvar |
 
