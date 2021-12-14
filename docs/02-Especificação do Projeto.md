@@ -46,21 +46,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |## CADASTROS|
-|RF-01|	O site deve permitir o usuário cadastrar-se com um login e senha. O login deverá ser seu endereço de e-mail ou número do telefone celular. A senha é opcional.	|Alta|
-|RF-02|	O site deverá sugerir senhas de fácil memorização. Ex: os 5 primeiros dígitos do CPF.	|Média|
-|RF-03|	O site deverá permitir validar o e-mail ou telefone do usuário	|baixa|
+|RF-01|	O site deve permitir o usuário cadastrar-se com um login e senha. O login deverá ser seu endereço de e-mail.	|Alta|
+|RF-02|	O site deverá sugerir senhas de fácil memorização.	|Média|
+|RF-03|	O site deverá permitir validar o e-mail do usuário	|baixa|
 |RF-04|	O site deve permitir o acesso do paciente cadastrado, seu cuidador e seu familiar.	|Média|
 |RF-05|	O site deve possuir uma tela de cadastro de dados pessoais do paciente.	|Alta|
-|RF-06|	O site deve possuir uma tela de cadastro da ficha médica do paciente.	|Baixa|
-|RF-07|	O site deve possuir uma tela de cadastro de medicamentos.	|Alta|
-|RF-08|	O site deve possuir uma tela de cadastro de doenças.	|Alta|
-|RF-09|	O site deve possuir uma tela de cadastro do período de tratamento, horário, posologia e modo de administração do medicamento para aquele paciente.	|Alta|
-|## NAVEGAÇÃO E ALERTAS|
-|RF-10|	O site deve emitir alertas aos usuários cadastrados como cuidador e paciente com informações de horário, posologia e modo de administração do medicamento. 	|Alta|
+|RF-06|	O site deve possuir uma tela de cadastro de medicamentos.	|Alta|
+|RF-07|	O site deve possuir uma tela de cadastro de doenças.	|Alta|
+|RF-08|	O site deve possuir uma tela de cadastro do período de tratamento.	|Alta|
 |## RELATÓRIOS|
-|RF-11|	O site deverá permitir gerar um relatório com os medicamentos que tiveram melhor efetividade durante um tratamento.|	Média|
-|RF-12|	O site deve permitir que o usuário de um feedback em relação ao uso dos medicamentos, informando se houve e quais foram eles.|	Baixa|
-|RF-13|	O site deve emitir relatório dos medicamentos utilizados em determinado período.|	Baixa|
+
+|RF-10|	O site deve emitir relatório dos medicamentos utilizados em determinado período.|	Baixa|
 
 
 ### Requisitos não Funcionais
@@ -72,9 +68,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-03	|O website deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.	|Alta|
 |RNF-04	|O website deverá adotar uma paleta de cores adequada para criar um ambiente esteticamente agradável para o usuário.	|Alta|
 |RNF-05	|O website deverá ter um bom nível de contraste entre os elementos da tela em conformidade.	|Alta|
-|RNF-06	|As mensagens de alerta deverão utilizar fontes de tamanho grande para facilitar a leitura por pessoas com baixa visão.	|Baixa|
-|RNF-07	|O website deve conter uma barra de navegação de fácil uso.	|Média|
-|RNF-08 |O website deve ser de fácil compreensão e utilização. |Alta| 
+|RNF-06	|O website deve conter uma barra de navegação de fácil uso.	|Média|
+|RNF-07 |O website deve ser de fácil compreensão e utilização. |Alta| 
 
 
 ## Restrições
