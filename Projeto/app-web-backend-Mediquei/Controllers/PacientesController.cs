@@ -29,6 +29,7 @@ namespace app_web_backend_Mediquei.Controllers
                 var id = User.Claims.ElementAt(2).Value;
                 applicationDbContext =
                        _context.Pacientes
+                       .Include(p => p.Usuario)
                        .Where(d => d.UserId.ToString() == id)
                        .Include(p => p.Usuario);
             }
@@ -45,7 +46,7 @@ namespace app_web_backend_Mediquei.Controllers
             }
 
             var paciente = await _context.Pacientes
-                .Include(p => p.Usuario)
+                .Include(p => p.Usuario)                
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (paciente == null)
             {
