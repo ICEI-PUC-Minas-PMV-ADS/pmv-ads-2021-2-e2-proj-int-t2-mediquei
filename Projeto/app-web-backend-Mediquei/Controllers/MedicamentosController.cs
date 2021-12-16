@@ -55,7 +55,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome")] Medicamento medicamento)
+        public async Task<IActionResult> Create([Bind("Id,Nome,RegistroANS,Farmaco,Detentor,Concentracao,FormaFarma")] Medicamento medicamento)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace app_web_backend_Mediquei.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Medicamento medicamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,RegistroANS,Farmaco,Detentor,Concentracao,FormaFarma")] Medicamento medicamento)
         {
             if (id != medicamento.Id)
             {

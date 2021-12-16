@@ -4,7 +4,17 @@
     ViewData["Title"] = "Edit";
 }
 
-<h3>Editar informações referente ao medicamento</h3>
+<head>
+    <title>Medicamento</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="~/css/login.css">
+</head>
+
+<h3>Editar Medicamentos</h3>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -16,6 +26,33 @@
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="RegistroANS" class="control-label"></label>
+                <input asp-for="RegistroANS" class="form-control" />
+                <span asp-validation-for="RegistroANS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Farmaco" class="control-label"></label>
+                <input asp-for="Farmaco" class="form-control" />
+                <span asp-validation-for="Farmaco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Detentor" class="control-label"></label>
+                <input asp-for="Detentor" class="form-control" />
+                <span asp-validation-for="Detentor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Concentracao" class="control-label"></label>
+                <input asp-for="Concentracao" class="form-control" />
+                <span asp-validation-for="Concentracao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FormaFarma" class="control-label"></label>
+                <select asp-for="FormaFarma" class="form-control" asp-items="Html.GetEnumSelectList<FormaFarm>()"></select>
+                <span asp-validation-for="FormaFarma" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-primary" />
                 <a href=/Medicamentos type="button" class="btn btn-secondary">Voltar</a>

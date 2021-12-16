@@ -46,5 +46,8 @@ namespace app_web_backend_Mediquei.Models
 
         //Migration M11
         // Exclusão de TratamentoSaude e TratamentoSaudeDet
+
+        //Migration M12
+        // Inclusão de campos na tabela de medicamentos
     }
 }
